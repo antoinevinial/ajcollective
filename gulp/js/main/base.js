@@ -1,10 +1,11 @@
-//import modules
-var moduleExemple = require('./modules/module.js');
+// Import modules.
+var nav = require('./modules/nav.js');
 
-(function ($, win) {
+$(function() {
+	
+	if ($('.js-nav').length) {
+		nav.init();
+	}
 
-    $(function () {
-        moduleExemple();
-    });
+});
 
-})(jQuery, window);

@@ -1,0 +1,160 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.nav {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.nav, .main {
+  transition: all 0.35s ease; }
+
+.panel {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  padding: 120px; }
+  .panel__container {
+    display: table-cell;
+    vertical-align: middle; }
+  .panel__cover {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; }
+  .panel__btn {
+    position: absolute;
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    background-color: #fff; }
+    .panel__btn--top, .panel__btn--right, .panel__btn--bottom, .panel__btn--left {
+      padding: 50px 0; }
+    .panel__btn--top, .panel__btn--bottom {
+      left: 0;
+      width: 100%;
+      height: 120px; }
+    .panel__btn--top {
+      top: 0; }
+    .panel__btn--bottom {
+      bottom: 0; }
+    .panel__btn--left, .panel__btn--right {
+      bottom: 0;
+      width: 100vh;
+      height: 120px; }
+    .panel__btn--left {
+      left: 120px;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      -webkit-transform-origin: left bottom;
+              transform-origin: left bottom; }
+    .panel__btn--right {
+      right: 120px;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      -webkit-transform-origin: right bottom;
+              transform-origin: right bottom; }
+  .panel--blue {
+    background-color: #0f008a; }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 480px;
+  height: 100vh;
+  color: #fff;
+  background-color: #202020;
+  z-index: 2;
+  -webkit-transform: translateX(-480px);
+          transform: translateX(-480px); }
+  .nav:before, .nav:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 10px;
+    height: 50%; }
+  .nav:before {
+    top: 0;
+    background-color: #000; }
+  .nav:after {
+    top: 50%;
+    background-color: #373737; }
+  .nav__link {
+    display: block;
+    padding: 55px 80px 0 80px; }
+    .nav__link__name {
+      display: block;
+      font-size: 70px; }
+    .nav__link__jobtitle {
+      display: block;
+      margin: 10px 0 55px 0;
+      font-size: 22px; }
+    .nav__link:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #2b2b2b; }
+
+.is-nav-open .main {
+  -webkit-transform: translateX(480px);
+          transform: translateX(480px); }
+
+.is-nav-open .nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+body {
+  overflow-x: hidden; }

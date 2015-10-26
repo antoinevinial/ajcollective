@@ -1,0 +1,72 @@
+// Navigation.
+
+.nav {
+	@extend %antialiased;
+	@extend %transitionEase;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 480px;
+	height: 100vh;
+	color: $color-white;
+	background-color: $color-dark;
+	z-index: 2;
+	transform: translateX(-480px);
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		display: block;
+		width: 10px;
+		height: 50%;
+	}
+
+	&:before {
+		top: 0;
+		background-color: $color-black;
+	}
+
+	&:after {
+		top: 50%;
+		background-color: $color-dark-light;
+	}
+
+	&__link {
+		display: block;
+		padding: 55px 80px 0 80px;
+
+		&__name {
+			display: block;
+			font-size: 70px;
+		}
+
+		&__jobtitle {
+			display: block;
+			margin: 10px 0 55px 0;
+			font-size: 22px;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: $color-border;
+		}
+	}
+}
+
+
+// When nav is open.
+
+.is-nav-open {
+	.main {
+		transform: translateX(480px);
+	}
+
+	.nav {
+		transform: translateX(0);
+	}
+}
