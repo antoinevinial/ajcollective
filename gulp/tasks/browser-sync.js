@@ -4,8 +4,6 @@ var path        = require('../config.js');
 
 gulp.task('browser-sync', function() {
   browserSync({
-    server: {
-      baseDir: path.base
-    }
+    proxy: "ajcollective.dev/"
   });
 });
