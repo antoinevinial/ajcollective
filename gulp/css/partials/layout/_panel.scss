@@ -6,6 +6,7 @@
 	width: 100%;
 	height: 100vh;
 	padding: 120px;
+	transition: all $transition-quick ease;
 
 	&__container {
 		display: table-cell;
@@ -21,16 +22,10 @@
 	&__btn {
 		position: absolute;
 		display: block;
-		font-size: 22px;
+		padding: 50px 0;
+		font-size: 16px;
 		text-align: center;
 		background-color: $color-white;
-
-		&--top,
-		&--right,
-		&--bottom,
-		&--left {
-			padding: 50px 0;
-		}
 
 		&--top,
 		&--bottom {
@@ -65,9 +60,99 @@
 			transform: rotate(90deg);
 			transform-origin: right bottom;
 		}
+
+		&--bordered {
+			&:after {
+				content: "";
+				position: absolute;
+				left: 50%;
+				display: block;
+				width: 2px;
+				height: 30px;
+				margin-left: -1px;
+				background-color: $color-black;
+			}
+
+			&--top {
+				&:after {
+					top: 0;
+				}
+			}
+
+			&--bottom {
+				&:after {
+					bottom: 0;
+				}
+			}
+		}
 	}
 
 	&--blue {
 		background-color: $color-brand;
 	}
+
+	&--black {
+		background-color: $color-black;
+
+		.panel__container {
+			color: $color-white;
+		}
+	}
+
+	&--no-right {
+		padding-right: 0;
+	}
+
+	// Special classes for animation.
+
+	&.is-push {
+		transform: translateY(-100%);
+	}
+
+	&.is-show {
+		transform: translateY(-100%);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

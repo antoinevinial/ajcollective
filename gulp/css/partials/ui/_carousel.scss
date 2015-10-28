@@ -1,0 +1,20 @@
+// Carousel.
+
+.carousel {
+	margin-left: 80px;
+	overflow: hidden;
+
+	&__slider {
+		width: 10000px;
+	}
+
+	&__item {
+		display: table-cell;
+		vertical-align: middle;
+		padding-right: 40px;
+
+		&--intro {
+			max-width: 320px;
+		}
+	}
+}
