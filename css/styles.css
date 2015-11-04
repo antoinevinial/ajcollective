@@ -269,8 +269,7 @@ body {
     display: flex;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center;
-    width: 100000px; }
+            align-items: center; }
   .carousel__item {
     padding-right: 40px; }
     .carousel__item--text {
