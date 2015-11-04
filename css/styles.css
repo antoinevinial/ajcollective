@@ -291,7 +291,9 @@ body {
     margin-top: -25px;
     padding: 0;
     background: none;
-    border: none; }
+    border: none;
+    outline: none;
+    cursor: pointer; }
     .carousel__btn .icon {
       display: block; }
     .carousel__btn--prev {
