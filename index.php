@@ -34,7 +34,7 @@
 
 		<main class="main js-main">
 			<!-- Homepage -->
-			<section class="panel panel--blue js-panel is-active">
+			<section class="panel panel--blue panel--center js-panel is-active">
 				<div class="panel__pager">
 					<a class="panel__btn panel__btn--top panel__btn--title" href="#">AJCollective</a>
 					<a class="panel__btn panel__btn--right" href="#">About / Contact</a>
@@ -56,12 +56,22 @@
 				</div>
 				<div class="panel__container">
 					<div class="carousel js-carousel">
-						<div class="carousel__slider js-carousel-slider">
-							<div class="carousel__item carousel__item--intro js-carousel-item">
-								<h2>AJ Colomb</h2>
+						<ul class="carousel__slider js-carousel-slider">
+							<li class="carousel__item carousel__item--text js-carousel-item">
+								<h2 class="heading-2">AJ Colomb</h2>
 								<span class="carousel__jobtitle">Creative researcher &amp; founder</span>
 								<p class="carousel__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-							</div>
+							</li>
+							<?php 
+								for ($x = 0; $x <= 3; $x++) {
+									echo '<li class="carousel__item js-carousel-item"><img class="carousel__img" src="http://placehold.it/400x223/010006/ffffff"/></li>';
+									echo '<li class="carousel__item js-carousel-item"><img class="carousel__img" src="http://placehold.it/1045x300/010006/ffffff"/></li>';
+								}
+							?>
+						</ul>
+						<div class="carousel__pager">
+							<button class="carousel__btn carousel__btn--prev js-carousel-btn js-carousel-btn-prev" data-direction="prev" href="#"><?php include "partials/icons/arrow-left.php" ?></button>
+							<button class="carousel__btn carousel__btn--next js-carousel-btn js-carousel-btn-next" data-direction="next" href="#"><?php include "partials/icons/arrow-right.php" ?></button>
 						</div>
 					</div>
 				</div>

@@ -59,7 +59,11 @@ table {
 .nav__link__name, .nav__link__name:after {
   transition: all 0.25s ease; }
 
-.nav, .main {
+.panel {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease; }
+
+.nav, .main, .carousel__slider, .carousel__btn {
   transition: all 0.35s ease; }
 
 /* @font-face */
@@ -85,8 +89,11 @@ table {
   font-style: normal; }
 
 /* Extends for font-family */
-.panel__btn--title, .nav__link__name {
+.heading-2, .panel__btn--title, .nav__link__name {
   font-family: "grumpy", Serif; }
+
+.carousel__txt {
+  font-family: "patronlight", Arial, sans-serif; }
 
 body {
   font-family: "patronregular", Arial, sans-serif; }
@@ -94,6 +101,11 @@ body {
 /* Titles */
 .heading-1 {
   font-size: 28px; }
+
+.heading-2 {
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 3px; }
 
 .panel {
   position: relative;
@@ -103,16 +115,9 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   height: 100vh;
-  padding: 120px;
-  transition: all 0.35s ease; }
-  .panel__container {
-    display: table-cell;
-    vertical-align: middle; }
+  padding: 120px; }
   .panel__cover {
     display: block;
     margin: 0 auto;
@@ -125,6 +130,7 @@ body {
     letter-spacing: 1px;
     text-align: center;
     background-color: #fff;
+    z-index: 5;
     /* Modifiers */ }
     .panel__btn--top, .panel__btn--bottom {
       left: 0;
@@ -173,6 +179,10 @@ body {
     background-color: #000; }
     .panel--black .panel__container {
       color: #fff; }
+  .panel--center {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .panel--no-right {
     padding-right: 0; }
   .panel.is-push {
@@ -240,14 +250,66 @@ body {
   font-size: 16px;
   overflow: hidden; }
 
+.icon-arrow-left {
+  width: 40px;
+  height: 12px;
+  fill: #fff; }
+
+.icon-arrow-right {
+  width: 40px;
+  height: 12px;
+  fill: #fff; }
+
 .carousel {
-  margin-left: 80px;
-  overflow: hidden; }
+  position: relative;
+  margin-left: 80px; }
   .carousel__slider {
-    width: 10000px; }
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100000px; }
   .carousel__item {
-    display: table-cell;
-    vertical-align: middle;
     padding-right: 40px; }
-    .carousel__item--intro {
-      max-width: 280px; }
+    .carousel__item--text {
+      max-width: 320px; }
+  .carousel__img {
+    display: block;
+    max-width: calc(100vw - 220px);
+    max-height: 500px;
+    border: 2px solid #fff; }
+  .carousel__pager {
+    position: absolute;
+    top: 50%;
+    width: calc(100vw - 200px); }
+  .carousel__btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    padding: 0;
+    background: none;
+    border: none; }
+    .carousel__btn .icon {
+      display: block; }
+    .carousel__btn--prev {
+      float: left;
+      margin-left: 40px; }
+    .carousel__btn--next {
+      float: right;
+      margin-right: 40px; }
+      .carousel__btn--next .icon {
+        margin: 0 0 0 auto; }
+    .carousel__btn.is-fade {
+      opacity: 0;
+      pointer-events: none; }
+  .carousel__jobtitle {
+    display: block;
+    margin: 10px 0 20px 0;
+    color: #727272;
+    letter-spacing: 1px; }
+  .carousel__txt {
+    display: block;
+    line-height: 24px; }

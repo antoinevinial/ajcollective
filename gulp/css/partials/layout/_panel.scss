@@ -1,19 +1,13 @@
 // Panels.
 
 .panel {
+	@extend %transitionPanels;
 	position: relative;
 	display: flex;
 	align-items: center;
-  	justify-content: center;
 	width: 100%;
 	height: 100vh;
 	padding: 120px;
-	transition: all $transition-quick ease;
-
-	&__container {
-		display: table-cell;
-		vertical-align: middle;
-	}
 
 	&__cover {
 		display: block;
@@ -29,6 +23,7 @@
 		letter-spacing: 1px;
 		text-align: center;
 		background-color: $color-white;
+		z-index: 5;
 
 		&--top,
 		&--bottom {
@@ -111,6 +106,10 @@
 		}
 	}
 
+	&--center {
+		justify-content: center;
+	}
+
 	&--no-right {
 		padding-right: 0;
 	}
@@ -124,47 +123,4 @@
 	&.is-show {
 		transform: translateY(-100%);
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

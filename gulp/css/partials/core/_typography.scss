@@ -60,3 +60,10 @@
 .heading-1 {
     font-size: 28px;
 }
+
+.heading-2 {
+    @extend %grumpy;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 3px;
+}
