@@ -1,0 +1,62 @@
+/* @font-face */
+
+@font-face {
+    font-family: 'grumpy';
+    src: url('../fonts/grumpy.eot');
+    src: url('../fonts/grumpy.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/grumpy.woff2') format('woff2'),
+         url('../fonts/grumpy.woff') format('woff'),
+         url('../fonts/grumpy.ttf') format('truetype'),
+         url('../fonts/grumpy.svg#grumpy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'patronlight';
+    src: url('../fonts/patron-light-webfont.eot');
+    src: url('../fonts/patron-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/patron-light-webfont.woff2') format('woff2'),
+         url('../fonts/patron-light-webfont.woff') format('woff'),
+         url('../fonts/patron-light-webfont.ttf') format('truetype'),
+         url('../fonts/patron-light-webfont.svg#patronlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'patronregular';
+    src: url('../fonts/patron-regular-webfont.eot');
+    src: url('../fonts/patron-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/patron-regular-webfont.woff2') format('woff2'),
+         url('../fonts/patron-regular-webfont.woff') format('woff'),
+         url('../fonts/patron-regular-webfont.ttf') format('truetype'),
+         url('../fonts/patron-regular-webfont.svg#patronregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Extends for font-family */
+
+%grumpy {
+	font-family: "grumpy", Serif;
+}
+
+%patronLight {
+	font-family: "patronlight", Arial, sans-serif;
+}
+
+%patronRegular {
+	font-family: "patronregular", Arial, sans-serif;	
+}
+
+
+/* Titles */
+
+.heading-1 {
+    font-size: 28px;
+}

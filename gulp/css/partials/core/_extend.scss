@@ -3,6 +3,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+%transitionLinks {
+	transition: all 0.25s ease;
+}
+
 %transitionEase {
 	transition: all 0.35s ease;
 }

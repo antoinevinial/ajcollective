@@ -36,8 +36,8 @@
 			<!-- Homepage -->
 			<section class="panel panel--blue js-panel is-active">
 				<div class="panel__pager">
-					<a class="panel__btn panel__btn--top" href="#">AJCollective</a>
-					<a class="panel__btn panel__btn--right" href="#">About/Contact</a>
+					<a class="panel__btn panel__btn--top panel__btn--title" href="#">AJCollective</a>
+					<a class="panel__btn panel__btn--right" href="#">About / Contact</a>
 					<a class="panel__btn panel__btn--bottom panel__btn--bordered panel__btn--bordered--bottom js-panel-move" data-panel="work" data-move="top-to-bottom" href="#">Discover our work</a>
 					<a class="panel__btn panel__btn--left js-nav-toggle" href="#">Creative, Researchers &amp; Writers</a>
 				</div>

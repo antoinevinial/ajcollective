@@ -1,4 +1,6 @@
 body {
+	@extend %patronRegular;
+	font-size: 16px;
 	overflow: hidden;
 }
 

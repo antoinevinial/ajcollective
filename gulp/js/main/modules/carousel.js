@@ -12,7 +12,7 @@ var carousel = {
 	},
 
 	bindEvents: function bindEvents() {
-		console.log(this.ui.$carousel);
+		
 	}
 
 };
