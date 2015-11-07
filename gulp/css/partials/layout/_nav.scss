@@ -6,13 +6,13 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 480px;
+	width: #{$navW}vw;
 	height: 100vh;
 	color: $color-white;
 	background-color: $color-dark;
 	z-index: 2;
 	overflow: hidden;
-	transform: translateX(-480px);
+	transform: translateX(#{-$navW}vw);
 
 	&__link {
 		display: block;
@@ -23,8 +23,8 @@
 			@extend %transitionLinks;
 			position: relative;
 			display: block;
-			font-size: 60px;
-			line-height: 70px;
+			font-size: 50px;
+			line-height: 60px;
 			color: $color-grey;
 
 			&:after {
@@ -72,7 +72,7 @@
 
 .is-nav-open {
 	.main {
-		transform: translateX(480px);
+		transform: translateX(#{$navW}vw);
 	}
 
 	.nav {

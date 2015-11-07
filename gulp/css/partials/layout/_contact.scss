@@ -1,0 +1,81 @@
+/* Popin contact */
+
+.contact {
+	@extend %antialiased;
+	@extend %transitionEase;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+	color: $color-white;
+	background-color: $color-black;
+	opacity: 0;
+	pointer-events: none;
+
+	.panel {
+		position: static;
+		transform: translateY(0);
+	}
+
+	&__txt {
+		@extend %patronLight;
+		font-size: 16px;
+		line-height: 24px;
+
+		&__label {
+			display: inline-block;
+			margin-right: 14px;
+		}
+	}
+
+	.contact__txt + .contact__txt {
+		margin-top: 15px;
+	}
+
+	.contact__bloc + .contact__bloc {
+		margin-top: 55px;
+	}
+
+	&__label {
+		display: block;
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+		color: $color-grey;
+		border-bottom: 1px solid $color-border;
+	}
+
+	&__close {
+		position: absolute;
+		top: 50px;
+		right: 1 / 36 * 100vw;
+		display: block;
+		color: $color-grey;
+
+		&__icon {
+			display: inline-block;
+			vertical-align: middle;
+			width: 40px;
+			height: 40px;
+			margin-left: 40px;
+			background-color: $color-white;
+
+			.icon {
+				position: relative;
+				top: 10px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+/* When contact is open */
+
+.is-contact-open {
+	.contact {
+		opacity: 1;
+		pointer-events: auto;
+	}
+}

@@ -1,0 +1,58 @@
+/* Grid layout */
+$cols: 36;
+$marieLouiseW: 3/36*100;
+$navW: 12/36*100;
+
+[class*="cell-"] {
+	float: left;
+}
+
+@for $i from 1 through $cols {
+    .cell-#{$i} {
+        width: #{$i / $cols * 100}vw;
+    }
+}
+
+@for $i from 1 through $cols {
+    .prepend-#{$i} {
+        margin-left: #{$i / $cols * 100}vw;
+    }
+}
+
+@for $i from 1 through $cols {
+    .append-#{$i} {
+        margin-right: #{$i / $cols * 100}vw;
+    }
+}
+
+/* Special style for grid dev */
+
+.grid--dev {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	pointer-events: none;
+
+	[class*="cell-"] {
+		float: left;
+		height: 100%;
+	}
+
+	.cell-1 {
+		position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: -1px;
+			display: block;
+			width: 1px;
+			height: 100%;
+			background-color: #4affff;
+		}
+	}
+}
