@@ -18,7 +18,7 @@
 
 		<main class="main js-main">
 			<!-- Homepage -->
-			<section class="panel panel--blue panel--center js-panel is-top" id="home">
+			<section class="panel panel--blue panel--center js-panel is-active" id="home">
 				<div class="panel__pager">
 					<div class="panel__btn panel__btn--top">
 						<span class="panel__btn__label panel__btn__label--lrg">AJCollective</span>
@@ -39,7 +39,7 @@
 			</section>
 
 			<!-- Work -->
-			<section class="panel panel--black panel--no-right js-panel is-active" id="work">
+			<section class="panel panel--black panel--no-right js-panel is-bottom" id="work">
 				<div class="panel__pager">
 					<div class="panel__btn panel__btn--top panel__btn--bordered panel__btn--bordered--top">
 						<span class="panel__btn__label panel__btn__label--left panel__btn__label--lrg">AJCollective</span>
