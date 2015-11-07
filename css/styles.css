@@ -63,7 +63,7 @@ table {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease; }
 
-.nav, .contact, .main, .carousel__slider, .carousel__btn {
+.nav, .contact, .main, .carousel__slider, .carousel__btn, .carousel__viewer__slider {
   transition: all 0.35s ease; }
 
 /* @font-face */
@@ -437,6 +437,7 @@ body {
 
 /* Special style for grid dev */
 .grid--dev {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -694,6 +695,10 @@ body {
   width: 20px;
   height: 20px; }
 
+.icon-text {
+  width: 30px;
+  height: 39px; }
+
 .carousel {
   position: relative; }
   .carousel__slider {
@@ -703,9 +708,10 @@ body {
     vertical-align: middle;
     padding-right: 2.77778vw; }
     .carousel__item--text {
-      max-width: 320px; }
+      max-width: 19.44444vw; }
   .carousel__img {
     display: block;
+    max-width: 72.22222vw;
     box-shadow: 0px 0px 0px 2px #fff; }
   .carousel__pager {
     position: absolute;
@@ -715,7 +721,7 @@ body {
     height: 100%; }
   .carousel__btn {
     display: block;
-    width: 16.66667vw;
+    width: 5.55556vw;
     height: 100%;
     padding: 0;
     background: none;
@@ -744,3 +750,37 @@ body {
   .carousel__txt {
     display: block;
     line-height: 24px; }
+  .carousel__viewer {
+    position: absolute;
+    bottom: 11.11111vw;
+    left: 44.44444vw;
+    height: 80px;
+    width: 100000px;
+    margin-left: -1.38889vw;
+    padding: 20px; }
+    .carousel__viewer__rectangle {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 13.88889vw;
+      height: 80px;
+      border: 2px solid #fff; }
+      .carousel__viewer__rectangle:before, .carousel__viewer__rectangle:after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        width: 100vw;
+        height: calc(100% + 4px);
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2; }
+      .carousel__viewer__rectangle:before {
+        right: calc(100% + 2px); }
+      .carousel__viewer__rectangle:after {
+        left: calc(100% + 2px); }
+    .carousel__viewer__item {
+      display: table-cell;
+      padding-right: 10px; }
+    .carousel__viewer__img {
+      max-height: 40px; }

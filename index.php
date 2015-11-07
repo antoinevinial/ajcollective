@@ -18,7 +18,7 @@
 
 		<main class="main js-main">
 			<!-- Homepage -->
-			<section class="panel panel--blue panel--center js-panel is-active" id="home">
+			<section class="panel panel--blue panel--center js-panel is-top" id="home">
 				<div class="panel__pager">
 					<div class="panel__btn panel__btn--top">
 						<span class="panel__btn__label panel__btn__label--lrg">AJCollective</span>
@@ -39,7 +39,7 @@
 			</section>
 
 			<!-- Work -->
-			<section class="panel panel--black panel--no-right js-panel is-bottom" id="work">
+			<section class="panel panel--black panel--no-right js-panel is-active" id="work">
 				<div class="panel__pager">
 					<div class="panel__btn panel__btn--top panel__btn--bordered panel__btn--bordered--top">
 						<span class="panel__btn__label panel__btn__label--left panel__btn__label--lrg">AJCollective</span>
@@ -58,15 +58,15 @@
 						<div class="cell-31 prepend-5">
 							<div class="carousel js-carousel">
 								<ul class="carousel__slider js-carousel-slider">
-									<li class="carousel__item carousel__item--text js-carousel-item">
+									<li class="carousel__item carousel__item--text js-carousel-item js-carousel-item--text">
 										<h2 class="heading-2">AJ Colomb</h2>
 										<span class="carousel__jobtitle">Creative researcher &amp; founder</span>
 										<p class="carousel__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 									</li>
 									<?php 
 										for ($x = 0; $x <= 3; $x++) {
-											echo '<li class="carousel__item js-carousel-item"><img class="carousel__img" src="http://placehold.it/400x223/010006/ffffff"/></li>';
-											echo '<li class="carousel__item js-carousel-item"><img class="carousel__img" src="http://placehold.it/1040x300/010006/ffffff"/></li>';
+											echo '<li class="carousel__item js-carousel-item"><img class="carousel__img" src="http://placehold.it/400x223/ffffff/000000"/></li>';
+											echo '<li class="carousel__item js-carousel-item"><img class="carousel__img" src="http://placehold.it/1040x300/ffffff/000000"/></li>';
 										}
 									?>
 								</ul>
@@ -75,6 +75,10 @@
 						<div class="carousel__pager">
 							<button class="carousel__btn carousel__btn--prev js-carousel-btn js-carousel-btn-prev" data-direction="prev" href="#"></button>
 							<button class="carousel__btn carousel__btn--next js-carousel-btn js-carousel-btn-next" data-direction="next" href="#"></button>
+						</div>
+						<div class="carousel__viewer js-carousel-viewer">
+							<div class="carousel__viewer__rectangle"></div>
+							<div class="carousel__viewer__slider js-carousel-viewer-slider"></div>
 						</div>
 					</div>
 				</div>
