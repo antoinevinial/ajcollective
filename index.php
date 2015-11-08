@@ -18,7 +18,7 @@
 
 		<main class="main js-main">
 			<!-- Homepage -->
-			<section class="panel panel--blue panel--center js-panel is-top" id="home">
+			<section class="panel panel--blue js-panel is-top" id="home">
 				<div class="panel__pager">
 					<div class="panel__btn panel__btn--top">
 						<span class="panel__btn__label panel__btn__label--lrg">AJCollective</span>
@@ -34,7 +34,11 @@
 					</div>
 				</div>
 				<div class="panel__container">
-					<img class="panel__cover" src="http://placehold.it/720x480"/>
+					<div class="grid">
+						<div class="cell-18 prepend-9">
+							<img class="panel__cover" src="http://placehold.it/720x480"/>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -61,14 +65,19 @@
 									<li class="carousel__item carousel__item--text js-carousel-item js-carousel-item--text">
 										<h2 class="heading-2">AJ Colomb</h2>
 										<span class="carousel__jobtitle">Creative researcher &amp; founder</span>
-										<p class="carousel__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+										<p class="carousel__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 									</li>
-									<?php 
-										for ($x = 0; $x <= 3; $x++) {
-											echo '<li class="carousel__item js-carousel-item"><img class="carousel__img" src="http://placehold.it/400x223/ffffff/000000"/></li>';
-											echo '<li class="carousel__item js-carousel-item"><img class="carousel__img" src="http://placehold.it/1040x300/ffffff/000000"/></li>';
-										}
-									?>
+									<li class="carousel__item js-carousel-item">
+										<div class="carousel__item__container">
+											<img class="carousel__img" src="http://placehold.it/2000x600/ffffff/000000"/>
+											<a class="carousel__full js-carousel-full-btn" href="#"><?php include "partials/icons/full.php" ?></a>
+										</div>
+									</li>
+									<li class="carousel__item js-carousel-item">
+										<div class="carousel__item__container">
+											<img class="carousel__img" src="http://placehold.it/400x223/ffffff/000000"/>
+										</div>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -80,6 +89,10 @@
 							<div class="carousel__viewer__rectangle"></div>
 							<div class="carousel__viewer__slider js-carousel-viewer-slider"></div>
 						</div>
+						<a class="carousel__close js-carousel-full-btn" href="#">
+							leave full screen view
+							<span class="carousel__close__btn"><?php include "partials/icons/close.php" ?></span>
+						</a>
 					</div>
 				</div>
 			</section>

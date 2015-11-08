@@ -9,9 +9,14 @@
 	}
 
 	&__item {
+		@extend %transitionLinks;
 		display: table-cell;
 		vertical-align: middle;
 		padding-right: 1 / 36 * 100vw;
+
+		&__container {
+			position: relative;
+		}
 
 		&--text {
 			max-width: 7 / 36 * 100vw;
@@ -19,21 +24,16 @@
 	}
 
 	&__img {
+		@extend %transitionLinks;
 		display: block;
 		max-width: 26 / 36 * 100vw;
 		box-shadow: 0px 0px 0px 2px $color-white;
 	}
 
-	&__pager {
-		position: absolute;
-		top: 0;
-		left: 3 / 36 * 100vw;
-		right: 0;
-		height: 100%;
-	}
-
 	&__btn {
 		@extend %transitionEase;
+		position: absolute;
+		top: 0;
 		display: block;
 		width: 2 / 36 * 100vw;
 		height: 100%;
@@ -47,13 +47,13 @@
 		}
 
 		&--prev {
-			float: left;
+			left: 3 / 36 * 100vw;
 			padding-left: 1 / 36 * 100vw;
 			cursor: url(../icons/arrow-left.svg), auto;
 		}
 
 		&--next {
-			float: right;
+			right: 0;
 			padding-right: 1 / 36 * 100vw;
 			cursor: url(../icons/arrow-right.svg), auto;
 
@@ -81,7 +81,26 @@
 		line-height: 24px;
 	}
 
+	&__full {
+		@extend %transitionLinks;
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-color: $color-white;
+
+		.icon {
+			position: relative;
+			top: 10px;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
 	&__viewer {
+		@extend %transitionLinks;
 		position: absolute;
 		bottom: 4 / 36 * 100vw;
 		left: 16 / 36 * 100vw;
@@ -133,37 +152,81 @@
 			max-height: 40px;
 		}
 	}
+
+	&__close {
+		@extend %transitionLinks;
+		position: absolute;
+		top: 50px;
+		right: 40px;
+		color: $color-grey;
+		z-index: 20;
+		opacity: 0;
+
+		&__btn {
+			display: inline-block;
+			vertical-align: middle;
+			width: 40px;
+			height: 40px;
+			margin-left: 36px;
+			background-color: $color-white;
+
+			.icon {
+				position: relative;
+				top: 10px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
 }
 
 
+/* When carousel is in full-screen mode. */
 
+.is-carousel-full {
+	.panel__btn {
+		&--left {
+			transform: rotate(-90deg) translateY(-100%);
+		}
 
+		&--top {
+			transform: translateY(-100%);
+		}
 
+		&--bottom {
+			transform: translateY(100%);
+		}
+	}
 
+	.panel__container {
+		.cell-31 {
+			margin-left: 3 / 36 * 100vw;
+		}
+	}
 
+	.carousel__item {
+		opacity: 0.25;
 
+		&.is-active {
+			opacity: 1;
+		}
+	}
 
+	.carousel__img {
+		max-width: 30 / 36 * 100vw;
+	}
 
+	.carousel__viewer {
+		bottom: 40px;
+		left: 16 / 36 * 100vw;
+	}
 
+	.carousel__full {
+		opacity: 0;
+		pointer-events: none;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	.carousel__close {
+		opacity: 1;
+	}
+}

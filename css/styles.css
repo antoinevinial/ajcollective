@@ -56,7 +56,7 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.nav__link__name, .nav__link__name:after {
+.cell-1, .cell-2, .cell-3, .cell-4, .cell-5, .cell-6, .cell-7, .cell-8, .cell-9, .cell-10, .cell-11, .cell-12, .cell-13, .cell-14, .cell-15, .cell-16, .cell-17, .cell-18, .cell-19, .cell-20, .cell-21, .cell-22, .cell-23, .cell-24, .cell-25, .cell-26, .cell-27, .cell-28, .cell-29, .cell-30, .cell-31, .cell-32, .cell-33, .cell-34, .cell-35, .cell-36, .panel__btn, .nav__link__name, .nav__link__name:after, .carousel__item, .carousel__img, .carousel__full, .carousel__viewer, .carousel__close {
   transition: all 0.25s ease; }
 
 .panel {
@@ -437,7 +437,6 @@ body {
 
 /* Special style for grid dev */
 .grid--dev {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -481,7 +480,7 @@ body {
   .panel__cover {
     display: block;
     margin: 0 auto;
-    max-width: 100%; }
+    width: 100%; }
   .panel__btn {
     position: absolute;
     display: block;
@@ -699,6 +698,10 @@ body {
   width: 30px;
   height: 39px; }
 
+.icon-full {
+  width: 20px;
+  height: 20px; }
+
 .carousel {
   position: relative; }
   .carousel__slider {
@@ -707,19 +710,17 @@ body {
     display: table-cell;
     vertical-align: middle;
     padding-right: 2.77778vw; }
+    .carousel__item__container {
+      position: relative; }
     .carousel__item--text {
       max-width: 19.44444vw; }
   .carousel__img {
     display: block;
     max-width: 72.22222vw;
     box-shadow: 0px 0px 0px 2px #fff; }
-  .carousel__pager {
+  .carousel__btn {
     position: absolute;
     top: 0;
-    left: 8.33333vw;
-    right: 0;
-    height: 100%; }
-  .carousel__btn {
     display: block;
     width: 5.55556vw;
     height: 100%;
@@ -730,11 +731,11 @@ body {
     .carousel__btn .icon {
       display: block; }
     .carousel__btn--prev {
-      float: left;
+      left: 8.33333vw;
       padding-left: 2.77778vw;
       cursor: url(../icons/arrow-left.svg), auto; }
     .carousel__btn--next {
-      float: right;
+      right: 0;
       padding-right: 2.77778vw;
       cursor: url(../icons/arrow-right.svg), auto; }
       .carousel__btn--next .icon {
@@ -750,6 +751,19 @@ body {
   .carousel__txt {
     display: block;
     line-height: 24px; }
+  .carousel__full {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff; }
+    .carousel__full .icon {
+      position: relative;
+      top: 10px;
+      display: block;
+      margin: 0 auto; }
   .carousel__viewer {
     position: absolute;
     bottom: 11.11111vw;
@@ -784,3 +798,57 @@ body {
       padding-right: 10px; }
     .carousel__viewer__img {
       max-height: 40px; }
+  .carousel__close {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    color: #727272;
+    z-index: 20;
+    opacity: 0; }
+    .carousel__close__btn {
+      display: inline-block;
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      margin-left: 36px;
+      background-color: #fff; }
+      .carousel__close__btn .icon {
+        position: relative;
+        top: 10px;
+        display: block;
+        margin: 0 auto; }
+
+/* When carousel is in full-screen mode. */
+.is-carousel-full .panel__btn--left {
+  -webkit-transform: rotate(-90deg) translateY(-100%);
+          transform: rotate(-90deg) translateY(-100%); }
+
+.is-carousel-full .panel__btn--top {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%); }
+
+.is-carousel-full .panel__btn--bottom {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%); }
+
+.is-carousel-full .panel__container .cell-31 {
+  margin-left: 8.33333vw; }
+
+.is-carousel-full .carousel__item {
+  opacity: 0.25; }
+  .is-carousel-full .carousel__item.is-active {
+    opacity: 1; }
+
+.is-carousel-full .carousel__img {
+  max-width: 83.33333vw; }
+
+.is-carousel-full .carousel__viewer {
+  bottom: 40px;
+  left: 44.44444vw; }
+
+.is-carousel-full .carousel__full {
+  opacity: 0;
+  pointer-events: none; }
+
+.is-carousel-full .carousel__close {
+  opacity: 1; }

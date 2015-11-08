@@ -41,9 +41,12 @@ var carousel = {
 
 	bindUI: function bindUI() {
 		this.ui.$win      = $(window);
+		this.ui.$body     = $('body');
 		this.ui.$carousel = $('.js-carousel');
 		this.ui.$slider   = $('.js-carousel-slider');
 		this.ui.$items    = $('.js-carousel-item');
+
+		this.ui.$fullBtn  = $('.js-carousel-full-btn')
 
 		this.ui.$viewer       = $('.js-carousel-viewer');
 		this.ui.$viewerSlider = $('.js-carousel-viewer-slider');
@@ -57,6 +60,7 @@ var carousel = {
 		this.ui.$win.on('resize', $.proxy(this.initCarousel, this));
 		this.ui.$btns.on('click', $.proxy(this.prevNext, this));
 		this.ui.$win.on('keydown', $.proxy(this.keyboardHandler, this));
+		this.ui.$fullBtn.on('click', $.proxy(this.toggleFullScreen, this));
 	},
 
 	initCarousel: function initCarousel() {
@@ -87,6 +91,11 @@ var carousel = {
 		if (e.keyCode == 37) {
 			this.ui.$prev.click();
 		}
+
+		// If press esc, close full screen.
+		if (e.keyCode == 27 && this.ui.$body.hasClass('is-carousel-full')) {
+			this.ui.$body.removeClass('is-carousel-full');
+		}
 	},
 
 	initViewer: function initViewer() {
@@ -96,10 +105,10 @@ var carousel = {
 		$.each(this.ui.$items, function() {
 			var $el = $(this);
 
-			// If item has text inside.
+			// If item has text inside, create list item with icon.
 			if ($el.hasClass('js-carousel-item--text')) {
 				viewerHTML += '<li class="carousel__viewer__item js-carousel-viewer-item">';
-				viewerHTML += '<svg width="30px" height="39px" viewBox="0 0 30 39"><rect fill="#FFFFFF" x="0" y="0" width="25" height="2"></rect><rect fill="#FFFFFF" x="0" y="7" width="30" height="2"></rect><rect fill="#4D4D4D" x="0" y="14" width="30" height="1"></rect><rect fill="#4D4D4D" x="0" y="18" width="25" height="1"></rect><rect fill="#4D4D4D" x="0" y="22" width="30" height="1"></rect><rect fill="#4D4D4D" x="0" y="26" width="25" height="1"></rect><rect fill="#4D4D4D" x="0" y="30" width="30" height="1"></rect><rect fill="#4D4D4D" x="0" y="34" width="25" height="1"></rect><rect fill="#4D4D4D" x="0" y="38" width="20" height="1"></rect></svg>';
+				viewerHTML += '<svg class="icon icon-text" viewBox="0 0 30 39"><rect fill="#FFFFFF" x="0" y="0" width="25" height="2"></rect><rect fill="#FFFFFF" x="0" y="7" width="30" height="2"></rect><rect fill="#4D4D4D" x="0" y="14" width="30" height="1"></rect><rect fill="#4D4D4D" x="0" y="18" width="25" height="1"></rect><rect fill="#4D4D4D" x="0" y="22" width="30" height="1"></rect><rect fill="#4D4D4D" x="0" y="26" width="25" height="1"></rect><rect fill="#4D4D4D" x="0" y="30" width="30" height="1"></rect><rect fill="#4D4D4D" x="0" y="34" width="25" height="1"></rect><rect fill="#4D4D4D" x="0" y="38" width="20" height="1"></rect></svg>';
 				viewerHTML += '</li>';
 			}
 
@@ -112,7 +121,7 @@ var carousel = {
 		});
 
 		// Add all carousel viewer item inside carousel slider.
-		this.ui.$viewerSlider.append(viewerHTML);
+		this.ui.$viewerSlider.html('').append(viewerHTML);
 
 		// Bind new UI.
 		this.ui.$viewerItems = $('.js-carousel-viewer-item');
@@ -157,6 +166,10 @@ var carousel = {
             "transform":"translate(" + translate + "px,0)"
 		});
 
+		// Add is-active class on current item.
+		this.ui.$items.removeClass('is-active');
+		$(this.ui.$items[this.itemActive]).addClass('is-active');
+
 		// Update btns.
 		this.updateBtns();
 	},
@@ -182,11 +195,21 @@ var carousel = {
 	updateBtns: function updateBtns() {
 		if (this.itemActive == 0) {
 			this.ui.$prev.addClass('is-fade');
+			this.ui.$next.removeClass('is-fade');
 		} else if (this.itemActive == this.ui.$items.length - 1) {
+			this.ui.$prev.removeClass('is-fade');
 			this.ui.$next.addClass('is-fade');
 		} else {
 			this.ui.$btns.removeClass('is-fade');
 		}
+	},
+
+	toggleFullScreen: function toggleFullScreen(e) {
+		// Prevent default.
+		e.preventDefault();
+
+		// Add correct class on body.
+		this.ui.$body.toggleClass('is-carousel-full');
 	}
 
 };
