@@ -56,7 +56,7 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.panel__btn, .nav__link__name, .nav__link__name:after, .carousel, .carousel__item, .carousel__img, .carousel__full, .carousel__viewer, .carousel__close {
+.panel__btn, .nav__link:before, .nav__link__name, .nav__link__img, .carousel, .carousel__item, .carousel__img, .carousel__full, .carousel__viewer, .carousel__close {
   transition: all 0.25s ease; }
 
 .panel {
@@ -580,28 +580,45 @@ body {
   -webkit-transform: translateX(-33.33333vw);
           transform: translateX(-33.33333vw); }
   .nav__link {
+    position: relative;
     display: block;
-    padding: 55px 80px 0 80px; }
+    padding: 55px 5.55556vw 0 5.55556vw; }
+    .nav__link:before {
+      content: "";
+      position: absolute;
+      top: 105px;
+      right: 0;
+      display: block;
+      width: 2.77778vw;
+      height: 2px;
+      background-color: #fff;
+      -webkit-transform: translateX(2.77778vw);
+              transform: translateX(2.77778vw); }
     .nav__link__name {
       position: relative;
       display: block;
       font-size: 50px;
       line-height: 60px;
-      color: #727272; }
-      .nav__link__name:after {
-        content: "";
-        position: absolute;
-        top: 70px;
-        right: -120px;
+      color: #727272;
+      z-index: 2 .nav__link__name; }
+      .nav__link__name :after {
+        content: "Toto";
         display: block;
-        width: 40px;
-        height: 2px;
-        background-color: #fff; }
+        background-color: red; }
     .nav__link__jobtitle {
       display: block;
       margin: 10px 0 55px 0;
       color: #727272;
       letter-spacing: 1px; }
+    .nav__link__img {
+      position: absolute;
+      top: 70px;
+      right: 2.77778vw;
+      display: block;
+      max-width: 11.11111vw;
+      max-height: 140px;
+      pointer-events: none;
+      opacity: 0; }
     .nav__link:after {
       content: "";
       display: block;
@@ -610,8 +627,13 @@ body {
       background-color: #2b2b2b; }
     .nav__link:hover .nav__link__name {
       color: #fff; }
-      .nav__link:hover .nav__link__name:after {
-        right: -80px; }
+    .nav__link:hover .nav__link__img {
+      opacity: 1; }
+    .nav__link.is-active:before {
+      -webkit-transform: translateX(0);
+              transform: translateX(0); }
+    .nav__link.is-active .nav__link__name {
+      color: #fff; }
 
 .is-nav-open .main {
   -webkit-transform: translateX(33.33333vw);
@@ -714,11 +736,10 @@ body {
     .carousel__item__container {
       position: relative; }
     .carousel__item--text {
-      max-width: 19.44444vw; }
+      max-width: 22.22222vw; }
   .carousel__img {
     display: block;
-    max-width: 72.22222vw;
-    box-shadow: 0px 0px 0px 2px #fff; }
+    max-width: 72.22222vw; }
   .carousel__btn {
     position: absolute;
     top: 0;
@@ -796,7 +817,8 @@ body {
         left: calc(100% + 2px); }
     .carousel__viewer__item {
       display: table-cell;
-      padding-right: 10px; }
+      padding-right: 10px;
+      -webkit-backface-visibility: hidden; }
     .carousel__viewer__img {
       max-height: 40px; }
   .carousel__close {
@@ -820,15 +842,15 @@ body {
         margin: 0 auto; }
 
 /* When carousel is in full-screen mode. */
-.is-carousel-full .panel__btn--left {
+.is-carousel-full .panel.is-active .panel__btn--left {
   -webkit-transform: rotate(-90deg) translateY(-100%);
           transform: rotate(-90deg) translateY(-100%); }
 
-.is-carousel-full .panel__btn--top {
+.is-carousel-full .panel.is-active .panel__btn--top {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%); }
 
-.is-carousel-full .panel__btn--bottom {
+.is-carousel-full .panel.is-active .panel__btn--bottom {
   -webkit-transform: translateY(100%);
           transform: translateY(100%); }
 

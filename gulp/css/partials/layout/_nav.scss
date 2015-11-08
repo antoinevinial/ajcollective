@@ -15,8 +15,22 @@
 	transform: translateX(#{-$navW}vw);
 
 	&__link {
+		position: relative;
 		display: block;
-		padding: 55px 80px 0 80px;
+		padding: 55px (2 / $cols * 100vw) 0 (2 / $cols * 100vw);
+
+		&:before {
+			@extend %transitionLinks;
+			content: "";
+			position: absolute;
+			top: 105px;
+			right: 0;
+			display: block;
+			width: 1 / $cols * 100vw;
+			height: 2px;
+			background-color: $color-white;
+			transform: translateX(1 / $cols * 100vw);
+		}
 
 		&__name {
 			@extend %grumpy;
@@ -26,17 +40,12 @@
 			font-size: 50px;
 			line-height: 60px;
 			color: $color-grey;
+			z-index: 2
 
 			&:after {
-				@extend %transitionLinks;
-				content: "";
-				position: absolute;
-				top: 70px;
-				right: -120px;
+				content: "Toto";
 				display: block;
-				width: 40px;
-				height: 2px;
-				background-color: $color-white;
+				background-color: red;
 			}
 		}
 
@@ -45,6 +54,18 @@
 			margin: 10px 0 55px 0;
 			color: $color-grey;
 			letter-spacing: 1px;
+		}
+
+		&__img {
+			@extend %transitionLinks;
+			position: absolute;
+			top: 70px;
+			right: 1 / $cols * 100vw;
+			display: block;
+			max-width: 4 / $cols * 100vw;
+			max-height: 140px;
+			pointer-events: none;
+			opacity: 0;
 		}
 
 		&:after {
@@ -58,10 +79,20 @@
 		&:hover {
 			.nav__link__name {
 				color: $color-white;
+			}
 
-				&:after {
-					right: -80px;
-				}
+			.nav__link__img {
+				opacity: 1;
+			}
+		}
+
+		&.is-active {
+			&:before {
+				transform: translateX(0);
+			}
+
+			.nav__link__name {
+				color: $color-white;
 			}
 		}
 	}

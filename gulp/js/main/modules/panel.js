@@ -68,6 +68,9 @@ var panel = {
 			this.ui.$active.addClass('is-bottom');
 		}
 
+		// Remove is-active class.
+		this.ui.$active.removeClass('is-active');
+
 		// Show target panel.
 		$target.removeClass('is-top is-bottom').addClass('is-active');
 

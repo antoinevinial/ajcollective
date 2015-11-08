@@ -259,10 +259,12 @@ var nav = {
 		this.ui.$body   = $('body');
 		this.ui.$nav    = $('.js-nav');
 		this.ui.$toggle = $('.js-nav-toggle');
+		this.ui.$links  = $('.js-nav-link');
 	},
 
 	bindEvents: function bindEvents() {
 		this.ui.$toggle.on('click', $.proxy(this.toggleNav, this));
+		this.ui.$links.on('click', $.proxy(this.getClickedLink, this));
 	},
 
 	toggleNav: function toggleNav(e) {
@@ -271,6 +273,18 @@ var nav = {
 
 		// Add is-nav-open class on body.
 		this.ui.$body.toggleClass('is-nav-open');
+	},
+
+	getClickedLink: function getClickedLink(e) {
+		// Prevent default.
+		e.preventDefault();
+
+		// Close nav.
+		this.ui.$body.removeClass('is-nav-open');
+
+		// Add is-active class.
+		this.ui.$links.removeClass('is-active');
+		$(e.currentTarget).addClass('is-active');
 	}
 
 };
@@ -348,6 +362,9 @@ var panel = {
 		} else {
 			this.ui.$active.addClass('is-bottom');
 		}
+
+		// Remove is-active class.
+		this.ui.$active.removeClass('is-active');
 
 		// Show target panel.
 		$target.removeClass('is-top is-bottom').addClass('is-active');

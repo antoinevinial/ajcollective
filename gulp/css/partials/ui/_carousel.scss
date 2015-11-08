@@ -20,7 +20,7 @@
 		}
 
 		&--text {
-			max-width: 7 / 36 * 100vw;
+			max-width: 8 / 36 * 100vw;
 		}
 	}
 
@@ -28,7 +28,7 @@
 		@extend %transitionLinks;
 		display: block;
 		max-width: 26 / 36 * 100vw;
-		box-shadow: 0px 0px 0px 2px $color-white;
+		// box-shadow: 0px 0px 0px 2px $color-white;
 	}
 
 	&__btn {
@@ -147,6 +147,7 @@
 		&__item {
 			display: table-cell;
 			padding-right: 10px;
+			-webkit-backface-visibility: hidden;
 		}
 
 		&__img {
@@ -185,17 +186,19 @@
 /* When carousel is in full-screen mode. */
 
 .is-carousel-full {
-	.panel__btn {
-		&--left {
-			transform: rotate(-90deg) translateY(-100%);
-		}
+	.panel.is-active {
+		.panel__btn {
+			&--left {
+				transform: rotate(-90deg) translateY(-100%);
+			}
 
-		&--top {
-			transform: translateY(-100%);
-		}
+			&--top {
+				transform: translateY(-100%);
+			}
 
-		&--bottom {
-			transform: translateY(100%);
+			&--bottom {
+				transform: translateY(100%);
+			}
 		}
 	}
 
