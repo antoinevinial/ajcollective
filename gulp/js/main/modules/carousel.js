@@ -54,12 +54,12 @@ var carousel = {
 
 	keyboardHandler: function keyboardHandler(e) {
 		// If press arrow right, bind click on next btn.
-		if (e.keyCode == 39) {
+		if (e.keyCode == 39 && !this.ui.$body.hasClass('is-carousel-full')) {
 			this.ui.$next.click();
 		}
 
 		// If press arrow left, bind click on prev btn.
-		if (e.keyCode == 37) {
+		if (e.keyCode == 37 && !this.ui.$body.hasClass('is-carousel-full')) {
 			this.ui.$prev.click();
 		}
 
