@@ -1,6 +1,7 @@
 // Carousel.
 
 .carousel {
+	@extend %transitionLinks;
 	position: relative;
 
 	&__slider {
@@ -159,7 +160,7 @@
 		top: 50px;
 		right: 40px;
 		color: $color-grey;
-		z-index: 20;
+		z-index: 4;
 		opacity: 0;
 
 		&__btn {
@@ -198,10 +199,8 @@
 		}
 	}
 
-	.panel__container {
-		.cell-31 {
-			margin-left: 3 / 36 * 100vw;
-		}
+	.carousel {
+		margin-left: -2 / 36 * 100vw;
 	}
 
 	.carousel__item {
@@ -209,11 +208,11 @@
 
 		&.is-active {
 			opacity: 1;
-		}
-	}
 
-	.carousel__img {
-		max-width: 30 / 36 * 100vw;
+			.carousel__img {
+				max-width: 30 / 36 * 100vw;		
+			}
+		}
 	}
 
 	.carousel__viewer {

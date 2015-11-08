@@ -78,6 +78,50 @@
 											<img class="carousel__img" src="http://placehold.it/400x223/ffffff/000000"/>
 										</div>
 									</li>
+									<li class="carousel__item js-carousel-item">
+										<div class="carousel__item__container">
+											<img class="carousel__img" src="http://placehold.it/2000x600/ffffff/000000"/>
+											<a class="carousel__full js-carousel-full-btn" href="#"><?php include "partials/icons/full.php" ?></a>
+										</div>
+									</li>
+									<li class="carousel__item js-carousel-item">
+										<div class="carousel__item__container">
+											<img class="carousel__img" src="http://placehold.it/400x223/ffffff/000000"/>
+										</div>
+									</li>
+									<li class="carousel__item js-carousel-item">
+										<div class="carousel__item__container">
+											<img class="carousel__img" src="http://placehold.it/2000x600/ffffff/000000"/>
+											<a class="carousel__full js-carousel-full-btn" href="#"><?php include "partials/icons/full.php" ?></a>
+										</div>
+									</li>
+									<li class="carousel__item js-carousel-item">
+										<div class="carousel__item__container">
+											<img class="carousel__img" src="http://placehold.it/400x223/ffffff/000000"/>
+										</div>
+									</li>
+									<li class="carousel__item js-carousel-item">
+										<div class="carousel__item__container">
+											<img class="carousel__img" src="http://placehold.it/2000x600/ffffff/000000"/>
+											<a class="carousel__full js-carousel-full-btn" href="#"><?php include "partials/icons/full.php" ?></a>
+										</div>
+									</li>
+									<li class="carousel__item js-carousel-item">
+										<div class="carousel__item__container">
+											<img class="carousel__img" src="http://placehold.it/400x223/ffffff/000000"/>
+										</div>
+									</li>
+									<li class="carousel__item js-carousel-item">
+										<div class="carousel__item__container">
+											<img class="carousel__img" src="http://placehold.it/2000x600/ffffff/000000"/>
+											<a class="carousel__full js-carousel-full-btn" href="#"><?php include "partials/icons/full.php" ?></a>
+										</div>
+									</li>
+									<li class="carousel__item js-carousel-item">
+										<div class="carousel__item__container">
+											<img class="carousel__img" src="http://placehold.it/400x223/ffffff/000000"/>
+										</div>
+									</li>
 								</ul>
 							</div>
 						</div>

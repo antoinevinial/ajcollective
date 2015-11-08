@@ -56,7 +56,7 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.cell-1, .cell-2, .cell-3, .cell-4, .cell-5, .cell-6, .cell-7, .cell-8, .cell-9, .cell-10, .cell-11, .cell-12, .cell-13, .cell-14, .cell-15, .cell-16, .cell-17, .cell-18, .cell-19, .cell-20, .cell-21, .cell-22, .cell-23, .cell-24, .cell-25, .cell-26, .cell-27, .cell-28, .cell-29, .cell-30, .cell-31, .cell-32, .cell-33, .cell-34, .cell-35, .cell-36, .panel__btn, .nav__link__name, .nav__link__name:after, .carousel__item, .carousel__img, .carousel__full, .carousel__viewer, .carousel__close {
+.panel__btn, .nav__link__name, .nav__link__name:after, .carousel, .carousel__item, .carousel__img, .carousel__full, .carousel__viewer, .carousel__close {
   transition: all 0.25s ease; }
 
 .panel {
@@ -437,7 +437,6 @@ body {
 
 /* Special style for grid dev */
 .grid--dev {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -804,7 +803,7 @@ body {
     top: 50px;
     right: 40px;
     color: #727272;
-    z-index: 20;
+    z-index: 4;
     opacity: 0; }
     .carousel__close__btn {
       display: inline-block;
@@ -832,16 +831,15 @@ body {
   -webkit-transform: translateY(100%);
           transform: translateY(100%); }
 
-.is-carousel-full .panel__container .cell-31 {
-  margin-left: 8.33333vw; }
+.is-carousel-full .carousel {
+  margin-left: -5.55556vw; }
 
 .is-carousel-full .carousel__item {
   opacity: 0.25; }
   .is-carousel-full .carousel__item.is-active {
     opacity: 1; }
-
-.is-carousel-full .carousel__img {
-  max-width: 83.33333vw; }
+    .is-carousel-full .carousel__item.is-active .carousel__img {
+      max-width: 83.33333vw; }
 
 .is-carousel-full .carousel__viewer {
   bottom: 40px;

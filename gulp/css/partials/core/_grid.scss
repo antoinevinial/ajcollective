@@ -9,7 +9,6 @@ $navW: 12/36*100;
 
 @for $i from 1 through $cols {
     .cell-#{$i} {
-    	@extend %transitionLinks;
         width: #{$i / $cols * 100}vw;
     }
 }
@@ -29,7 +28,7 @@ $navW: 12/36*100;
 /* Special style for grid dev */
 
 .grid--dev {
-	display: none;
+	// display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
