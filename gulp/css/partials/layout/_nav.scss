@@ -97,6 +97,18 @@
 			}
 		}
 	}
+
+	&__layer {
+		@extend %transitionEase;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 6;
+		cursor: pointer;
+		pointer-events: none;
+	}
 }
 
 
@@ -109,5 +121,10 @@
 
 	.nav {
 		transform: translateX(0);
+	}
+
+	.nav__layer {
+		pointer-events: auto;
+		transform: translateX(#{$navW}vw)
 	}
 }

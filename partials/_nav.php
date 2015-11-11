@@ -1,4 +1,4 @@
-<nav class="nav js-nav">
+<nav class="nav js-nav">	
 	<ul class="nav__list">
 		<li class="nav__item">
 			<a class="nav__link js-nav-link" href="#">
@@ -86,3 +86,4 @@
 		</li>
 	</ul>
 </nav>
+<div class="nav__layer js-nav-toggle"></div>

@@ -63,7 +63,7 @@ table {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease; }
 
-.nav, .contact, .main, .carousel__slider, .carousel__btn, .carousel__viewer__slider {
+.nav, .nav__layer, .contact, .main, .carousel__slider, .carousel__btn, .carousel__viewer__slider {
   transition: all 0.35s ease; }
 
 /* Customize scrollbar */
@@ -409,7 +409,6 @@ body {
 
 /* Special style for grid dev */
 .grid--dev {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -605,6 +604,15 @@ body {
               transform: translateX(0); }
     .nav__link.is-active .nav__link__name {
       color: #fff; }
+  .nav__layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 6;
+    cursor: pointer;
+    pointer-events: none; }
 
 .is-nav-open .main {
   -webkit-transform: translateX(37.5vw);
@@ -613,6 +621,11 @@ body {
 .is-nav-open .nav {
   -webkit-transform: translateX(0);
           transform: translateX(0); }
+
+.is-nav-open .nav__layer {
+  pointer-events: auto;
+  -webkit-transform: translateX(37.5vw);
+          transform: translateX(37.5vw); }
 
 /* Popin contact */
 .contact {
