@@ -36,7 +36,7 @@
 				</div>
 				<div class="panel__container">
 					<div class="grid">
-						<div class="cell-18 prepend-9">
+						<div class="cell-16 prepend-8">
 							<img class="panel__cover" src="http://placehold.it/720x480"/>
 						</div>
 					</div>

@@ -1,7 +1,7 @@
 /* Grid layout */
-$cols: 36;
-$marieLouiseW: 3/36*100;
-$navW: 12/36*100;
+$cols: 32;
+$marieLouiseW: 3 / $cols * 100;
+$navW: 12 / $cols * 100;
 
 [class*="cell-"] {
 	float: left;
@@ -28,7 +28,7 @@ $navW: 12/36*100;
 /* Special style for grid dev */
 
 .grid--dev {
-	display: none;
+	// display: none;
 	position: fixed;
 	top: 0;
 	left: 0;

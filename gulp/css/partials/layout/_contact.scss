@@ -49,7 +49,7 @@
 	&__close {
 		position: absolute;
 		top: 50px;
-		right: 1 / 36 * 100vw;
+		right: 1 / $cols * 100vw;
 		display: block;
 		color: $color-grey;
 
