@@ -56,7 +56,7 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.panel__btn, .nav__link:before, .nav__link__name, .nav__link__img, .carousel, .carousel__item, .carousel__img, .carousel__full, .carousel__viewer, .carousel__close, .carousel__doc__overlay {
+.panel__btn, .nav__link:before, .nav__link__name, .carousel, .carousel__item, .carousel__img, .carousel__full, .carousel__viewer, .carousel__close, .carousel__doc__overlay {
   transition: all 0.25s ease; }
 
 .panel {
@@ -537,9 +537,10 @@ body {
   color: #fff;
   background-color: #202020;
   z-index: 2;
-  overflow: hidden;
   -webkit-transform: translateX(-37.5vw);
-          transform: translateX(-37.5vw); }
+          transform: translateX(-37.5vw);
+  overflow-x: hidden;
+  overflow-y: scroll; }
   .nav__link {
     position: relative;
     display: block;
@@ -561,23 +562,23 @@ body {
       font-size: 50px;
       line-height: 60px;
       color: #727272;
-      z-index: 2 .nav__link__name; }
-      .nav__link__name :after {
-        content: "Toto";
-        display: block;
-        background-color: red; }
+      z-index: 2; }
     .nav__link__jobtitle {
+      position: relative;
       display: block;
       margin: 10px 0 55px 0;
       color: #727272;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      z-index: 2; }
     .nav__link__img {
       position: absolute;
-      top: 70px;
-      right: 3.125vw;
+      top: 0;
+      left: 0;
       display: block;
       max-width: 12.5vw;
       max-height: 140px;
+      pointer-events: none;
+      transition: all 0.08s ease;
       pointer-events: none;
       opacity: 0; }
     .nav__link:after {
@@ -586,9 +587,9 @@ body {
       width: 100%;
       height: 1px;
       background-color: #2b2b2b; }
-    .nav__link:hover .nav__link__name {
+    .nav__link.is-hover .nav__link__name {
       color: #fff; }
-    .nav__link:hover .nav__link__img {
+    .nav__link.is-hover .nav__link__img {
       opacity: 1; }
     .nav__link.is-active:before {
       -webkit-transform: translateX(0);

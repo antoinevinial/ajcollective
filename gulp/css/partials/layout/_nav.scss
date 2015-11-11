@@ -11,8 +11,9 @@
 	color: $color-white;
 	background-color: $color-dark;
 	z-index: 2;
-	overflow: hidden;
 	transform: translateX(#{-$navW}vw);
+	overflow-x: hidden;
+	overflow-y: scroll;
 
 	&__link {
 		position: relative;
@@ -40,30 +41,27 @@
 			font-size: 50px;
 			line-height: 60px;
 			color: $color-grey;
-			z-index: 2
-
-			&:after {
-				content: "Toto";
-				display: block;
-				background-color: red;
-			}
+			z-index: 2;
 		}
 
 		&__jobtitle {
+			position: relative;
 			display: block;
 			margin: 10px 0 55px 0;
 			color: $color-grey;
 			letter-spacing: 1px;
+			z-index: 2;
 		}
 
 		&__img {
-			@extend %transitionLinks;
 			position: absolute;
-			top: 70px;
-			right: 1 / $cols * 100vw;
+			top: 0;
+			left: 0;
 			display: block;
 			max-width: 4 / $cols * 100vw;
 			max-height: 140px;
+			pointer-events: none;
+			transition: all 0.08s ease;
 			pointer-events: none;
 			opacity: 0;
 		}
@@ -76,7 +74,7 @@
 			background-color: $color-border;
 		}
 
-		&:hover {
+		&.is-hover {
 			.nav__link__name {
 				color: $color-white;
 			}
