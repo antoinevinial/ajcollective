@@ -35,12 +35,13 @@
 		position: absolute;
 		top: 0;
 		display: block;
-		width: 2 / $cols * 100vw;
+		width: 3 / $cols * 100vw;
 		height: 100%;
 		padding: 0;
 		background: none;
 		border: none;
 		outline: none;
+		z-index: 3;
 
 		&--prev {
 			left: 3 / $cols * 100vw;
@@ -127,7 +128,7 @@
 				width: 100vw;
 				height: calc(100% + 4px);
 				display: block;
-				background-color: rgba(0,0,0,0.8);
+				background-color: rgba(0,0,0,0.5);
 				z-index: 2;
 				pointer-events: none;
 			}

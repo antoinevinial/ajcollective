@@ -21,13 +21,21 @@ var panel = {
 	},
 
 	bindEvents: function bindEvents() {
-		this.ui.$win.on('scroll', $.proxy(this.scrollHandler, this));
+		this.ui.$win.on('mousewheel', $.proxy(this.scrollHandler, this));
 		this.ui.$win.on('keydown', $.proxy(this.keydownHandler, this));
 		this.ui.$move.on('click', $.proxy(this.movePanel, this));
 	},
 
-	scrollHandler: function scrollHandler() {
-		// console.log('yo');
+	scrollHandler: function scrollHandler(event) {
+		// If the panel is animated, return.
+		if (this.isAnimated) { return; }
+
+		// If we scroll down and there is a next panel, click on it.
+		if (event.deltaY <= -125 && this.ui.$btnBottom.length) {
+			this.ui.$btnBottom.click();
+		} else if (event.deltaY > 125 && this.ui.$btnTop) {
+			this.ui.$btnTop.click();
+		}
 	},
 
 	keydownHandler: function keydownHandler(e) {

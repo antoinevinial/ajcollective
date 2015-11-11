@@ -174,7 +174,6 @@
 
                     // Loop through each items and get current item left position.
                     for (i = 0; i < this.itemActive; i++) {
-                        console.log($(this.ui.$viewerItems[i]).outerWidth());
                         translate -= $(this.ui.$viewerItems[i]).outerWidth();
                     }
 

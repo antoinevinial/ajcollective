@@ -1,5 +1,6 @@
 // Import plugins.
-var jqueryCarousel = require('./plugins/jquery.carousel.js');
+var jqueryMousewheel = require('jquery-mousewheel')($);
+var jqueryCarousel   = require('./plugins/jquery.carousel.js');
 
 // Import modules.
 var nav = require('./modules/nav.js');
