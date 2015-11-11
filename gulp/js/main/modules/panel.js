@@ -12,6 +12,7 @@ var panel = {
 
 	bindUI: function bindUI() {
 		this.ui.$win    = $(window);
+		this.ui.$body   = $('body');
 		this.ui.$panels = $('.js-panel');
 		this.ui.$active = $('.js-panel.is-active');
 		this.ui.$move   = $('.js-panel-move');
@@ -28,7 +29,7 @@ var panel = {
 
 	scrollHandler: function scrollHandler(event) {
 		// If the panel is animated, return.
-		if (this.isAnimated) { return; }
+		if (this.isAnimated || this.ui.$body.hasClass('is-nav-open')) { return; }
 
 		// If we scroll down and there is a next panel, click on it.
 		if (event.deltaY <= -125 && this.ui.$btnBottom.length) {
