@@ -2,6 +2,8 @@ var panel = {
 
 	ui: {},
 	scroll: 0,
+	timerPanel: 500,
+	isAnimated: false,
 
 	init: function init() {
 		this.bindUI();
@@ -25,7 +27,7 @@ var panel = {
 	},
 
 	scrollHandler: function scrollHandler() {
-		console.log('yo');
+		// console.log('yo');
 	},
 
 	keydownHandler: function keydownHandler(e) {
@@ -50,10 +52,17 @@ var panel = {
 	},
 
 	movePanel: function movePanel(e) {
-		var $el = $(e.currentTarget);
+		var self = this,
+			$el  = $(e.currentTarget);
+
+		// Return if we already move a panel.
+		if (this.isAnimated) { return; }
 
 		// Prevent default.
 		e.preventDefault();
+
+		// Update is animated variable.
+		this.isAnimated = true;
 
 		// Get target element.
 		var $target = $($el.attr('href'));
@@ -76,6 +85,12 @@ var panel = {
 
 		// Update UI and events.
 		this.updateUIEvents($target);
+
+		// Focus on carousel to enable keyboard navigation.
+		setTimeout(function() {
+			$target.find('.js-carousel-btn-next').focus();
+			self.isAnimated = false;
+		}, this.timerPanel);
 	}
 
 };

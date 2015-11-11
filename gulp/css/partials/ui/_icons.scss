@@ -24,3 +24,14 @@
 	width: 20px;
 	height: 20px;
 }
+
+.icon-pdf {
+	width: 18px;
+	height: 20px;
+
+	&--sml {
+		width: 26px;
+		height: 40px;
+		fill: $color-brand;
+	}
+}

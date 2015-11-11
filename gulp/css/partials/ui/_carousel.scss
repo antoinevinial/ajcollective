@@ -2,7 +2,6 @@
 
 .carousel {
 	@extend %transitionLinks;
-	position: relative;
 
 	&__slider {
 		@extend %transitionEase;
@@ -20,7 +19,7 @@
 		}
 
 		&--text {
-			max-width: 6 / $cols * 100vw;
+			width: 7 / $cols * 100vw;
 		}
 	}
 
@@ -42,10 +41,6 @@
 		background: none;
 		border: none;
 		outline: none;
-
-		.icon {
-			display: block;
-		}
 
 		&--prev {
 			left: 3 / $cols * 100vw;
@@ -122,6 +117,7 @@
 			width: 5 / $cols * 100vw;
 			height: 80px;
 			border: 2px solid $color-white;
+			z-index: 2;
 
 			&:before,
 			&:after {
@@ -180,6 +176,94 @@
 				display: block;
 				margin: 0 auto;
 			}
+		}
+	}
+
+	&__doc {
+		position: relative;
+		width: 4 / $cols * 100vw;
+		height: 270px;
+		padding: 20px 30px 20px 20px;
+		background-color: $color-brand;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 5px;
+			height: 100%;
+			background-color: $color-brand-light;
+		}
+
+		&__title {
+			@extend %antialiased;
+			@extend %grumpy;
+			display: block;
+			font-size: 20px;
+			line-height: 30px;
+		}
+
+		&__type,
+		&__pages {
+			position: absolute;
+			bottom: 20px;
+			font-size: 14px;
+			color: #6c67ac;
+		}
+
+		&__type {
+			left: 20px;
+		}
+
+		&__pages {
+			right: 20px;
+		}
+
+		&__overlay {
+			@extend %transitionLinks;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.25);
+			border: 2px solid $color-white;
+			opacity: 0;
+		}
+
+		&__btn {
+			position: absolute;
+			bottom: 12px;
+			right: 12px;
+			display: block;
+			width: 40px;
+			height: 40px;
+			background-color: $color-white;
+
+			.icon {
+				position: relative;
+				top: 11px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		&:hover {
+			.carousel__doc__overlay {
+				opacity: 1;
+			}
+		}
+	}
+
+	/* Modifiers */
+
+	&--writer {
+		.carousel__item--text {
+			width: 9 / $cols * 100vw;
+			padding-right: 3 / $cols * 100vw;
 		}
 	}
 }
