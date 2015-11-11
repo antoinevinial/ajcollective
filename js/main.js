@@ -54,12 +54,20 @@ var contact = {
 	},
 
 	bindUI: function bindUI() {
+		this.ui.$win    = $(window);
 		this.ui.$body   = $('body');
 		this.ui.$toggle = $('.js-contact-toggle');
 	},
 
 	bindEvents: function bindEvents() {
+		this.ui.$win.on('keydown', $.proxy(this.keyboardHandler, this));
 		this.ui.$toggle.on('click', $.proxy(this.toggleContact, this));
+	},
+
+	keyboardHandler: function keyboardHandler(e) {
+		if (e.keyCode == 27 && this.ui.$body.hasClass('is-contact-open')) {
+			this.ui.$body.removeClass('is-contact-open');
+		}
 	},
 
 	toggleContact: function toggleContact(e) {
@@ -216,13 +224,14 @@ var panel = {
 	},
 
 	scrollHandler: function scrollHandler(event) {
+
 		// If the panel is animated, return.
 		if (this.isAnimated || this.ui.$body.hasClass('is-nav-open')) { return; }
 
 		// If we scroll down and there is a next panel, click on it.
-		if (event.deltaY <= -125 && this.ui.$btnBottom.length) {
+		if (event.deltaY <= -50 && this.ui.$btnBottom.length) {
 			this.ui.$btnBottom.click();
-		} else if (event.deltaY > 125 && this.ui.$btnTop) {
+		} else if (event.deltaY > 50 && this.ui.$btnTop) {
 			this.ui.$btnTop.click();
 		}
 	},
@@ -237,15 +246,6 @@ var panel = {
 		if (e.keyCode == 38 && this.ui.$btnTop.length) {
 			 this.ui.$btnTop.click();
 		}
-	},
-
-	updateUIEvents: function updateUIEvents($target) {
-		// Update active panel.
-		this.ui.$active = $target;
-
-		// Update btns.
-		this.ui.$btnTop    = this.ui.$active.find('.js-panel-move--top');
-		this.ui.$btnBottom = this.ui.$active.find('.js-panel-move--bottom');
 	},
 
 	movePanel: function movePanel(e) {
@@ -288,6 +288,15 @@ var panel = {
 			$target.find('.js-carousel-btn-next').focus();
 			self.isAnimated = false;
 		}, this.timerPanel);
+	},
+
+	updateUIEvents: function updateUIEvents($target) {
+		// Update active panel.
+		this.ui.$active = $target;
+
+		// Update btns.
+		this.ui.$btnTop    = this.ui.$active.find('.js-panel-move--top');
+		this.ui.$btnBottom = this.ui.$active.find('.js-panel-move--bottom');
 	}
 
 };
