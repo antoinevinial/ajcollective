@@ -3,6 +3,7 @@
 .nav {
 	@extend %antialiased;
 	@extend %transitionEase;
+	@extend %customScrollbar;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -11,9 +12,14 @@
 	color: $color-white;
 	background-color: $color-dark;
 	z-index: 2;
-	transform: translateX(#{-$navW}vw);
 	overflow-x: hidden;
 	overflow-y: scroll;
+	direction: rtl;
+	transform: translateX(#{-$navW}vw);
+
+	&__list {
+		direction: ltr;
+	}
 
 	&__link {
 		position: relative;

@@ -5,7 +5,7 @@
 		<title>AJ Collective</title>
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
 	</head>
-	<body>
+	<body class="is-nav-open">
 
 		<!-- Grid for development -->
 		<?php include "partials/_grid.php" ?>
