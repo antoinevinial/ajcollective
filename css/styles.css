@@ -557,19 +557,15 @@ body {
       -webkit-transform: translateX(3.125vw);
               transform: translateX(3.125vw); }
     .nav__link__name {
-      position: relative;
       display: block;
       font-size: 50px;
       line-height: 60px;
-      color: #727272;
-      z-index: 2; }
+      color: #727272; }
     .nav__link__jobtitle {
-      position: relative;
       display: block;
       margin: 10px 0 55px 0;
       color: #727272;
-      letter-spacing: 1px;
-      z-index: 2; }
+      letter-spacing: 1px; }
     .nav__link__img {
       position: absolute;
       top: 0;
@@ -580,6 +576,7 @@ body {
       pointer-events: none;
       transition: all 0.08s ease;
       pointer-events: none;
+      z-index: 2;
       opacity: 0; }
     .nav__link:after {
       content: "";

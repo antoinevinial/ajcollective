@@ -36,21 +36,17 @@
 		&__name {
 			@extend %grumpy;
 			@extend %transitionLinks;
-			position: relative;
 			display: block;
 			font-size: 50px;
 			line-height: 60px;
 			color: $color-grey;
-			z-index: 2;
 		}
 
 		&__jobtitle {
-			position: relative;
 			display: block;
 			margin: 10px 0 55px 0;
 			color: $color-grey;
 			letter-spacing: 1px;
-			z-index: 2;
 		}
 
 		&__img {
@@ -63,6 +59,7 @@
 			pointer-events: none;
 			transition: all 0.08s ease;
 			pointer-events: none;
+			z-index: 2;
 			opacity: 0;
 		}
 
