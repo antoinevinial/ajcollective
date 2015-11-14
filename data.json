@@ -20,7 +20,230 @@
 
 	{
 		"id" : 1,
+		"name" : "Abigail Willis",
+		"template" : "researcher",
+		"jobtitle" : "Creative researcher",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"thumbnail" : "http://placehold.it/160x100/",
+		"illustrations" : [
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000"
+		]
+	},
+
+	{
+		"id" : 2,
+		"name" : "Paige Lawrence",
+		"template" : "researcher",
+		"jobtitle" : "Creative researcher",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"thumbnail" : "http://placehold.it/160x100/",
+		"illustrations" : [
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000"
+		]
+	},
+
+	{
+		"id" : 3,
+		"name" : "Amelie McCarthy",
+		"template" : "researcher",
+		"jobtitle" : "Creative researcher",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"thumbnail" : "http://placehold.it/160x100/",
+		"illustrations" : [
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000"
+		]
+	},
+
+	{
+		"id" : 4,
+		"name" : "Hannah Holland",
+		"template" : "researcher",
+		"jobtitle" : "Creative researcher",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"thumbnail" : "http://placehold.it/160x100/",
+		"illustrations" : [
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000"
+		]
+	},
+
+	{
+		"id" : 5,
+		"name" : "Isabel Heath",
+		"template" : "researcher",
+		"jobtitle" : "Creative researcher & founder",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"thumbnail" : "http://placehold.it/160x100/",
+		"illustrations" : [
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000",
+			"http://placehold.it/2000x600/ffffff/000000",
+			"http://placehold.it/360x223/ffffff/000000"
+		]
+	},
+
+	{
+		"id" : 6,
 		"name" : "Katie Anderton",
+		"template" : "writer",
+		"jobtitle" : "Treatment Writer",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"documents" : [
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			}
+		]
+	},
+
+	{
+		"id" : 7,
+		"name" : "Tia Norris",
+		"template" : "writer",
+		"jobtitle" : "Treatment Writer",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"documents" : [
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			},
+			{
+				"title" : "Lorem ipsum dolor sit amet",
+				"type" : "PDF",
+				"pages" : "7 pages",
+				"link" : "http://www.orimi.com/pdf-test.pdf"
+			}
+		]
+	},
+
+	{
+		"id" : 8,
+		"name" : "Katherine Nicholls",
 		"template" : "writer",
 		"jobtitle" : "Treatment Writer",
 		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
