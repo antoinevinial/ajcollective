@@ -3,6 +3,7 @@ var jqueryMousewheel = require('jquery-mousewheel')($);
 var jqueryCarousel   = require('./../plugins/jquery.carousel.js');
 
 // Import modules.
+var slideshow = require('./slideshow.js');
 var nav = require('./nav.js');
 var panel = require('./panel.js');
 var carousel = require('./carousel.js');
@@ -42,6 +43,9 @@ var content = {
 
 		    // Build panels.
 		    self.buildPanels();
+
+		    // Init slideshow.
+		    slideshow.init();
 
 		    // Init navigation.
 		    nav.init();
@@ -202,50 +206,3 @@ var content = {
 };
 
 module.exports = content;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

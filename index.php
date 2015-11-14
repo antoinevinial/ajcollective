@@ -37,7 +37,26 @@
 				<div class="panel__container">
 					<div class="grid">
 						<div class="cell-16 prepend-8">
-							<img class="panel__cover" src="http://placehold.it/720x480"/>
+							<ul class="slideshow js-slideshow">
+								<li class="slideshow__item js-slideshow-item is-active">
+									<img class="slideshow__img" src="http://placehold.it/720x480/ffffff/000000"/>
+								</li>
+								<li class="slideshow__item js-slideshow-item">
+									<img class="slideshow__img" src="http://placehold.it/720x480/000000/ffffff"/>
+								</li>
+								<li class="slideshow__item js-slideshow-item">
+									<img class="slideshow__img" src="http://placehold.it/720x480/ffffff/000000"/>
+								</li>
+								<li class="slideshow__item js-slideshow-item">
+									<img class="slideshow__img" src="http://placehold.it/720x480/000000/ffffff"/>
+								</li>
+								<li class="slideshow__item js-slideshow-item">
+									<img class="slideshow__img" src="http://placehold.it/720x480/ffffff/000000"/>
+								</li>
+								<li class="slideshow__item js-slideshow-item">
+									<img class="slideshow__img" src="http://placehold.it/720x480/000000/ffffff"/>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>

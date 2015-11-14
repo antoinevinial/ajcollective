@@ -67,6 +67,7 @@ var jqueryMousewheel = require('jquery-mousewheel')($);
 var jqueryCarousel   = require('./../plugins/jquery.carousel.js');
 
 // Import modules.
+var slideshow = require('./slideshow.js');
 var nav = require('./nav.js');
 var panel = require('./panel.js');
 var carousel = require('./carousel.js');
@@ -106,6 +107,9 @@ var content = {
 
 		    // Build panels.
 		    self.buildPanels();
+
+		    // Init slideshow.
+		    slideshow.init();
 
 		    // Init navigation.
 		    nav.init();
@@ -267,54 +271,7 @@ var content = {
 
 module.exports = content;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-},{"./../plugins/jquery.carousel.js":7,"./carousel.js":2,"./contact.js":3,"./nav.js":5,"./panel.js":6,"jquery-mousewheel":8}],5:[function(require,module,exports){
+},{"./../plugins/jquery.carousel.js":8,"./carousel.js":2,"./contact.js":3,"./nav.js":5,"./panel.js":6,"./slideshow.js":7,"jquery-mousewheel":9}],5:[function(require,module,exports){
 var nav = {
 
 	ui: {},
@@ -536,6 +493,78 @@ var panel = {
 
 module.exports = panel;
 },{}],7:[function(require,module,exports){
+var slideshow = {
+
+	ui: {},
+	intervalListener: '',
+	itemActive: 0,
+	timer: 200,
+
+	init: function init() {
+		this.bindUI();
+		this.bindEvents();
+	},
+
+	bindUI: function bindUI() {
+		this.ui.$slideshow = $('.js-slideshow');
+		this.ui.$home      = $('#home');
+		this.ui.$items     = this.ui.$slideshow.find('.js-slideshow-item');
+		this.ui.$move      = $('.js-panel-move');
+	},
+
+	bindEvents: function bindEvents() {
+		var self = this;
+
+		// Init slideshow.
+		this.launchSlideshow();
+
+		// Bind slideshow on click.
+		this.ui.$move.on('click', $.proxy(this.playPauseSlideshow, this));
+	},
+
+	playPauseSlideshow: function playPauseSlideshow() {
+		var self = this;
+
+		setTimeout(function() {
+			if (self.ui.$home.hasClass('is-active')) {
+				self.launchSlideshow();
+			} else {
+				self.pauseSlideshow();
+			}
+		}, 200);
+	},
+
+	launchSlideshow: function launchSlideshow() {
+		var self = this;
+
+		intervalListener = setInterval(function() {
+			self.changeSlide();
+		}, this.timer);
+	},
+
+	pauseSlideshow: function pauseSlideshow() {
+		window.clearInterval(intervalListener);
+	},
+
+	changeSlide: function changeSlide() {
+		// Update itemActive variable.
+		if (this.itemActive == (this.ui.$items.length - 1)) {
+			this.itemActive = 0;
+		} else {
+			this.itemActive++;
+		}
+
+		// Remove is-active class on all items.
+		this.ui.$items.removeClass('is-active');
+
+		// Add on next item.
+		$(this.ui.$items[this.itemActive]).addClass('is-active');
+	},
+
+};
+
+module.exports = slideshow;
+},{}],8:[function(require,module,exports){
 // Plugin Carousel.
 
 (function($) {
@@ -754,7 +783,7 @@ module.exports = panel;
     };
 
 })(jQuery);
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 /*!
  * jQuery Mousewheel 3.1.13
  *

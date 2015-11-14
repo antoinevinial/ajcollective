@@ -1,0 +1,24 @@
+.slideshow {
+	position: relative;
+	max-height: 480px;
+	padding-bottom: 66.66%;
+
+	&__item {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+
+		&.is-active {
+			z-index: 2;
+		}
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}

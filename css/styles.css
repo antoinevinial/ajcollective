@@ -450,10 +450,6 @@ body {
   height: 100vh;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%); }
-  .panel__cover {
-    display: block;
-    margin: 0 auto;
-    width: 100%; }
   .panel__btn {
     position: absolute;
     display: block;
@@ -931,3 +927,21 @@ body {
 
 .is-carousel-full .carousel__btn {
   pointer-events: none; }
+
+.slideshow {
+  position: relative;
+  max-height: 480px;
+  padding-bottom: 66.66%; }
+  .slideshow__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+    .slideshow__item.is-active {
+      z-index: 2; }
+  .slideshow__img {
+    display: block;
+    width: 100%;
+    height: 100%; }
