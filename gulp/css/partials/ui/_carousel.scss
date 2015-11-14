@@ -66,6 +66,7 @@
 	}
 
 	&__jobtitle {
+		@extend %antialiased;
 		display: block;
 		margin: 10px 0 20px 0;
 		color: $color-grey;
@@ -73,6 +74,7 @@
 	}
 
 	&__txt {
+		@extend %antialiased;
 		@extend %patronLight;
 		display: block;
 		line-height: 24px;

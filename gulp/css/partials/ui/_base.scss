@@ -6,4 +6,5 @@ body {
 
 .main {
 	@extend %transitionEase;
+	position: relative;
 }

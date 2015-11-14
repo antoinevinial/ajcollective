@@ -28,6 +28,7 @@
 		z-index: 5;
 
 		&__label {
+			@extend %antialiased;
 			position: relative;
 			top: 50%;
 			display: inline-block;

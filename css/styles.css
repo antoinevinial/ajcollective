@@ -52,7 +52,7 @@ table {
 *, *:before, *:after {
   box-sizing: border-box; }
 
-.nav, .contact, .carousel__doc__title {
+.heading-2, .panel__btn__label, .nav, .contact, .carousel__jobtitle, .carousel__txt, .carousel__doc__title {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -687,6 +687,9 @@ body {
 body {
   font-size: 16px;
   overflow: hidden; }
+
+.main {
+  position: relative; }
 
 .icon-arrow-left {
   width: 40px;
