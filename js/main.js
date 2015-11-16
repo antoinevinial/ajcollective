@@ -381,7 +381,7 @@ var nav = {
 		// Get index of the clicked link.
 		var index = this.ui.$navList.find('li').index($el.parent());
 
-		// Add no-transition class on all panel.
+		// Add is-bottom class on all panel.
 		$.each(this.ui.$panels, function() {
 			$(this).not($active).removeClass('is-top').addClass('is-bottom'); 
 		});
