@@ -532,6 +532,8 @@ body {
   .panel.is-bottom {
     -webkit-transform: translateY(100%);
             transform: translateY(100%); }
+  .panel.no-transition {
+    transition: none; }
 
 .nav {
   position: fixed;

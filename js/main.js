@@ -132,7 +132,7 @@ var content = {
 
 		// Loop through the JSON and create list item for each link.
 		$.each(this.JSON, function() {
-			navHTML += '<li class="nav__item"></li>';
+			navHTML += '<li class="nav__item">';
 			navHTML += '<a class="nav__link js-nav-link" href="#' + this.id + '">';
 			navHTML += '<span class="nav__link__name">' + this.name + '</span>';
 			navHTML += '<span class="nav__link__jobtitle">' + this.jobtitle + '</span>';
@@ -275,6 +275,8 @@ module.exports = content;
 var nav = {
 
 	ui: {},
+	timerNav: 350,
+	timerPanel: 500,
 
 	init: function init() {
 		this.bindUI();
@@ -282,12 +284,14 @@ var nav = {
 	},
 
 	bindUI: function bindUI() {
-		this.ui.$body   = $('body');
-		this.ui.$nav    = $('.js-nav');
-		this.ui.$toggle = $('.js-nav-toggle');
-		this.ui.$links  = $('.js-nav-link');
-		this.ui.$imgs   = $('.js-nav-img');
-		this.ui.$panels = $('.js-panel');
+		this.ui.$body    = $('body');
+		this.ui.$nav     = $('.js-nav');
+		this.ui.$navList = $('.js-nav-list');
+		this.ui.$panels  = $('.js-panel');
+		this.ui.$toggle  = $('.js-nav-toggle');
+		this.ui.$links   = $('.js-nav-link');
+		this.ui.$imgs    = $('.js-nav-img');
+		this.ui.$panels  = $('.js-panel');
 	},
 
 	bindEvents: function bindEvents() {
@@ -345,6 +349,9 @@ var nav = {
 	},
 
 	getClickedLink: function getClickedLink(e) {
+		var self = this,
+			$el  = $(e.currentTarget);
+
 		// Prevent default.
 		e.preventDefault();
 
@@ -354,6 +361,52 @@ var nav = {
 		// Add is-active class.
 		this.ui.$links.removeClass('is-active');
 		$(e.currentTarget).addClass('is-active');
+
+		// Go to panel.
+		setTimeout(function() {
+			self.goToPanel($el);
+		}, this.timerNav);
+	},
+
+	goToPanel: function goToPanel($el) {
+		var self = this,
+			href = $el.attr('href');
+
+		// Get active panel.
+		var $active = $('.js-panel.is-active');
+
+		// Get target panel.
+		var $target = $(href);
+
+		// Get index of the clicked link.
+		var index = this.ui.$navList.find('li').index($el.parent());
+
+		// Add no-transition class on all panel.
+		$.each(this.ui.$panels, function() {
+			$(this).not($active).removeClass('is-top').addClass('is-bottom'); 
+		});
+
+		// Loop through each panel until the target one.
+		for (i = 0; i < index + 1; i++) {
+			$(this.ui.$panels[i]).not($active).removeClass('is-bottom').addClass('is-top');
+		}
+
+		// Get href of active and target.
+		var hrefAct    = $active.attr('id').replace("#", "");
+		var hrefTarget = $target.attr('id').replace("#", "");
+
+		if (hrefTarget > hrefAct || hrefAct == "home") {
+			$active.removeClass('is-active').addClass('is-top');
+			$target.removeClass('is-top is-bottom').addClass('is-active');
+		} else {
+			$active.removeClass('is-active').addClass('is-bottom');
+			$target.removeClass('is-top is-bottom').addClass('is-active');
+		}
+
+		// Focus on carousel to enable keyboard navigation.
+		setTimeout(function() {
+			$target.find('.js-carousel-btn-next').focus();
+		}, this.timerPanel);
 	},
 
 	throttle: function throttle(callback, delay) {
@@ -402,6 +455,7 @@ var panel = {
 		this.ui.$panels = $('.js-panel');
 		this.ui.$active = $('.js-panel.is-active');
 		this.ui.$move   = $('.js-panel-move');
+		this.ui.$navLink = $('.js-nav-link');
 
 		this.ui.$btnTop    = this.ui.$active.find('.js-panel-move--top');
 		this.ui.$btnBottom = this.ui.$active.find('.js-panel-move--bottom');
@@ -411,6 +465,7 @@ var panel = {
 		this.ui.$win.on('mousewheel', $.proxy(this.scrollHandler, this));
 		this.ui.$win.on('keydown', $.proxy(this.keydownHandler, this));
 		this.ui.$move.on('click', $.proxy(this.movePanel, this));
+		this.ui.$navLink.on('click', $.proxy(this.updatePanel, this));
 	},
 
 	scrollHandler: function scrollHandler(event) {
@@ -480,6 +535,12 @@ var panel = {
 		}, this.timerPanel);
 	},
 
+	updatePanel: function updatePanel(e) {
+		var $target = $($(e.currentTarget).attr('href'));
+
+		this.updateUIEvents($target);
+	},
+
 	updateUIEvents: function updateUIEvents($target) {
 		// Update active panel.
 		this.ui.$active = $target;
@@ -487,7 +548,7 @@ var panel = {
 		// Update btns.
 		this.ui.$btnTop    = this.ui.$active.find('.js-panel-move--top');
 		this.ui.$btnBottom = this.ui.$active.find('.js-panel-move--bottom');
-	}
+	},
 
 };
 
@@ -531,7 +592,7 @@ var slideshow = {
 			} else {
 				self.pauseSlideshow();
 			}
-		}, 200);
+		}, 20);
 	},
 
 	launchSlideshow: function launchSlideshow() {

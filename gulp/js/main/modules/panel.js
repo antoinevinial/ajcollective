@@ -16,6 +16,7 @@ var panel = {
 		this.ui.$panels = $('.js-panel');
 		this.ui.$active = $('.js-panel.is-active');
 		this.ui.$move   = $('.js-panel-move');
+		this.ui.$navLink = $('.js-nav-link');
 
 		this.ui.$btnTop    = this.ui.$active.find('.js-panel-move--top');
 		this.ui.$btnBottom = this.ui.$active.find('.js-panel-move--bottom');
@@ -25,6 +26,7 @@ var panel = {
 		this.ui.$win.on('mousewheel', $.proxy(this.scrollHandler, this));
 		this.ui.$win.on('keydown', $.proxy(this.keydownHandler, this));
 		this.ui.$move.on('click', $.proxy(this.movePanel, this));
+		this.ui.$navLink.on('click', $.proxy(this.updatePanel, this));
 	},
 
 	scrollHandler: function scrollHandler(event) {
@@ -94,6 +96,12 @@ var panel = {
 		}, this.timerPanel);
 	},
 
+	updatePanel: function updatePanel(e) {
+		var $target = $($(e.currentTarget).attr('href'));
+
+		this.updateUIEvents($target);
+	},
+
 	updateUIEvents: function updateUIEvents($target) {
 		// Update active panel.
 		this.ui.$active = $target;
@@ -101,7 +109,7 @@ var panel = {
 		// Update btns.
 		this.ui.$btnTop    = this.ui.$active.find('.js-panel-move--top');
 		this.ui.$btnBottom = this.ui.$active.find('.js-panel-move--bottom');
-	}
+	},
 
 };
 

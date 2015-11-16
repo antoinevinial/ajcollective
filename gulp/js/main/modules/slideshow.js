@@ -36,7 +36,7 @@ var slideshow = {
 			} else {
 				self.pauseSlideshow();
 			}
-		}, 200);
+		}, 20);
 	},
 
 	launchSlideshow: function launchSlideshow() {

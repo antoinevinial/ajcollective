@@ -68,7 +68,7 @@ var content = {
 
 		// Loop through the JSON and create list item for each link.
 		$.each(this.JSON, function() {
-			navHTML += '<li class="nav__item"></li>';
+			navHTML += '<li class="nav__item">';
 			navHTML += '<a class="nav__link js-nav-link" href="#' + this.id + '">';
 			navHTML += '<span class="nav__link__name">' + this.name + '</span>';
 			navHTML += '<span class="nav__link__jobtitle">' + this.jobtitle + '</span>';

@@ -1,6 +1,8 @@
 var nav = {
 
 	ui: {},
+	timerNav: 350,
+	timerPanel: 500,
 
 	init: function init() {
 		this.bindUI();
@@ -8,12 +10,14 @@ var nav = {
 	},
 
 	bindUI: function bindUI() {
-		this.ui.$body   = $('body');
-		this.ui.$nav    = $('.js-nav');
-		this.ui.$toggle = $('.js-nav-toggle');
-		this.ui.$links  = $('.js-nav-link');
-		this.ui.$imgs   = $('.js-nav-img');
-		this.ui.$panels = $('.js-panel');
+		this.ui.$body    = $('body');
+		this.ui.$nav     = $('.js-nav');
+		this.ui.$navList = $('.js-nav-list');
+		this.ui.$panels  = $('.js-panel');
+		this.ui.$toggle  = $('.js-nav-toggle');
+		this.ui.$links   = $('.js-nav-link');
+		this.ui.$imgs    = $('.js-nav-img');
+		this.ui.$panels  = $('.js-panel');
 	},
 
 	bindEvents: function bindEvents() {
@@ -71,6 +75,9 @@ var nav = {
 	},
 
 	getClickedLink: function getClickedLink(e) {
+		var self = this,
+			$el  = $(e.currentTarget);
+
 		// Prevent default.
 		e.preventDefault();
 
@@ -80,6 +87,52 @@ var nav = {
 		// Add is-active class.
 		this.ui.$links.removeClass('is-active');
 		$(e.currentTarget).addClass('is-active');
+
+		// Go to panel.
+		setTimeout(function() {
+			self.goToPanel($el);
+		}, this.timerNav);
+	},
+
+	goToPanel: function goToPanel($el) {
+		var self = this,
+			href = $el.attr('href');
+
+		// Get active panel.
+		var $active = $('.js-panel.is-active');
+
+		// Get target panel.
+		var $target = $(href);
+
+		// Get index of the clicked link.
+		var index = this.ui.$navList.find('li').index($el.parent());
+
+		// Add no-transition class on all panel.
+		$.each(this.ui.$panels, function() {
+			$(this).not($active).removeClass('is-top').addClass('is-bottom'); 
+		});
+
+		// Loop through each panel until the target one.
+		for (i = 0; i < index + 1; i++) {
+			$(this.ui.$panels[i]).not($active).removeClass('is-bottom').addClass('is-top');
+		}
+
+		// Get href of active and target.
+		var hrefAct    = $active.attr('id').replace("#", "");
+		var hrefTarget = $target.attr('id').replace("#", "");
+
+		if (hrefTarget > hrefAct || hrefAct == "home") {
+			$active.removeClass('is-active').addClass('is-top');
+			$target.removeClass('is-top is-bottom').addClass('is-active');
+		} else {
+			$active.removeClass('is-active').addClass('is-bottom');
+			$target.removeClass('is-top is-bottom').addClass('is-active');
+		}
+
+		// Focus on carousel to enable keyboard navigation.
+		setTimeout(function() {
+			$target.find('.js-carousel-btn-next').focus();
+		}, this.timerPanel);
 	},
 
 	throttle: function throttle(callback, delay) {

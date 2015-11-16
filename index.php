@@ -39,22 +39,13 @@
 						<div class="cell-16 prepend-8">
 							<ul class="slideshow js-slideshow">
 								<li class="slideshow__item js-slideshow-item is-active">
-									<img class="slideshow__img" src="http://placehold.it/720x480/ffffff/000000"/>
+									<img class="slideshow__img" src="resources/slideshow/1.jpg"/>
 								</li>
 								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="http://placehold.it/720x480/000000/ffffff"/>
+									<img class="slideshow__img" src="resources/slideshow/2.jpg"/>
 								</li>
 								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="http://placehold.it/720x480/ffffff/000000"/>
-								</li>
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="http://placehold.it/720x480/000000/ffffff"/>
-								</li>
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="http://placehold.it/720x480/ffffff/000000"/>
-								</li>
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="http://placehold.it/720x480/000000/ffffff"/>
+									<img class="slideshow__img" src="resources/slideshow/3.jpg"/>
 								</li>
 							</ul>
 						</div>

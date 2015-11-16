@@ -134,4 +134,8 @@
 	&.is-bottom {
 		transform: translateY(100%);
 	}
+
+	&.no-transition {
+		transition: none;
+	}
 }
