@@ -12,6 +12,7 @@
 		@extend %transitionLinks;
 		display: table-cell;
 		vertical-align: middle;
+		max-width: 24 / $cols * 100vw;
 		padding-right: 1 / $cols * 100vw;
 
 		&__container {
@@ -19,15 +20,23 @@
 		}
 
 		&--text {
-			width: 7 / $cols * 100vw;
+			max-width: 7 / $cols * 100vw;
+		}
+
+		&:hover {
+			.carousel__full {
+				opacity: 1;
+			}
 		}
 	}
 
 	&__img {
 		@extend %transitionLinks;
+		position: relative;
+		left: 0;
 		display: block;
-		max-width: 23 / $cols * 100vw;
-		// box-shadow: 0px 0px 0px 2px $color-white;
+		max-width: 100%;
+		transform: translateX(0);
 	}
 
 	&__btn {
@@ -89,6 +98,7 @@
 		width: 40px;
 		height: 40px;
 		background-color: $color-white;
+		opacity: 0;
 
 		.icon {
 			position: relative;
@@ -121,6 +131,7 @@
 			height: 80px;
 			border: 2px solid $color-white;
 			z-index: 2;
+			pointer-events: none;
 
 			&:before,
 			&:after {
@@ -132,7 +143,6 @@
 				display: block;
 				background-color: rgba(0,0,0,0.5);
 				z-index: 2;
-				pointer-events: none;
 			}
 
 			&:before {
@@ -147,12 +157,12 @@
 		&__item {
 			display: table-cell;
 			padding-right: 10px;
+			cursor: pointer;
 			-webkit-backface-visibility: hidden;
 		}
 
 		&__img {
 			max-height: 40px;
-			cursor: pointer;
 		}
 	}
 
@@ -299,10 +309,19 @@
 		opacity: 0.25;
 
 		&.is-active {
+			width: 26 / $cols * 100vw !important;
+			max-width: 26 / $cols * 100vw;
 			opacity: 1;
 
 			.carousel__img {
-				max-width: 26 / $cols * 100vw;		
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
+		&:hover {
+			.carousel__full {
+				opacity: 0;
 			}
 		}
 	}

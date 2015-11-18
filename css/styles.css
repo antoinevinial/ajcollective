@@ -409,7 +409,6 @@ body {
 
 /* Special style for grid dev */
 .grid--dev {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -726,14 +725,21 @@ body {
   .carousel__item {
     display: table-cell;
     vertical-align: middle;
+    max-width: 75vw;
     padding-right: 3.125vw; }
     .carousel__item__container {
       position: relative; }
     .carousel__item--text {
-      width: 21.875vw; }
+      max-width: 21.875vw; }
+    .carousel__item:hover .carousel__full {
+      opacity: 1; }
   .carousel__img {
+    position: relative;
+    left: 0;
     display: block;
-    max-width: 71.875vw; }
+    max-width: 100%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
   .carousel__btn {
     position: absolute;
     top: 0;
@@ -773,7 +779,8 @@ body {
     display: block;
     width: 40px;
     height: 40px;
-    background-color: #fff; }
+    background-color: #fff;
+    opacity: 0; }
     .carousel__full .icon {
       position: relative;
       top: 10px;
@@ -795,7 +802,8 @@ body {
       width: 15.625vw;
       height: 80px;
       border: 2px solid #fff;
-      z-index: 2; }
+      z-index: 2;
+      pointer-events: none; }
       .carousel__viewer__rectangle:before, .carousel__viewer__rectangle:after {
         content: "";
         position: absolute;
@@ -804,8 +812,7 @@ body {
         height: calc(100% + 4px);
         display: block;
         background-color: rgba(0, 0, 0, 0.5);
-        z-index: 2;
-        pointer-events: none; }
+        z-index: 2; }
       .carousel__viewer__rectangle:before {
         right: calc(100% + 2px); }
       .carousel__viewer__rectangle:after {
@@ -813,10 +820,10 @@ body {
     .carousel__viewer__item {
       display: table-cell;
       padding-right: 10px;
+      cursor: pointer;
       -webkit-backface-visibility: hidden; }
     .carousel__viewer__img {
-      max-height: 40px;
-      cursor: pointer; }
+      max-height: 40px; }
   .carousel__close {
     position: absolute;
     top: 50px;
@@ -912,9 +919,15 @@ body {
 .is-carousel-full .carousel__item {
   opacity: 0.25; }
   .is-carousel-full .carousel__item.is-active {
+    width: 81.25vw !important;
+    max-width: 81.25vw;
     opacity: 1; }
     .is-carousel-full .carousel__item.is-active .carousel__img {
-      max-width: 81.25vw; }
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .is-carousel-full .carousel__item:hover .carousel__full {
+    opacity: 0; }
 
 .is-carousel-full .carousel__viewer {
   bottom: 40px;

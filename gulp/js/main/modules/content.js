@@ -90,7 +90,7 @@ var content = {
 		$.each(this.JSON, function() {
 
 			// Start section.
-			panelHTML += '<section class="panel panel--black js-panel is-bottom" id="' + this.id + '">';
+			panelHTML += '<section class="panel panel--black js-panel is-bottom" id="' + this.id + '" tabindex="1">';
 
 				// Start pager.
 				panelHTML += '<div class="panel__pager">';

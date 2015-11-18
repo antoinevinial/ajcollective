@@ -154,7 +154,7 @@ var content = {
 		$.each(this.JSON, function() {
 
 			// Start section.
-			panelHTML += '<section class="panel panel--black js-panel is-bottom" id="' + this.id + '">';
+			panelHTML += '<section class="panel panel--black js-panel is-bottom" id="' + this.id + '" tabindex="1">';
 
 				// Start pager.
 				panelHTML += '<div class="panel__pager">';
@@ -658,6 +658,7 @@ module.exports = slideshow;
                 bindUI: function bindUI() {
                     this.ui.$win      = $(window);
                     this.ui.$body     = $('body');
+
                     this.ui.$carousel = options.$el;
                     this.ui.$slider   = this.ui.$carousel.find('.js-carousel-slider');
                     this.ui.$items    = this.ui.$carousel.find('.js-carousel-item');
@@ -674,6 +675,7 @@ module.exports = slideshow;
 
                 bindEvents: function bindEvents() {
                     this.ui.$win.on('resize', $.proxy(this.initCarousel, this));
+                    this.ui.$win.on('load', $.proxy(this.initCarousel, this));
                     this.ui.$btns.on('click', $.proxy(this.prevNext, this));
                     this.ui.$carousel.on('keydown', $.proxy(this.keyboardHandler, this));
                     this.ui.$fullBtn.on('click', $.proxy(this.toggleFullScreen, this));
@@ -683,6 +685,9 @@ module.exports = slideshow;
                     // Init variables.
                     this.itemActive = 0;
                     this.nbItems    = this.ui.$items.length;
+
+                    // Init width on items.
+                    this.initWidth();
 
                     // Init viewer.
                     this.initViewer();
@@ -695,6 +700,30 @@ module.exports = slideshow;
 
                     // Init btns.
                     this.updateBtns();
+                },
+
+                initWidth: function initWidth() {
+                    var self = this;
+
+                    setTimeout(function() {
+                        // On each items, get img width and set width on item.
+                        $.each(self.ui.$items, function() {
+                            var $el   = $(this);
+
+                            // Set auto on items.
+                            $el.outerWidth('auto');
+
+                            // Get img inside item.
+                            var $img = $el.find('img');
+
+                            // If img exists, get its width and set it on item.
+                            if ($img.length) {
+                                $el.outerWidth($img.outerWidth());
+                            }
+
+                            
+                        });
+                    }, 200);
                 },
 
                 keyboardHandler: function keyboardHandler(e) {
@@ -719,25 +748,26 @@ module.exports = slideshow;
 
                     // Loop through each carousel items and create thumbnail.
                     $.each(this.ui.$items, function() {
-                        var $el = $(this);
+                        var $el   = $(this),
+                            index = $el.index();
 
                         // If item has text inside, create list item with icon.
                         if ($el.hasClass('js-carousel-item--text')) {
-                            viewerHTML += '<li class="carousel__viewer__item js-carousel-viewer-item">';
+                            viewerHTML += '<li class="carousel__viewer__item js-carousel-viewer-item" data-index="' + index + '">';
                             viewerHTML += '<svg class="icon icon-text" viewBox="0 0 30 39"><rect fill="#FFFFFF" x="0" y="0" width="25" height="2"></rect><rect fill="#FFFFFF" x="0" y="7" width="30" height="2"></rect><rect fill="#4D4D4D" x="0" y="14" width="30" height="1"></rect><rect fill="#4D4D4D" x="0" y="18" width="25" height="1"></rect><rect fill="#4D4D4D" x="0" y="22" width="30" height="1"></rect><rect fill="#4D4D4D" x="0" y="26" width="25" height="1"></rect><rect fill="#4D4D4D" x="0" y="30" width="30" height="1"></rect><rect fill="#4D4D4D" x="0" y="34" width="25" height="1"></rect><rect fill="#4D4D4D" x="0" y="38" width="20" height="1"></rect></svg>';
                             viewerHTML += '</li>';
                         }
 
                         // If item has a doc inside, create list item with icon.
                         if ($el.hasClass('js-carousel-item--doc')) {
-                            viewerHTML += '<li class="carousel__viewer__item js-carousel-viewer-item">';
+                            viewerHTML += '<li class="carousel__viewer__item js-carousel-viewer-item" data-index="' + index + '">';
                             viewerHTML += '<svg class="icon icon-pdf--sml" viewBox="0 0 26 40"><rect x="0" y="0" width="26" height="40"></rect></svg>';
                             viewerHTML += '</li>';
                         }
 
                         // If item has picture inside, create a thumbnail.
                         if ($el.find('img').length) {
-                            viewerHTML += '<li class="carousel__viewer__item js-carousel-viewer-item">';
+                            viewerHTML += '<li class="carousel__viewer__item js-carousel-viewer-item" data-index="' + index + '">';
                             viewerHTML += '<img class="carousel__viewer__img" src="' + $el.find('img').attr('src') + '"/>';
                             viewerHTML += '</li>';
                         }
@@ -748,6 +778,22 @@ module.exports = slideshow;
 
                     // Bind new UI.
                     this.ui.$viewerItems = this.ui.$carousel.find('.js-carousel-viewer-item');
+
+                    // Bind new event/
+                    this.ui.$viewerItems.on('click', $.proxy(this.goTo, this));
+                },
+
+                goTo: function goTo(e) {
+                    var index = $(e.currentTarget).data('index');
+
+                    // Update item active variable.
+                    this.itemActive = index;
+
+                    // Translate slider.
+                    this.translateSlider();
+
+                    // Translate viewer.
+                    this.translateViewer();
                 },
 
                 prevNext: function prevNext(e) {
