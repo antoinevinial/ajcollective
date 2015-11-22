@@ -436,7 +436,7 @@ body {
   margin-bottom: 25px; }
 
 .panel {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   display: -webkit-flex;

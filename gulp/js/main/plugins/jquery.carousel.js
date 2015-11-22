@@ -92,8 +92,6 @@
                             if ($img.length) {
                                 $el.outerWidth($img.outerWidth());
                             }
-
-                            
                         });
                     }, 200);
                 },

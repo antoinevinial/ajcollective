@@ -73,29 +73,18 @@ var panel = {
 		// Get direction.
 		var direction = $el.data('direction');
 
-		// // Top or bottom depending on data direction for active panel.
-		// if (direction == "bottom") {
-		// 	this.ui.$active.addClass('is-top');
-		// } else {
-		// 	this.ui.$active.addClass('is-bottom');
-		// }
-
-		// // Remove is-active class.
-		// this.ui.$active.removeClass('is-active');
-
-		// // Show target panel.
-		// $target.removeClass('is-top is-bottom').addClass('is-active');
-
 		// Top or bottom depending on data direction for active panel.
-		if (direction == "top") {
+		if (direction == "bottom") {
+			this.ui.$active.addClass('is-top');
+		} else {
 			this.ui.$active.addClass('is-bottom');
 		}
 
 		// Remove is-active class.
-		// this.ui.$active.removeClass('is-active');
+		this.ui.$active.removeClass('is-active');
 
 		// Show target panel.
-		$target.removeClass('is-bottom').addClass('is-active');
+		$target.removeClass('is-top is-bottom').addClass('is-active');
 
 		// Update UI and events.
 		this.updateUIEvents($target);
