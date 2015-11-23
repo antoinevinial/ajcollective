@@ -128,6 +128,13 @@
                             viewerHTML += '</li>';
                         }
 
+                        // If item has a video inside, create video item with icon.
+                        if ($el.hasClass('js-carousel-item--video')) {
+                            viewerHTML += '<li class="carousel__viewer__item js-carousel-viewer-item" data-index="' + index + '">';
+                            viewerHTML += '<svg class="icon icon-video" viewBox="0 0 21 29"><path d="M0,29 L3.92668354e-15,0 L21,14.5 L0,29 Z"></path></svg>';
+                            viewerHTML += '</li>';
+                        }
+
                         // If item has a doc inside, create list item with icon.
                         if ($el.hasClass('js-carousel-item--doc')) {
                             viewerHTML += '<li class="carousel__viewer__item js-carousel-viewer-item" data-index="' + index + '">';

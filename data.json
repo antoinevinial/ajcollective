@@ -6,7 +6,7 @@
 		"jobtitle" : "Creative researcher & founder",
 		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
 		"thumbnail" : "http://placehold.it/160x100/",
-		"illustrations" : [
+		"medias" : [
 			"http://placehold.it/2000x600/b9b9b9/000000",
 			"http://placehold.it/360x223/b9b9b9/000000",
 			"http://placehold.it/2000x600/b9b9b9/000000",
@@ -15,7 +15,8 @@
 			"http://placehold.it/360x223/b9b9b9/000000",
 			"http://placehold.it/2000x600/b9b9b9/000000",
 			"http://placehold.it/360x223/b9b9b9/000000"
-		]
+		],
+		"comments" : "use this kind of iframe url to display videos : <iframe src='https://player.vimeo.com/video/81805080?title=0&byline=0&portrait=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 	},
 
 	{
@@ -25,7 +26,7 @@
 		"jobtitle" : "Creative researcher",
 		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
 		"thumbnail" : "http://placehold.it/160x100/",
-		"illustrations" : [
+		"medias" : [
 			"http://placehold.it/2000x600/b9b9b9/000000",
 			"http://placehold.it/360x223/b9b9b9/000000",
 			"http://placehold.it/2000x600/b9b9b9/000000",
@@ -44,7 +45,7 @@
 		"jobtitle" : "Creative researcher",
 		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
 		"thumbnail" : "http://placehold.it/160x100/",
-		"illustrations" : [
+		"medias" : [
 			"http://placehold.it/2000x600/b9b9b9/000000",
 			"http://placehold.it/360x223/b9b9b9/000000",
 			"http://placehold.it/2000x600/b9b9b9/000000",
@@ -63,7 +64,7 @@
 		"jobtitle" : "Creative researcher",
 		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
 		"thumbnail" : "http://placehold.it/160x100/",
-		"illustrations" : [
+		"medias" : [
 			"http://placehold.it/2000x600/b9b9b9/000000",
 			"http://placehold.it/360x223/b9b9b9/000000",
 			"http://placehold.it/2000x600/b9b9b9/000000",
@@ -82,7 +83,7 @@
 		"jobtitle" : "Creative researcher",
 		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
 		"thumbnail" : "http://placehold.it/160x100/",
-		"illustrations" : [
+		"medias" : [
 			"http://placehold.it/2000x600/b9b9b9/000000",
 			"http://placehold.it/360x223/b9b9b9/000000",
 			"http://placehold.it/2000x600/b9b9b9/000000",
@@ -101,7 +102,7 @@
 		"jobtitle" : "Creative researcher & founder",
 		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
 		"thumbnail" : "http://placehold.it/160x100/",
-		"illustrations" : [
+		"medias" : [
 			"http://placehold.it/2000x600/b9b9b9/000000",
 			"http://placehold.it/360x223/b9b9b9/000000",
 			"http://placehold.it/2000x600/b9b9b9/000000",

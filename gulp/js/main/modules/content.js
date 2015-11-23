@@ -136,12 +136,24 @@ var content = {
 										panelHTML += '<p class="carousel__txt">' + this.description + '</p>';
 									panelHTML += '</li>';
 
-									// Loop through each illustration.
-									for (i = 0; i < this.illustrations.length; i++) {
-										panelHTML += '<li class="carousel__item js-carousel-item">';
-											panelHTML += '<div class="carousel__item__container">';
-												panelHTML += '<img class="carousel__img" src="' + this.illustrations[i] + '"/>';
-												panelHTML += '<a class="carousel__full js-carousel-full-btn" href="#"><svg class="icon icon-full" viewBox="0 0 20 20"><path d="M7,9 L7,11 L1,17 L1,15 L0,15 L0,20 L5,20 L5,19 L3,19 L9,13 L11,13 L17,19 L15,19 L15,20 L20,20 L20,15 L19,15 L19,17 L13,11 L13,9 L19,3 L19,5 L20,5 L20,0 L15,0 L15,1 L17,1 L11,7 L9,7 L3,1 L5,1 L5,0 L0,0 L0,5 L1,5 L1,3 L7,9 Z"></path></svg></a>';
+									// Loop through each medias.
+									for (i = 0; i < this.medias.length; i++) {
+										var str = this.medias[i];
+
+											if (str.search('vimeo') != -1) {
+												panelHTML += '<li class="carousel__item js-carousel-item js-carousel-item--video">';
+													panelHTML += '<div class="carousel__item__container">';
+														panelHTML += '<div class="carousel__video">';
+														panelHTML += this.medias[i];
+														panelHTML += '</div>';
+
+											} else {
+												panelHTML += '<li class="carousel__item js-carousel-item">';
+													panelHTML += '<div class="carousel__item__container">';
+														panelHTML += '<img class="carousel__img" src="' + this.medias[i] + '"/>';
+														panelHTML += '<a class="carousel__full js-carousel-full-btn" href="#"><svg class="icon icon-full" viewBox="0 0 20 20"><path d="M7,9 L7,11 L1,17 L1,15 L0,15 L0,20 L5,20 L5,19 L3,19 L9,13 L11,13 L17,19 L15,19 L15,20 L20,20 L20,15 L19,15 L19,17 L13,11 L13,9 L19,3 L19,5 L20,5 L20,0 L15,0 L15,1 L17,1 L11,7 L9,7 L3,1 L5,1 L5,0 L0,0 L0,5 L1,5 L1,3 L7,9 Z"></path></svg></a>';
+											}
+
 											panelHTML += '</div>';
 										panelHTML += '</li>';
 									}

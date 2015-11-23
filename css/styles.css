@@ -409,6 +409,7 @@ body {
 
 /* Special style for grid dev */
 .grid--dev {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -718,6 +719,11 @@ body {
     height: 40px;
     fill: #0f008a; }
 
+.icon-video {
+  width: 21px;
+  height: 29px;
+  fill: #fff; }
+
 .carousel {
   /* Modifiers */ }
   .carousel__slider {
@@ -740,11 +746,21 @@ body {
     max-width: 100%;
     -webkit-transform: translateX(0);
             transform: translateX(0); }
+  .carousel__video {
+    position: relative;
+    width: 37.5vw;
+    padding-bottom: 56.25%; }
+    .carousel__video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
   .carousel__btn {
     position: absolute;
     top: 0;
     display: block;
-    width: 9.375vw;
+    width: 6.25vw;
     height: 100%;
     padding: 0;
     background: none;
