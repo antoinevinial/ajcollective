@@ -1,7 +1,8 @@
 .slideshow {
 	position: relative;
-	max-height: 480px;
-	padding-bottom: 66.66%;
+	width: 720px;
+	height: 480px;
+	margin: 0 auto;
 
 	&__item {
 		position: absolute;

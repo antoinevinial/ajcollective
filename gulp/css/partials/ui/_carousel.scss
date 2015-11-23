@@ -358,3 +358,14 @@
 		pointer-events: none;
 	}
 }
+
+
+/* Responsive stuff */
+
+@include desktop-large {
+	.carousel {
+		&__viewer {
+			bottom: 3 / $cols * 100vw;
+		}
+	}
+}

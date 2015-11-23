@@ -432,6 +432,7 @@ body {
       height: 100%;
       background-color: #4affff; }
 
+/* Responsive stuff */
 /* Helpers */
 .trailer-25 {
   margin-bottom: 25px; }
@@ -534,6 +535,19 @@ body {
             transform: translateY(100%); }
   .panel.no-transition {
     transition: none; }
+  @media (min-width: 1382px) {
+    .panel__btn__label--left {
+      left: 6.25vw; }
+    .panel__btn__label--right {
+      right: 6.25vw; }
+    .panel__btn--top, .panel__btn--bottom {
+      height: 6.25vw; }
+    .panel__btn--left, .panel__btn--right {
+      height: 6.25vw; }
+    .panel__btn--left {
+      left: 6.25vw; }
+    .panel__btn--right {
+      right: 6.25vw; } }
 
 .nav {
   position: fixed;
@@ -625,6 +639,20 @@ body {
   pointer-events: auto;
   -webkit-transform: translateX(37.5vw);
           transform: translateX(37.5vw); }
+
+/* Responsive stuff */
+@media (min-width: 1382px) {
+  .nav {
+    width: 25vw;
+    -webkit-transform: translateX(-25vw);
+            transform: translateX(-25vw); }
+  .is-nav-open .main {
+    -webkit-transform: translateX(25vw);
+            transform: translateX(25vw); }
+  .is-nav-open .nav__layer {
+    pointer-events: auto;
+    -webkit-transform: translateX(25vw);
+            transform: translateX(25vw); } }
 
 /* Popin contact */
 .contact {
@@ -959,10 +987,16 @@ body {
 .is-carousel-full .carousel__btn {
   pointer-events: none; }
 
+/* Responsive stuff */
+@media (min-width: 1382px) {
+  .carousel__viewer {
+    bottom: 9.375vw; } }
+
 .slideshow {
   position: relative;
-  max-height: 480px;
-  padding-bottom: 66.66%; }
+  width: 720px;
+  height: 480px;
+  margin: 0 auto; }
   .slideshow__item {
     position: absolute;
     top: 0;
