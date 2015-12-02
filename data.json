@@ -49,14 +49,11 @@
 		"description" : "<strong>Hometown.</strong> Nottingham<br><strong>Current Location.</strong> Copenhagen<br><strong>Favourite Film.</strong> Wild at Heart<br><strong>Commercial.</strong> Prada A/W 2012<br><strong>Music Video.</strong> Radiohead ‘Street Spirit’<br><strong>Toast Topping.</strong> A full English<br><strong>Cocktail.</strong> Old Fashioned<br><strong>Guilty Pleasure.</strong> Katy Perry",
 		"thumbnail" : "http://placehold.it/160x100/",
 		"medias" : [
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000"
+			"resources/jody_nolan/deborah_tyfield.jpg",
+			"resources/jody_nolan/dove.jpg",
+			"resources/jody_nolan/fitness.jpg",
+			"resources/jody_nolan/these_walls.jpg",
+			"resources/jody_nolan/vitu.jpg"
 		]
 	},
 
