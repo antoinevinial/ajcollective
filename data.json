@@ -33,14 +33,11 @@
 		"description" : "<strong>Hometown.</strong> Dublin<br><strong>Current Location.</strong> London<br><strong>Favourite Film.</strong> Happiness<br><strong>Commercial.</strong> Dunlop ‘Expect the Unexpected’<br><strong>Music Video.</strong> Justin Bieber ‘Sorry’<br><strong>Toast Topping.</strong> Confit duck<br><strong>Cocktail.</strong> Anything neon with an umbrella<br><strong>Guilty Pleasure.</strong> Napping at work",
 		"thumbnail" : "http://placehold.it/160x100/",
 		"medias" : [
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000"
+			"resources/tegan_ashmore/audi_rs.jpg",
+			"resources/tegan_ashmore/betfair.jpg",
+			"resources/tegan_ashmore/hankook.jpg",
+			"resources/tegan_ashmore/lacnr.jpg",
+			"resources/tegan_ashmore/pfizer.jpg"
 		]
 	},
 
