@@ -782,6 +782,7 @@ body {
     left: 0;
     display: block;
     max-width: 100%;
+    max-height: 37.5vw;
     -webkit-transform: translateX(0);
             transform: translateX(0); }
   .carousel__video {
@@ -951,8 +952,7 @@ body {
     .carousel__doc:hover .carousel__doc__overlay {
       opacity: 1; }
   .carousel--writer .carousel__item--text {
-    width: 28.125vw;
-    padding-right: 9.375vw; }
+    width: 28.125vw; }
 
 /* When carousel is in full-screen mode. */
 .is-carousel-full .panel.is-active .panel__btn--left {

@@ -7,14 +7,20 @@
 		"description" : "<strong>Hometown.</strong> Boksburg, South Africa<br><strong>Current Location.</strong> Copenhagen, Denmark<br><strong>Favourite Film.</strong> Casino<br><strong>Advert.</strong> Guinness ‘Surfer’<br><strong>Music Video.</strong>David Byrne/St Vincent ‘Who’<br><strong>Toast Topping.</strong>Marmite<br><strong>Cocktail.</strong>Vodka Martini<br><strong>Guilty Pleasure.</strong> Mean Girls",
 		"thumbnail" : "http://placehold.it/160x100/",
 		"medias" : [
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000"
+			"resources/andrea_colomb/audi.jpg",
+			"resources/andrea_colomb/audi2.jpg",
+			"resources/andrea_colomb/audi3.jpg",
+			"resources/andrea_colomb/bulmers.jpg",
+			"resources/andrea_colomb/ergo.jpg",
+			"resources/andrea_colomb/hennesy.jpg",
+			"resources/andrea_colomb/landrover.jpg",
+			"resources/andrea_colomb/manshift.jpg",
+			"resources/andrea_colomb/mercedes.jpg",
+			"resources/andrea_colomb/psvita.jpg",
+			"resources/andrea_colomb/theaustronought.jpg",
+			"resources/andrea_colomb/unicorn.jpg",
+			"resources/andrea_colomb/veet.jpg",
+			"resources/andrea_colomb/volvic.jpg"
 		],
 		"comments" : "use this kind of iframe url to display videos : <iframe src='https://player.vimeo.com/video/81805080?title=0&byline=0&portrait=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 	},

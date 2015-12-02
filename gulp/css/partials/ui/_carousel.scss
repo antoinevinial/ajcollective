@@ -36,6 +36,7 @@
 		left: 0;
 		display: block;
 		max-width: 100%;
+		max-height: 12 / $cols * 100vw;
 		transform: translateX(0);
 	}
 
@@ -290,7 +291,7 @@
 	&--writer {
 		.carousel__item--text {
 			width: 9 / $cols * 100vw;
-			padding-right: 3 / $cols * 100vw;
+			// padding-right: 3 / $cols * 100vw;
 		}
 	}
 }
