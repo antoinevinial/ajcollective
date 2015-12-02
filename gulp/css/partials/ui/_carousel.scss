@@ -20,7 +20,7 @@
 		}
 
 		&--text {
-			max-width: 7 / $cols * 100vw;
+			width: 9 / $cols * 100vw !important;
 		}
 
 		&:hover {

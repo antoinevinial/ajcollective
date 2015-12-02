@@ -96,6 +96,13 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'patronmedium';
+  src: url("../fonts/patron-medium-webfont.eot");
+  src: url("../fonts/patron-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/patron-medium-webfont.woff2") format("woff2"), url("../fonts/patron-medium-webfont.woff") format("woff"), url("../fonts/patron-medium-webfont.ttf") format("truetype"), url("../fonts/patron-medium-webfont.svg#patronmedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* Extends for font-family */
 .heading-2, .panel__btn__label--lrg, .nav__link__name, .carousel__doc__title {
   font-family: "grumpy", Serif; }
@@ -105,6 +112,9 @@ table {
 
 body {
   font-family: "patronregular", Arial, sans-serif; }
+
+strong {
+  font-family: "patronmedium", Arial, sans-serif; }
 
 /* Titles */
 .heading-1 {
@@ -535,7 +545,7 @@ body {
             transform: translateY(100%); }
   .panel.no-transition {
     transition: none; }
-  @media (min-width: 1382px) {
+  @media (min-width: 1441px) {
     .panel__btn__label--left {
       left: 6.25vw; }
     .panel__btn__label--right {
@@ -641,7 +651,7 @@ body {
           transform: translateX(37.5vw); }
 
 /* Responsive stuff */
-@media (min-width: 1382px) {
+@media (min-width: 1441px) {
   .nav {
     width: 25vw;
     -webkit-transform: translateX(-25vw);
@@ -764,7 +774,7 @@ body {
     .carousel__item__container {
       position: relative; }
     .carousel__item--text {
-      max-width: 21.875vw; }
+      width: 28.125vw !important; }
     .carousel__item:hover .carousel__full {
       opacity: 1; }
   .carousel__img {
@@ -988,7 +998,7 @@ body {
   pointer-events: none; }
 
 /* Responsive stuff */
-@media (min-width: 1382px) {
+@media (min-width: 1441px) {
   .carousel__viewer {
     bottom: 9.375vw; } }
 

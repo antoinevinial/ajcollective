@@ -8,3 +8,7 @@ body {
 	@extend %transitionEase;
 	position: relative;
 }
+
+strong {
+	@extend %patronMedium;
+}

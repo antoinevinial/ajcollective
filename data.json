@@ -3,8 +3,8 @@
 		"id" : 0,
 		"name" : "Andrea Colomb",
 		"template" : "researcher",
-		"jobtitle" : "Creative researcher & founder",
-		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"jobtitle" : "Founder, Creative Researcher",
+		"description" : "<strong>Hometown.</strong> Boksburg, South Africa<br><strong>Current Location.</strong> Copenhagen, Denmark<br><strong>Favourite Film.</strong> Casino<br><strong>Advert.</strong> Guinness ‘Surfer’<br><strong>Music Video.</strong>David Byrne/St Vincent ‘Who’<br><strong>Toast Topping.</strong>Marmite<br><strong>Cocktail.</strong>Vodka Martini<br><strong>Guilty Pleasure.</strong> Mean Girls",
 		"thumbnail" : "http://placehold.it/160x100/",
 		"medias" : [
 			"http://placehold.it/2000x600/b9b9b9/000000",
@@ -21,10 +21,10 @@
 
 	{
 		"id" : 1,
-		"name" : "Abigail Willis",
+		"name" : "Tegan Ashmore",
 		"template" : "researcher",
-		"jobtitle" : "Creative researcher",
-		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"jobtitle" : "Senior Creative Researcher",
+		"description" : "<strong>Hometown.</strong> Dublin<br><strong>Current Location.</strong> London<br><strong>Favourite Film.</strong> Happiness<br><strong>Commercial.</strong> Dunlop ‘Expect the Unexpected’<br><strong>Music Video.</strong> Justin Bieber ‘Sorry’<br><strong>Toast Topping.</strong> Confit duck<br><strong>Cocktail.</strong> Anything neon with an umbrella<br><strong>Guilty Pleasure.</strong> Napping at work",
 		"thumbnail" : "http://placehold.it/160x100/",
 		"medias" : [
 			"http://placehold.it/2000x600/b9b9b9/000000",
@@ -40,10 +40,10 @@
 
 	{
 		"id" : 2,
-		"name" : "Paige Lawrence",
+		"name" : "Jody<br>Nolan",
 		"template" : "researcher",
-		"jobtitle" : "Creative researcher",
-		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"jobtitle" : "Senior Creative Researcher",
+		"description" : "<strong>Hometown.</strong> Nottingham<br><strong>Current Location.</strong> Copenhagen<br><strong>Favourite Film.</strong> Wild at Heart<br><strong>Commercial.</strong> Prada A/W 2012<br><strong>Music Video.</strong> Radiohead ‘Street Spirit’<br><strong>Toast Topping.</strong> A full English<br><strong>Cocktail.</strong> Old Fashioned<br><strong>Guilty Pleasure.</strong> Katy Perry",
 		"thumbnail" : "http://placehold.it/160x100/",
 		"medias" : [
 			"http://placehold.it/2000x600/b9b9b9/000000",
@@ -59,10 +59,10 @@
 
 	{
 		"id" : 3,
-		"name" : "Amelie McCarthy",
+		"name" : "Michael McCool",
 		"template" : "researcher",
-		"jobtitle" : "Creative researcher",
-		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"jobtitle" : "Senior Creative Researcher",
+		"description" : "<strong>Hometown.</strong> London<br><strong>Current Location.</strong> London<br><strong>Favourite Film.</strong> Jackie Brown<br><strong>Commercial.</strong> VW ‘Singing in the Rain’<br><strong>Music Video.</strong> Michael Jackson ‘Thriller’<br><strong>Toast Topping.</strong> Marmalade<br><strong>Cocktail.</strong> Espresso Martini<br><strong>Guilty Pleasure.</strong> Justin Bieber",
 		"thumbnail" : "http://placehold.it/160x100/",
 		"medias" : [
 			"http://placehold.it/2000x600/b9b9b9/000000",
@@ -78,10 +78,10 @@
 
 	{
 		"id" : 4,
-		"name" : "Hannah Holland",
+		"name" : "Kirstine Arildborg",
 		"template" : "researcher",
-		"jobtitle" : "Creative researcher",
-		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"jobtitle" : "Creative Researcher",
+		"description" : "<strong>Hometown.</strong> Nykøbing Falster<br><strong>Current Location.</strong> Copenhagen<br><strong>Favourite Film.</strong> Rust and Bone<br><strong>Commercial.</strong> Toyota ‘Feels Good Inside/Cat’<br><strong>Music Video.</strong> Michael Jackson/Janet Jackson ‘Scream’<br><strong>Toast Topping.</strong> Egg, Tomato & Avocado<br><strong>Cocktail.</strong> Anything with gin<br><strong>Guilty Pleasure.</strong> Pick ’n Mix",
 		"thumbnail" : "http://placehold.it/160x100/",
 		"medias" : [
 			"http://placehold.it/2000x600/b9b9b9/000000",
@@ -97,10 +97,10 @@
 
 	{
 		"id" : 5,
-		"name" : "Isabel Heath",
+		"name" : "Oscar Oz Juul-Sørensen",
 		"template" : "researcher",
-		"jobtitle" : "Creative researcher & founder",
-		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"jobtitle" : "Creative Researcher",
+		"description" : "<strong>Hometown.</strong> Copenhagen<br><strong>Current Location.</strong> Netherlands<br><strong>Favourite Film.</strong> Dirty Dancing<br><strong>Commercial.</strong><br><strong>Music Video.</strong> Duck Butter<br><strong>Toast Topping.</strong> Everything cheesy<br><strong>Cocktail.</strong> Pina Colada<br><strong>Guilty Pleasure.</strong> Grand Theft Auto 5 & Gucci Mane Mixtapes",
 		"thumbnail" : "http://placehold.it/160x100/",
 		"medias" : [
 			"http://placehold.it/2000x600/b9b9b9/000000",
@@ -118,136 +118,8 @@
 		"id" : 6,
 		"name" : "Katie Anderton",
 		"template" : "writer",
-		"jobtitle" : "Treatment Writer",
-		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-		"documents" : [
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			}
-		]
-	},
-
-	{
-		"id" : 7,
-		"name" : "Tia Norris",
-		"template" : "writer",
-		"jobtitle" : "Treatment Writer",
-		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-		"documents" : [
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			}
-		]
-	},
-
-	{
-		"id" : 8,
-		"name" : "Katherine Nicholls",
-		"template" : "writer",
-		"jobtitle" : "Treatment Writer",
-		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+		"jobtitle" : "Her Majesty, Creative Writer",
+		"description" : "<strong>Hometown.</strong> Liverpool<br><strong>Current Location.</strong> Milan<br><strong>Favourite Film.</strong> 8 1/2<br><strong>Commercial.</strong> The Guardian ‘Three Little Pigs’<br><strong>Music Video.</strong> Whitesnake ‘Is This Love’<br><strong>Toast Topping.</strong> Tom Hardy<br><strong>Cocktail.</strong> Snowball<br><strong>Guilty Pleasure.</strong> Kanye West",
 		"documents" : [
 			{
 				"title" : "Lorem ipsum dolor sit amet",
