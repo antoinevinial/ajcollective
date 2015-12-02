@@ -699,7 +699,7 @@ module.exports = slideshow;
                     this.nbItems    = this.ui.$items.length;
 
                     // Init width on items.
-                    this.initWidth();
+                    // this.initWidth();
 
                     // Init viewer.
                     this.initViewer();

@@ -33,11 +33,12 @@
 	&__img {
 		@extend %transitionLinks;
 		position: relative;
-		left: 0;
+		// left: 0;
 		display: block;
 		max-width: 100%;
+		margin: 0;
 		max-height: 12 / $cols * 100vw;
-		transform: translateX(0);
+		// transform: translateX(0);
 	}
 
 	&__video {
@@ -324,14 +325,8 @@
 		opacity: 0.25;
 
 		&.is-active {
-			width: 26 / $cols * 100vw !important;
 			max-width: 26 / $cols * 100vw;
 			opacity: 1;
-
-			.carousel__img {
-				left: 50%;
-				transform: translateX(-50%);
-			}
 		}
 
 		&:hover {
