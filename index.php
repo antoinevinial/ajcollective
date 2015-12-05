@@ -16,6 +16,9 @@
 		<!-- Contact -->
 		<?php include "partials/_contact.php" ?>
 
+		<!-- Loader -->
+		<?php include "partials/_loader.php" ?>
+
 		<!-- Main container -->
 		<main class="main js-main">
 

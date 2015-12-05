@@ -1,0 +1,60 @@
+.loader {
+    @extend %transitionLinks;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background-color: $color-black;
+
+    &.is-visible {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    &__table {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__table-cell {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+  
+    &__dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: $color-white;
+        border-radius: 5px;
+        animation: loading 1s infinite;
+        
+        &:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        
+        &:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        
+        &:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+    }
+}
+
+@keyframes loading {
+    0% { transform: scale(0); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0); }
+}

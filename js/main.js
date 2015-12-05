@@ -660,6 +660,7 @@ module.exports = slideshow;
                 ui: {},
                 itemActive: 0,
                 nbItems: 0,
+                timerLinks: 250,
 
                 init: function init() {
                     this.bindUI();
@@ -670,6 +671,7 @@ module.exports = slideshow;
                 bindUI: function bindUI() {
                     this.ui.$win      = $(window);
                     this.ui.$body     = $('body');
+                    this.ui.$loader   = $('.js-loader');
 
                     this.ui.$carousel = options.$el;
                     this.ui.$slider   = this.ui.$carousel.find('.js-carousel-slider');
@@ -891,11 +893,23 @@ module.exports = slideshow;
                 },
 
                 toggleFullScreen: function toggleFullScreen(e) {
+                    var self = this;
+
                     // Prevent default.
                     e.preventDefault();
 
+                    // Show loader.
+                    this.ui.$loader.addClass('is-visible');
+
                     // Add correct class on body.
-                    this.ui.$body.toggleClass('is-carousel-full');
+                    setTimeout(function() {
+                        self.ui.$body.toggleClass('is-carousel-full');
+
+                        // Hide loader.
+                        setTimeout(function() {
+                            self.ui.$loader.removeClass('is-visible');
+                        }, self.timerLinks);
+                    }, this.timerLinks); 
                 }
 
             };

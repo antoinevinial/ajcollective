@@ -366,3 +366,17 @@
 		}
 	}
 }
+
+@include smallHeight {
+	.carousel {
+		&__viewer {
+			display: none;
+		}
+
+		.is-carousel-full & {
+			&__viewer {
+				display: block;
+			}
+		}
+	}
+}
