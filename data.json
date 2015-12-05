@@ -65,14 +65,18 @@
 		"description" : "<strong>Hometown.</strong> London<br><strong>Current Location.</strong> London<br><strong>Favourite Film.</strong> Jackie Brown<br><strong>Commercial.</strong> VW ‘Singing in the Rain’<br><strong>Music Video.</strong> Michael Jackson ‘Thriller’<br><strong>Toast Topping.</strong> Marmalade<br><strong>Cocktail.</strong> Espresso Martini<br><strong>Guilty Pleasure.</strong> Justin Bieber",
 		"thumbnail" : "http://placehold.it/160x100/",
 		"medias" : [
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000"
+			"resources/michael_mccool/circus.jpg",
+			"resources/michael_mccool/dove.jpg",
+			"resources/michael_mccool/garnier.jpg",
+			"resources/michael_mccool/gdrive.jpg",
+			"resources/michael_mccool/guiness.jpg",
+			"resources/michael_mccool/lux.jpg",
+			"resources/michael_mccool/mercedes.jpg",
+			"resources/michael_mccool/ms.jpg",
+			"resources/michael_mccool/nike.jpg",
+			"resources/michael_mccool/nina_ricci.jpg",
+			"resources/michael_mccool/rimmel.jpg",
+			"resources/michael_mccool/truvia.jpg"
 		]
 	},
 
@@ -84,14 +88,9 @@
 		"description" : "<strong>Hometown.</strong> Nykøbing Falster<br><strong>Current Location.</strong> Copenhagen<br><strong>Favourite Film.</strong> Rust and Bone<br><strong>Commercial.</strong> Toyota ‘Feels Good Inside/Cat’<br><strong>Music Video.</strong> Michael Jackson/Janet Jackson ‘Scream’<br><strong>Toast Topping.</strong> Egg, Tomato & Avocado<br><strong>Cocktail.</strong> Anything with gin<br><strong>Guilty Pleasure.</strong> Pick ’n Mix",
 		"thumbnail" : "http://placehold.it/160x100/",
 		"medias" : [
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000"
+			"resources/kirstine_arildborg/bank.jpg",
+			"resources/kirstine_arildborg/nescafe.jpg",
+			"resources/kirstine_arildborg/timing.jpg"
 		]
 	},
 
@@ -103,14 +102,16 @@
 		"description" : "<strong>Hometown.</strong> Copenhagen<br><strong>Current Location.</strong> Netherlands<br><strong>Favourite Film.</strong> Dirty Dancing<br><strong>Commercial.</strong><br><strong>Music Video.</strong> Duck Butter<br><strong>Toast Topping.</strong> Everything cheesy<br><strong>Cocktail.</strong> Pina Colada<br><strong>Guilty Pleasure.</strong> Grand Theft Auto 5 & Gucci Mane Mixtapes",
 		"thumbnail" : "http://placehold.it/160x100/",
 		"medias" : [
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000",
-			"http://placehold.it/2000x600/b9b9b9/000000",
-			"http://placehold.it/360x223/b9b9b9/000000"
+			"resources/oscar/aperol.jpg",
+			"resources/oscar/auping.jpg",
+			"resources/oscar/danksebank.jpg",
+			"resources/oscar/jack_white.jpg",
+			"resources/oscar/mcdonalds.jpg",
+			"resources/oscar/tnt.jpg",
+			"resources/oscar/ur.jpg",
+			"resources/oscar/vw.jpg",
+			"resources/oscar/vw_2.jpg",
+			"resources/oscar/xix.jpg"
 		]
 	},
 
