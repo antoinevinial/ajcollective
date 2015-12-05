@@ -141,14 +141,14 @@ var content = {
 										var str = this.medias[i];
 
 											if (str.search('vimeo') != -1) {
-												panelHTML += '<li class="carousel__item js-carousel-item js-carousel-item--video">';
+												panelHTML += '<li class="carousel__item js-carousel-item js-carousel-item--video" data-index="' + (i + 1) + '">';
 													panelHTML += '<div class="carousel__item__container">';
 														panelHTML += '<div class="carousel__video">';
 														panelHTML += this.medias[i];
 														panelHTML += '</div>';
 
 											} else {
-												panelHTML += '<li class="carousel__item js-carousel-item">';
+												panelHTML += '<li class="carousel__item js-carousel-item" data-index="' + (i + 1) + '">';
 													panelHTML += '<div class="carousel__item__container">';
 														panelHTML += '<img class="carousel__img" src="' + this.medias[i] + '"/>';
 														panelHTML += '<a class="carousel__full js-carousel-full-btn" href="#"><svg class="icon icon-full" viewBox="0 0 20 20"><path d="M7,9 L7,11 L1,17 L1,15 L0,15 L0,20 L5,20 L5,19 L3,19 L9,13 L11,13 L17,19 L15,19 L15,20 L20,20 L20,15 L19,15 L19,17 L13,11 L13,9 L19,3 L19,5 L20,5 L20,0 L15,0 L15,1 L17,1 L11,7 L9,7 L3,1 L5,1 L5,0 L0,0 L0,5 L1,5 L1,3 L7,9 Z"></path></svg></a>';
@@ -162,7 +162,7 @@ var content = {
 						} else if (this.template == "writer") {
 							panelHTML += '<div class="carousel carousel--writer js-carousel">';
 								panelHTML += '<ul class="carousel__slider js-carousel-slider">';
-									panelHTML += '<li class="carousel__item carousel__item--text js-carousel-item js-carousel-item--text">';
+									panelHTML += '<li class="carousel__item carousel__item--text js-carousel-item js-carousel-item--text" data-index="' + (i + 1) + '">';
 										panelHTML += '<h2 class="heading-2">' + this.name + '</h2>';
 										panelHTML += '<span class="carousel__jobtitle">' + this.jobtitle + '</span>';
 										panelHTML += '<p class="carousel__txt">' + this.description + '</p>';
@@ -170,7 +170,7 @@ var content = {
 
 									// Loop through each document.
 									for (i = 0; i < this.documents.length; i++) {
-										panelHTML += '<li class="carousel__item carousel-item--doc js-carousel-item js-carousel-item--doc">';
+										panelHTML += '<li class="carousel__item carousel-item--doc js-carousel-item js-carousel-item--doc" data-index="' + (i + 1) + '">';
 											panelHTML += '<div class="carousel__doc">';
 												panelHTML += '<span class="carousel__doc__title">' + this.documents[i].title + '</span>';
 												panelHTML += '<span class="carousel__doc__type">' + this.documents[i].type + '</span>';
@@ -195,7 +195,7 @@ var content = {
 							panelHTML += '<div class="carousel__viewer__slider js-carousel-viewer-slider"></div>';
 						panelHTML += '</div>';
 
-						panelHTML += '<a class="carousel__close js-carousel-full-btn" href="#">leave full screen view';
+						panelHTML += '<a class="carousel__close js-carousel-full-btn js-carousel-full-close" href="#">leave full screen view';
 							panelHTML += '<span class="carousel__close__btn"><svg class="icon icon-close" viewBox="0 0 20 20"><path d="M0,2.12133113 L18.0001831,20.1213311 L20.1214927,18 L2.12130955,0 L0,2.12133113 L0,2.12133113 Z"></path><path d="M17.8914413,0 L0,17.8915564 L2.10855875,20 L20,2.10844362 L17.8914413,0 L17.8914413,0 Z"></path></svg></span>';
 						panelHTML += '</a>';
 

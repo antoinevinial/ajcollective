@@ -34,8 +34,8 @@
 		@extend %transitionLinks;
 		display: block;
 		max-width: 100%;
-		margin: 0;
-		max-height: 7 / $cols * 100vw;
+		margin: 0 auto;
+		max-height: 35vh;
 	}
 
 	&__video {
@@ -319,22 +319,28 @@
 	}
 
 	.carousel__item {
+		max-width: 27 / $cols * 100vw;
+		width: 27 / $cols * 100vw;
 		opacity: 0.25;
-
-		&.is-active {
-			max-width: 24 / $cols * 100vw;
-			opacity: 1;
-
-			.carousel__img {
-				max-height: 20 / $cols * 100vw;
-			}
-		}
 
 		&:hover {
 			.carousel__full {
 				opacity: 0;
 			}
 		}
+
+		&.is-active {
+			opacity: 1;
+		}
+	}
+
+	.carousel__img {
+		max-height: 60vh;
+	}
+
+	.carousel__full {
+		opacity: 0;
+		pointer-events: none;
 	}
 
 	.carousel__viewer {
@@ -352,31 +358,8 @@
 	}
 
 	.carousel__btn {
-		pointer-events: none;
-	}
-}
-
-
-/* Responsive stuff */
-
-@include desktop-large {
-	.carousel {
-		&__viewer {
-			bottom: 3 / $cols * 100vw;
-		}
-	}
-}
-
-@include smallHeight {
-	.carousel {
-		&__viewer {
-			display: none;
-		}
-
-		.is-carousel-full & {
-			&__viewer {
-				display: block;
-			}
+		&--prev {
+			left: 0;
 		}
 	}
 }

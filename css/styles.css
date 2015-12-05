@@ -780,8 +780,8 @@ body {
   .carousel__img {
     display: block;
     max-width: 100%;
-    margin: 0;
-    max-height: 21.875vw; }
+    margin: 0 auto;
+    max-height: 35vh; }
   .carousel__video {
     position: relative;
     width: 37.5vw;
@@ -968,14 +968,20 @@ body {
   margin-left: -6.25vw; }
 
 .is-carousel-full .carousel__item {
+  max-width: 84.375vw;
+  width: 84.375vw;
   opacity: 0.25; }
-  .is-carousel-full .carousel__item.is-active {
-    max-width: 75vw;
-    opacity: 1; }
-    .is-carousel-full .carousel__item.is-active .carousel__img {
-      max-height: 62.5vw; }
   .is-carousel-full .carousel__item:hover .carousel__full {
     opacity: 0; }
+  .is-carousel-full .carousel__item.is-active {
+    opacity: 1; }
+
+.is-carousel-full .carousel__img {
+  max-height: 60vh; }
+
+.is-carousel-full .carousel__full {
+  opacity: 0;
+  pointer-events: none; }
 
 .is-carousel-full .carousel__viewer {
   bottom: 40px;
@@ -988,19 +994,8 @@ body {
 .is-carousel-full .carousel__close {
   opacity: 1; }
 
-.is-carousel-full .carousel__btn {
-  pointer-events: none; }
-
-/* Responsive stuff */
-@media (min-width: 1441px) {
-  .carousel__viewer {
-    bottom: 9.375vw; } }
-
-@media (max-height: 800px) {
-  .carousel__viewer {
-    display: none; }
-  .is-carousel-full .carousel__viewer {
-    display: block; } }
+.is-carousel-full .carousel__btn--prev {
+  left: 0; }
 
 .slideshow {
   position: relative;

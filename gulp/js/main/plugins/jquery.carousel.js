@@ -21,6 +21,7 @@
                 itemActive: 0,
                 nbItems: 0,
                 timerLinks: 250,
+                timerCarousel: 350,
 
                 init: function init() {
                     this.bindUI();
@@ -37,7 +38,7 @@
                     this.ui.$slider   = this.ui.$carousel.find('.js-carousel-slider');
                     this.ui.$items    = this.ui.$carousel.find('.js-carousel-item');
 
-                    this.ui.$fullBtn  = this.ui.$carousel.find('.js-carousel-full-btn');
+                    this.ui.$fullBtn   = this.ui.$carousel.find('.js-carousel-full-btn');
 
                     this.ui.$viewer       = this.ui.$carousel.find('.js-carousel-viewer');
                     this.ui.$viewerSlider = this.ui.$carousel.find('.js-carousel-viewer-slider');
@@ -52,6 +53,7 @@
                     this.ui.$win.on('load', $.proxy(this.initCarousel, this));
                     this.ui.$btns.on('click', $.proxy(this.prevNext, this));
                     this.ui.$carousel.on('keydown', $.proxy(this.keyboardHandler, this));
+
                     this.ui.$fullBtn.on('click', $.proxy(this.toggleFullScreen, this));
                 },
 
@@ -111,7 +113,7 @@
 
                     // If press esc, close full screen.
                     if (e.keyCode == 27 && this.ui.$body.hasClass('is-carousel-full')) {
-                        this.ui.$body.removeClass('is-carousel-full');
+                        this.toggleFullScreen();
                     }
                 },
 
@@ -256,19 +258,40 @@
                     var self = this;
 
                     // Prevent default.
-                    e.preventDefault();
+                    if (e) {
+                        e.preventDefault();
+                    }
 
                     // Show loader.
                     this.ui.$loader.addClass('is-visible');
 
-                    // Add correct class on body.
+                    // Wait anim loader to be finished.
                     setTimeout(function() {
+
+                        // Add correct class on body.
                         self.ui.$body.toggleClass('is-carousel-full');
 
-                        // Hide loader.
+                        // Wait carousel full to be toggle.
                         setTimeout(function() {
-                            self.ui.$loader.removeClass('is-visible');
-                        }, self.timerLinks);
+
+                            // Update item active variable only if it's not the close btn.
+                            if (e && !$(e.currentTarget).hasClass('js-carousel-full-close')) {
+                                self.itemActive = $(e.currentTarget).closest('.js-carousel-item').data('index');
+                            }
+
+                            // Translate slider.
+                            self.translateSlider();
+
+                            // Translate viewer.
+                            self.translateViewer();
+
+                            // Hide loader.
+                            setTimeout(function() {
+                                self.ui.$loader.removeClass('is-visible');
+                            }, self.timerCarousel);
+
+                        }, self.timerCarousel);
+
                     }, this.timerLinks); 
                 }
 
