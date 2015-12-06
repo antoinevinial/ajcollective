@@ -104,6 +104,9 @@ var nav = {
 		// Get target panel.
 		var $target = $(href);
 
+		// Add no transition on hiding panels.
+		this.ui.$panels.not($active).not($target).addClass('no-transition');
+
 		// Get index of the clicked link.
 		var index = this.ui.$navList.find('li').index($el.parent());
 
@@ -129,9 +132,9 @@ var nav = {
 			$target.removeClass('is-top is-bottom').addClass('is-active');
 		}
 
-		// Focus on carousel to enable keyboard navigation.
+		// Remove no transition classes.
 		setTimeout(function() {
-			$target.find('.js-carousel-btn-next').focus();
+			self.ui.$panels.removeClass('no-transition');
 		}, this.timerPanel);
 	},
 

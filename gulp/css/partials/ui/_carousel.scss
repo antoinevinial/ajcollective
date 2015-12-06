@@ -210,6 +210,10 @@
 				margin: 0 auto;
 			}
 		}
+
+		&:hover {
+			color: $color-white;
+		}
 	}
 
 	&__doc {
