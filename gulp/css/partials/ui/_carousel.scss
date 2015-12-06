@@ -9,18 +9,12 @@
 	}
 
 	&__item {
+		@extend %no-selection;
 		@extend %transitionLinks;
 		display: table-cell;
 		vertical-align: middle;
 		max-width: 24 / $cols * 100vw;
 		padding-right: 1 / $cols * 100vw;
-
-		-webkit-touch-callout: none;
-	    -webkit-user-select: none;
-	    -khtml-user-select: none;
-	    -moz-user-select: none;
-	    -ms-user-select: none;
-	    user-select: none;
 
 		&__container {
 			position: relative;
@@ -175,6 +169,7 @@
 		}
 
 		&__item {
+			@extend %no-selection;
 			display: table-cell;
 			padding-right: 10px;
 			cursor: pointer;

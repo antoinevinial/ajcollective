@@ -1,0 +1,53 @@
+.splash {
+	@extend %transitionEase;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: table;
+	width: 100%;
+	height: 100%;
+	padding: 0 150px;
+	text-align: center;
+	background-color: $color-black;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 30;
+
+	&.is-visible {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&__container {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__title {
+		@extend %grumpy;
+		@extend %antialiased;
+		display: block;
+		margin-bottom: 40px;
+		font-size: 56px;
+		line-height: 56px;
+		color: $color-white;
+		letter-spacing: 1px;
+	}
+
+	&__loader {
+		@extend %transitionLinks;
+		display: block;
+		width: 0px;
+		height: 2px;
+		margin: 0;
+		background-color: $color-grey;
+	}
+
+	&__percent {
+		display: block;
+		margin-top: 20px;
+		font-family: Times New Roman;
+		font-size: 18px;
+		color: $color-grey;
+	}
+}

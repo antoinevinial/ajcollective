@@ -8,6 +8,7 @@ var nav = require('./nav.js');
 var panel = require('./panel.js');
 var carousel = require('./carousel.js');
 var contact = require('./contact.js');
+var splash = require('./splash.js');
 
 var content = {
 
@@ -37,12 +38,14 @@ var content = {
 			self.JSON = data;
 
 		}).done(function() {
-
 		    // Build navigation.
 		    self.buildNav();
 
 		    // Build panels.
 		    self.buildPanels();
+
+		    // Update splash screens.
+		    splash.init();
 
 		    // Init slideshow.
 		    slideshow.init();
@@ -70,8 +73,8 @@ var content = {
 		$.each(this.JSON, function() {
 			navHTML += '<li class="nav__item">';
 			navHTML += '<a class="nav__link js-nav-link" href="#' + this.id + '">';
-			navHTML += '<span class="nav__link__name">' + this.name + '</span>';
-			navHTML += '<span class="nav__link__jobtitle">' + this.jobtitle + '</span>';
+			navHTML += '<h2 class="nav__link__name">' + this.name + '</h2>';
+			navHTML += '<h3 class="nav__link__jobtitle">' + this.jobtitle + '</h3>';
 			if (this.thumbnail) { navHTML += '<img class="nav__link__img js-nav-img" src="' + this.thumbnail + '"/>'; }
 			navHTML += '</a></li>';
 		});

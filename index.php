@@ -10,6 +10,9 @@
 		<!-- Grid for development -->
 		<?php include "partials/_grid.php" ?>
 
+		<!-- Splash screen -->
+		<?php /* include "partials/_splash.php" */ ?>
+
 		<!-- Navigation -->
 		<?php include "partials/_nav.php" ?>
 
@@ -25,7 +28,7 @@
 			<section class="panel panel--blue js-panel is-active" id="home">
 				<div class="panel__pager">
 					<div class="panel__btn panel__btn--top">
-						<span class="panel__btn__label panel__btn__label--lrg">AJCollective</span>
+						<h1 class="panel__btn__label panel__btn__label--lrg">AJCollective</h1>
 					</div>
 					<div class="panel__btn panel__btn--right">
 						<a class="panel__btn__label js-contact-toggle" href="#">About / Contact</a>

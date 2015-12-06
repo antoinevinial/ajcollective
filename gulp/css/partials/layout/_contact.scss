@@ -47,6 +47,7 @@
 	}
 
 	&__close {
+		@extend %transitionLinks;
 		position: absolute;
 		top: 50px;
 		right: 1 / $cols * 100vw;
@@ -67,6 +68,10 @@
 				display: block;
 				margin: 0 auto;
 			}
+		}
+
+		&:hover {
+			color: $color-white;
 		}
 	}
 }
