@@ -756,7 +756,13 @@ body {
     display: table-cell;
     vertical-align: middle;
     max-width: 75vw;
-    padding-right: 3.125vw; }
+    padding-right: 3.125vw;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
     .carousel__item__container {
       position: relative; }
     .carousel__item--text {
