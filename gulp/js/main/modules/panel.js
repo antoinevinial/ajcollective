@@ -54,6 +54,16 @@ var panel = {
 		if (e.keyCode == 38 && this.ui.$btnTop.length) {
 			 this.ui.$btnTop.click();
 		}
+
+		// If press arrow right, bind click on next btn.
+		if (e.keyCode == 39) {
+			$('.js-panel.is-active').find('.js-carousel-btn-next').click();
+		}
+
+		// If press arrow left, bind click on prev btn.
+		if (e.keyCode == 37) {
+		    $('.js-panel.is-active').find('.js-carousel-btn-prev').click();
+		}
 	},
 
 	movePanel: function movePanel(e) {

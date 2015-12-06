@@ -52,7 +52,7 @@
                     this.ui.$win.on('resize', $.proxy(this.initCarousel, this));
                     this.ui.$win.on('load', $.proxy(this.initCarousel, this));
                     this.ui.$btns.on('click', $.proxy(this.prevNext, this));
-                    this.ui.$carousel.on('keydown', $.proxy(this.keyboardHandler, this));
+                    this.ui.$win.on('keydown', $.proxy(this.keyboardHandler, this));
 
                     this.ui.$fullBtn.on('click', $.proxy(this.toggleFullScreen, this));
                 },
@@ -61,9 +61,6 @@
                     // Init variables.
                     this.itemActive = 0;
                     this.nbItems    = this.ui.$items.length;
-
-                    // Init width on items.
-                    // this.initWidth();
 
                     // Init viewer.
                     this.initViewer();
@@ -78,39 +75,7 @@
                     this.updateBtns();
                 },
 
-                initWidth: function initWidth() {
-                    var self = this;
-
-                    setTimeout(function() {
-                        // On each items, get img width and set width on item.
-                        $.each(self.ui.$items, function() {
-                            var $el   = $(this);
-
-                            // Set auto on items.
-                            $el.outerWidth('auto');
-
-                            // Get img inside item.
-                            var $img = $el.find('img');
-
-                            // If img exists, get its width and set it on item.
-                            if ($img.length) {
-                                $el.outerWidth($img.outerWidth());
-                            }
-                        });
-                    }, 200);
-                },
-
                 keyboardHandler: function keyboardHandler(e) {
-                    // If press arrow right, bind click on next btn.
-                    if (e.keyCode == 39 && !this.ui.$body.hasClass('is-carousel-full')) {
-                        this.ui.$next.click();
-                    }
-
-                    // If press arrow left, bind click on prev btn.
-                    if (e.keyCode == 37 && !this.ui.$body.hasClass('is-carousel-full')) {
-                        this.ui.$prev.click();
-                    }
-
                     // If press esc, close full screen.
                     if (e.keyCode == 27 && this.ui.$body.hasClass('is-carousel-full')) {
                         this.toggleFullScreen();
