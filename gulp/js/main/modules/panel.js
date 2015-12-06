@@ -16,7 +16,9 @@ var panel = {
 		this.ui.$panels = $('.js-panel');
 		this.ui.$active = $('.js-panel.is-active');
 		this.ui.$move   = $('.js-panel-move');
-		this.ui.$navLink = $('.js-nav-link');
+
+		this.ui.$navItems = $('.js-nav-list').find('li');
+		this.ui.$navLink  = $('.js-nav-link');
 
 		this.ui.$btnTop    = this.ui.$active.find('.js-panel-move--top');
 		this.ui.$btnBottom = this.ui.$active.find('.js-panel-move--bottom');
@@ -106,9 +108,20 @@ var panel = {
 		// Update active panel.
 		this.ui.$active = $target;
 
+		// Get current ID.
+		var id = this.ui.$active.attr('id');
+
 		// Update btns.
 		this.ui.$btnTop    = this.ui.$active.find('.js-panel-move--top');
 		this.ui.$btnBottom = this.ui.$active.find('.js-panel-move--bottom');
+
+		// Update navigation.
+		if (id != 'home') {
+			this.ui.$navLink.removeClass('is-active');
+			this.ui.$navItems.eq(id).find('.js-nav-link').addClass('is-active');
+		} else {
+			this.ui.$navLink.removeClass('is-active');
+		}
 	},
 
 };

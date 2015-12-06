@@ -650,20 +650,6 @@ strong {
   -webkit-transform: translateX(37.5vw);
           transform: translateX(37.5vw); }
 
-/* Responsive stuff */
-@media (min-width: 1441px) {
-  .nav {
-    width: 25vw;
-    -webkit-transform: translateX(-25vw);
-            transform: translateX(-25vw); }
-  .is-nav-open .main {
-    -webkit-transform: translateX(25vw);
-            transform: translateX(25vw); }
-  .is-nav-open .nav__layer {
-    pointer-events: auto;
-    -webkit-transform: translateX(25vw);
-            transform: translateX(25vw); } }
-
 /* Popin contact */
 .contact {
   position: fixed;

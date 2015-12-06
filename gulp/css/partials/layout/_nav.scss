@@ -128,24 +128,3 @@
 		transform: translateX(#{$navW}vw)
 	}
 }
-
-
-/* Responsive stuff */
-
-@include desktop-large {
-	.nav {
-		width: #{$navWLrg}vw;
-		transform: translateX(#{-$navWLrg}vw);
-	}
-
-	.is-nav-open {
-		.main {
-			transform: translateX(#{$navWLrg}vw);
-		}
-
-		.nav__layer {
-			pointer-events: auto;
-			transform: translateX(#{$navWLrg}vw)
-		}
-	}
-}
