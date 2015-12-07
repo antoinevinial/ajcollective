@@ -370,3 +370,46 @@
 		}
 	}
 }
+
+
+/* Responsive stuff */
+
+@media screen and (max-height: 1050px) {
+	.carousel {
+		&__video {
+			width: 12 / $cols * 100vw;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

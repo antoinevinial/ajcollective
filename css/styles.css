@@ -995,6 +995,11 @@ body {
 .is-carousel-full .carousel__btn--prev {
   left: 0; }
 
+/* Responsive stuff */
+@media screen and (max-height: 1050px) {
+  .carousel__video {
+    width: 37.5vw; } }
+
 .slideshow {
   position: relative;
   width: 720px;
