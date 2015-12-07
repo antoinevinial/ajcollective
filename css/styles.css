@@ -781,6 +781,7 @@ body {
   .carousel__video {
     position: relative;
     width: 56.25vw;
+    margin: 0 auto;
     padding-bottom: 56.25%; }
     .carousel__video iframe {
       position: absolute;
@@ -977,6 +978,9 @@ body {
 .is-carousel-full .carousel__img {
   max-height: 60vh; }
 
+.is-carousel-full .carousel__video {
+  width: 81.25vw; }
+
 .is-carousel-full .carousel__full {
   opacity: 0;
   pointer-events: none; }
@@ -998,7 +1002,10 @@ body {
 /* Responsive stuff */
 @media screen and (max-height: 1050px) {
   .carousel__video {
-    width: 37.5vw; } }
+    width: 37.5vw; }
+  .is-carousel-full .carousel__video {
+    width: 46.875vw;
+    padding-bottom: 33%; } }
 
 .slideshow {
   position: relative;
