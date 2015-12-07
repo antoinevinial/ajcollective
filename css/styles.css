@@ -52,7 +52,7 @@ table {
 *, *:before, *:after {
   box-sizing: border-box; }
 
-.heading-2, .panel__btn__label, .nav, .contact, .carousel__jobtitle, .carousel__txt, .carousel__doc__title, .splash__title {
+.heading-2, .panel__btn__label, .nav, .contact, .carousel__jobtitle, .carousel__txt, .carousel__close, .carousel__doc__title, .splash__title {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -780,7 +780,7 @@ body {
     max-height: 35vh; }
   .carousel__video {
     position: relative;
-    width: 37.5vw;
+    width: 56.25vw;
     padding-bottom: 56.25%; }
     .carousel__video iframe {
       position: absolute;

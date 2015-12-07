@@ -45,8 +45,6 @@ var splash = {
 	updateSplash: function updateSplash() {
 		var percent = Math.round(this.imgsLoaded / this.imgsLength * 100);
 
-		console.log('yo');
-
 		// Update percent value.
 		this.ui.$percent.text(percent + '%');
 

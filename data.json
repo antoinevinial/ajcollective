@@ -20,9 +20,10 @@
 			"resources/andrea_colomb/theaustronought.jpg",
 			"resources/andrea_colomb/unicorn.jpg",
 			"resources/andrea_colomb/veet.jpg",
-			"resources/andrea_colomb/volvic.jpg"
-		],
-		"comments" : "use this kind of iframe url to display videos : <iframe src='https://player.vimeo.com/video/81805080?title=0&byline=0&portrait=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+			"resources/andrea_colomb/volvic.jpg",
+			"<iframe data-thumbnail='https://i.vimeocdn.com/video/546914920.webp' src='https://player.vimeo.com/video/148076642?title=0&byline=0&portrait=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+			"<iframe data-thumbnail='https://i.vimeocdn.com/video/546916219.webp' src='https://player.vimeo.com/video/148077796?title=0&byline=0&portrait=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+		]
 	},
 
 	{
@@ -76,7 +77,10 @@
 			"resources/michael_mccool/nike.jpg",
 			"resources/michael_mccool/nina_ricci.jpg",
 			"resources/michael_mccool/rimmel.jpg",
-			"resources/michael_mccool/truvia.jpg"
+			"resources/michael_mccool/truvia.jpg",
+			"<iframe data-thumbnail='https://i.vimeocdn.com/video/546917469.webp' src='https://player.vimeo.com/video/148079061?title=0&byline=0&portrait=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+			"<iframe data-thumbnail='https://i.vimeocdn.com/video/546918012.webp' src='https://player.vimeo.com/video/148079623?title=0&byline=0&portrait=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+			"<iframe data-thumbnail='https://i.vimeocdn.com/video/546918857.webp' src='https://player.vimeo.com/video/148080022?title=0&byline=0&portrait=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 		]
 	},
 

@@ -41,7 +41,7 @@
 
 	&__video {
 		position: relative;
-		width: 12 / $cols * 100vw;
+		width: 18 / $cols * 100vw;
 		padding-bottom: 56.25%;
 
 		iframe {
@@ -182,6 +182,7 @@
 	}
 
 	&__close {
+		@extend %antialiased;
 		@extend %transitionLinks;
 		position: absolute;
 		top: 50px;
