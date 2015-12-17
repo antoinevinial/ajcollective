@@ -81,3 +81,10 @@
     line-height: 60px;
     letter-spacing: 3px;
 }
+
+@include tablet-landscape {
+    .heading-2 {
+        font-size: 38px;
+        line-height: 44px;
+    }
+}

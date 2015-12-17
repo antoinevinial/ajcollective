@@ -41,42 +41,38 @@
 					</div>
 				</div>
 				<div class="panel__container">
-					<div class="grid">
-						<div class="cell-16 prepend-8">
-							<ul class="slideshow js-slideshow">
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="resources/slideshow/4.jpg"/>
-								</li>
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="resources/slideshow/5.jpg"/>
-								</li>
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="resources/slideshow/6.jpg"/>
-								</li>
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="resources/slideshow/7.jpg"/>
-								</li>
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="resources/slideshow/8.jpg"/>
-								</li>
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="resources/slideshow/9.jpg"/>
-								</li>
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="resources/slideshow/10.jpg"/>
-								</li>
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="resources/slideshow/11.jpg"/>
-								</li>
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="resources/slideshow/12.jpg"/>
-								</li>
-								<li class="slideshow__item js-slideshow-item">
-									<img class="slideshow__img" src="resources/slideshow/13.jpg"/>
-								</li>
-							</ul>
-						</div>
-					</div>
+					<ul class="slideshow js-slideshow">
+						<li class="slideshow__item js-slideshow-item">
+							<img class="slideshow__img" src="resources/slideshow/4.jpg"/>
+						</li>
+						<li class="slideshow__item js-slideshow-item">
+							<img class="slideshow__img" src="resources/slideshow/5.jpg"/>
+						</li>
+						<li class="slideshow__item js-slideshow-item">
+							<img class="slideshow__img" src="resources/slideshow/6.jpg"/>
+						</li>
+						<li class="slideshow__item js-slideshow-item">
+							<img class="slideshow__img" src="resources/slideshow/7.jpg"/>
+						</li>
+						<li class="slideshow__item js-slideshow-item">
+							<img class="slideshow__img" src="resources/slideshow/8.jpg"/>
+						</li>
+						<li class="slideshow__item js-slideshow-item">
+							<img class="slideshow__img" src="resources/slideshow/9.jpg"/>
+						</li>
+						<li class="slideshow__item js-slideshow-item">
+							<img class="slideshow__img" src="resources/slideshow/10.jpg"/>
+						</li>
+						<li class="slideshow__item js-slideshow-item">
+							<img class="slideshow__img" src="resources/slideshow/11.jpg"/>
+						</li>
+						<li class="slideshow__item js-slideshow-item">
+							<img class="slideshow__img" src="resources/slideshow/12.jpg"/>
+						</li>
+						<li class="slideshow__item js-slideshow-item">
+							<img class="slideshow__img" src="resources/slideshow/13.jpg"/>
+						</li>
+					</ul>
 				</div>
 			</section>
 

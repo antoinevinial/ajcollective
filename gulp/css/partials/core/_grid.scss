@@ -1,7 +1,7 @@
 /* Grid layout */
 $cols: 32;
 
-$navW: 12 / $cols * 100;
+$navW: 11 / $cols * 100;
 $navWLrg: 8 / $cols * 100;
 
 $marieLouiseW: 3 / $cols * 100;
@@ -32,7 +32,7 @@ $marieLouiseWLrg: 2 / $cols * 100;
 /* Special style for grid dev */
 
 .grid--dev {
-	display: none;
+	// display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -60,10 +60,4 @@ $marieLouiseWLrg: 2 / $cols * 100;
 			background-color: #4affff;
 		}
 	}
-}
-
-/* Responsive stuff */
-
-@include desktop-large {
-	$marieLouiseW: 2 / $cols * 100;
 }

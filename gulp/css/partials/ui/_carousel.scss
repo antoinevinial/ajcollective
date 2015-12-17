@@ -21,7 +21,7 @@
 		}
 
 		&--text {
-			width: 9 / $cols * 100vw !important;
+			width: 9 / $cols * 100vw;
 		}
 
 		&:hover {
@@ -215,7 +215,7 @@
 
 	&__doc {
 		position: relative;
-		width: 4 / $cols * 100vw;
+		width: 180px;
 		height: 270px;
 		padding: 20px 30px 20px 20px;
 		background-color: $color-brand;
@@ -300,6 +300,20 @@
 			// padding-right: 3 / $cols * 100vw;
 		}
 	}
+
+	@include tablet-landscape {
+		&__item {
+			
+		}
+
+		&__jobtitle {
+			font-size: 12px;
+		}
+
+		&__txt {
+			font-size: 12px;
+		}
+	}
 }
 
 
@@ -330,6 +344,10 @@
 		max-width: 27 / $cols * 100vw;
 		width: 27 / $cols * 100vw;
 		opacity: 0.25;
+
+		&--text {
+			width: 9 / $cols * 100vw;
+		}
 
 		&:hover {
 			.carousel__full {
@@ -375,56 +393,3 @@
 		}
 	}
 }
-
-
-/* Responsive stuff */
-
-@media screen and (max-height: 1050px) {
-	.carousel {
-		&__video {
-			width: 12 / $cols * 100vw;
-		}
-	}
-
-
-	.is-carousel-full {
-		.carousel {
-			&__video {
-				width: 15 / $cols * 100vw;
-				padding-bottom: 33%;
-			}
-		}		
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

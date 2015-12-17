@@ -11,6 +11,10 @@
 	height: 100vh;
 	transform: translateY(-100%);
 
+	&__container {
+		width: 100%;
+	}
+
 	&__btn {
 		@extend %transitionLinks;
 		position: absolute;
@@ -138,37 +142,16 @@
 	&.no-transition {
 		transition: none;
 	}
+	
 
-	// Media queries.
-
-	@include desktop-large {
+	@include tablet-landscape {
 		&__btn {
 			&__label {
-				&--left {
-					left: #{$marieLouiseWLrg}vw;
+				font-size: 12px;
+				
+				&--lrg {
+					font-size: 21px;
 				}
-
-				&--right {
-					right: #{$marieLouiseWLrg}vw;
-				}
-			}
-
-			&--top,
-			&--bottom {
-				height: #{$marieLouiseWLrg}vw;
-			}
-
-			&--left,
-			&--right {
-				height: #{$marieLouiseWLrg}vw;
-			}
-
-			&--left {
-				left: #{$marieLouiseWLrg}vw;
-			}
-
-			&--right {
-				right: #{$marieLouiseWLrg}vw;
 			}
 		}
 	}

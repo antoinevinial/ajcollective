@@ -74,6 +74,12 @@
 			color: $color-white;
 		}
 	}
+
+	@include tablet-landscape {
+		&__txt {
+			font-size: 12px;
+		}
+	}
 }
 
 /* When contact is open */

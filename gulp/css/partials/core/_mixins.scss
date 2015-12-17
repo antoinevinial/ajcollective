@@ -3,16 +3,8 @@ $mq-tablet-portrait     : 768px !default;
 $mq-tablet-landscape    : 1024px !default;
 $mq-desktop-large       : 1441px !default;
 
-
-// Desktop large.
-@mixin desktop-large {
-    @media (min-width : $mq-desktop-large) {
+@mixin tablet-landscape {
+    @media (max-width : $mq-tablet-landscape) {
         @content;
     }
-}
-
-@mixin smallHeight {
-	@media (max-height: 800px) {
-		@content;
-	}
 }

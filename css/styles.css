@@ -133,6 +133,11 @@ strong {
   line-height: 60px;
   letter-spacing: 3px; }
 
+@media (max-width: 1024px) {
+  .heading-2 {
+    font-size: 38px;
+    line-height: 44px; } }
+
 /* Grid layout */
 [class*="cell-"] {
   float: left; }
@@ -427,7 +432,6 @@ strong {
 
 /* Special style for grid dev */
 .grid--dev {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -450,7 +454,6 @@ strong {
       height: 100%;
       background-color: #4affff; }
 
-/* Responsive stuff */
 /* Helpers */
 .trailer-25 {
   margin-bottom: 25px; }
@@ -469,6 +472,8 @@ strong {
   height: 100vh;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%); }
+  .panel__container {
+    width: 100%; }
   .panel__btn {
     position: absolute;
     display: block;
@@ -553,25 +558,17 @@ strong {
             transform: translateY(100%); }
   .panel.no-transition {
     transition: none; }
-  @media (min-width: 1441px) {
-    .panel__btn__label--left {
-      left: 6.25vw; }
-    .panel__btn__label--right {
-      right: 6.25vw; }
-    .panel__btn--top, .panel__btn--bottom {
-      height: 6.25vw; }
-    .panel__btn--left, .panel__btn--right {
-      height: 6.25vw; }
-    .panel__btn--left {
-      left: 6.25vw; }
-    .panel__btn--right {
-      right: 6.25vw; } }
+  @media (max-width: 1024px) {
+    .panel__btn__label {
+      font-size: 12px; }
+      .panel__btn__label--lrg {
+        font-size: 21px; } }
 
 .nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 37.5vw;
+  width: 34.375vw;
   height: 100vh;
   color: #fff;
   background-color: #202020;
@@ -579,8 +576,8 @@ strong {
   overflow-x: hidden;
   overflow-y: scroll;
   direction: rtl;
-  -webkit-transform: translateX(-37.5vw);
-          transform: translateX(-37.5vw); }
+  -webkit-transform: translateX(-34.375vw);
+          transform: translateX(-34.375vw); }
   .nav__list {
     direction: ltr; }
   .nav__link {
@@ -644,10 +641,16 @@ strong {
     z-index: 6;
     cursor: pointer;
     pointer-events: none; }
+  @media (max-width: 1024px) {
+    .nav__link__name {
+      font-size: 38px;
+      line-height: 44px; }
+    .nav__link__jobtitle {
+      font-size: 12px; } }
 
 .is-nav-open .main {
-  -webkit-transform: translateX(37.5vw);
-          transform: translateX(37.5vw); }
+  -webkit-transform: translateX(34.375vw);
+          transform: translateX(34.375vw); }
 
 .is-nav-open .nav {
   -webkit-transform: translateX(0);
@@ -655,8 +658,8 @@ strong {
 
 .is-nav-open .nav__layer {
   pointer-events: auto;
-  -webkit-transform: translateX(37.5vw);
-          transform: translateX(37.5vw); }
+  -webkit-transform: translateX(34.375vw);
+          transform: translateX(34.375vw); }
 
 /* Popin contact */
 .contact {
@@ -710,6 +713,9 @@ strong {
         margin: 0 auto; }
     .contact__close:hover {
       color: #fff; }
+  @media (max-width: 1024px) {
+    .contact__txt {
+      font-size: 12px; } }
 
 /* When contact is open */
 .is-contact-open .contact {
@@ -770,7 +776,7 @@ body {
     .carousel__item__container {
       position: relative; }
     .carousel__item--text {
-      width: 28.125vw !important; }
+      width: 28.125vw; }
     .carousel__item:hover .carousel__full {
       opacity: 1; }
   .carousel__img {
@@ -896,7 +902,7 @@ body {
       color: #fff; }
   .carousel__doc {
     position: relative;
-    width: 12.5vw;
+    width: 180px;
     height: 270px;
     padding: 20px 30px 20px 20px;
     background-color: #0f008a; }
@@ -949,6 +955,11 @@ body {
       opacity: 1; }
   .carousel--writer .carousel__item--text {
     width: 28.125vw; }
+  @media (max-width: 1024px) {
+    .carousel__jobtitle {
+      font-size: 12px; }
+    .carousel__txt {
+      font-size: 12px; } }
 
 /* When carousel is in full-screen mode. */
 .is-carousel-full .panel.is-active .panel__btn--left {
@@ -970,6 +981,8 @@ body {
   max-width: 84.375vw;
   width: 84.375vw;
   opacity: 0.25; }
+  .is-carousel-full .carousel__item--text {
+    width: 28.125vw; }
   .is-carousel-full .carousel__item:hover .carousel__full {
     opacity: 0; }
   .is-carousel-full .carousel__item.is-active {
@@ -999,14 +1012,6 @@ body {
 .is-carousel-full .carousel__btn--prev {
   left: 0; }
 
-/* Responsive stuff */
-@media screen and (max-height: 1050px) {
-  .carousel__video {
-    width: 37.5vw; }
-  .is-carousel-full .carousel__video {
-    width: 46.875vw;
-    padding-bottom: 33%; } }
-
 .slideshow {
   position: relative;
   width: 720px;
@@ -1025,6 +1030,10 @@ body {
     display: block;
     width: 100%;
     height: 100%; }
+  @media (max-width: 1024px) {
+    .slideshow {
+      width: 512px;
+      height: 340px; } }
 
 .loader {
   position: fixed;

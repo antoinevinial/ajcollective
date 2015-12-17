@@ -109,6 +109,19 @@
 		cursor: pointer;
 		pointer-events: none;
 	}
+
+	@include tablet-landscape {
+		&__link {
+			&__name {
+				font-size: 38px;
+				line-height: 44px;
+			}
+
+			&__jobtitle {
+				font-size: 12px;
+			}
+		}
+	}
 }
 
 
