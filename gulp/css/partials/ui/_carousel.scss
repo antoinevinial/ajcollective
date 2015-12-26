@@ -70,13 +70,13 @@
 		&--prev {
 			left: 3 / $cols * 100vw;
 			padding-left: 1 / $cols * 100vw;
-			cursor: url(../icons/arrow-left.svg), auto;
+			cursor: url(/icons/arrow-left.svg), auto;
 		}
 
 		&--next {
 			right: 0;
 			padding-right: 1 / $cols * 100vw;
-			cursor: url(../icons/arrow-right.svg), auto;
+			cursor: url(/icons/arrow-right.svg), auto;
 
 			.icon {
 				margin: 0 0 0 auto;

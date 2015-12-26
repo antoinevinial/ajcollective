@@ -809,11 +809,11 @@ body {
     .carousel__btn--prev {
       left: 9.375vw;
       padding-left: 3.125vw;
-      cursor: url(../icons/arrow-left.svg), auto; }
+      cursor: url(/icons/arrow-left.svg), auto; }
     .carousel__btn--next {
       right: 0;
       padding-right: 3.125vw;
-      cursor: url(../icons/arrow-right.svg), auto; }
+      cursor: url(/icons/arrow-right.svg), auto; }
       .carousel__btn--next .icon {
         margin: 0 0 0 auto; }
     .carousel__btn.is-fade {

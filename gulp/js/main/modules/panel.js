@@ -5,6 +5,13 @@ var panel = {
 	timerPanel: 500,
 	isAnimated: false,
 
+	touch: {
+		isCalculating: false,
+	    start: 0,
+	    move: 0,
+	    delta: 0
+	},
+
 	init: function init() {
 		this.bindUI();
 		this.bindEvents();
@@ -29,6 +36,10 @@ var panel = {
 		this.ui.$win.on('keydown', $.proxy(this.keydownHandler, this));
 		this.ui.$move.on('click', $.proxy(this.movePanel, this));
 		this.ui.$navLink.on('click', $.proxy(this.updatePanel, this));
+
+		// Touch events.
+		this.ui.$win.on('touchstart', $.proxy(this.touchStart, this));
+		this.ui.$win.on('touchmove', $.proxy(this.touchMove, this));
 	},
 
 	scrollHandler: function scrollHandler(event) {
@@ -63,6 +74,32 @@ var panel = {
 		// If press arrow left, bind click on prev btn.
 		if (e.keyCode == 37) {
 		    $('.js-panel.is-active').find('.js-carousel-btn-prev').click();
+		}
+	},
+
+	touchStart: function touchStart(e) {
+	    // Prevent default.
+	    e.preventDefault();
+
+	    // Update touch start position.
+	    this.touch.start = e.originalEvent.touches[0].pageY;
+	},
+
+	touchMove: function touchMove(e) {
+		// If panels are already animated, do nothing.
+		if (this.touch.isCalculating) { return; }
+
+		// Update touch move position.
+		this.touch.move = e.originalEvent.touches[0].pageY;
+
+		// Update isCalculating variable.
+		this.touch.isCalculating = true;
+
+		// Click prev or next btn.
+		if (this.touch.start > this.touch.move && this.ui.$btnBottom) {
+			this.ui.$btnBottom.click();
+		} else if (this.touch.start < this.touch.move && this.ui.$btnTop) {
+			this.ui.$btnTop.click();
 		}
 	},
 
@@ -105,6 +142,7 @@ var panel = {
 		setTimeout(function() {
 			$target.find('.js-carousel-btn-next').focus();
 			self.isAnimated = false;
+			self.touch.isCalculating = false;
 		}, this.timerPanel);
 	},
 
