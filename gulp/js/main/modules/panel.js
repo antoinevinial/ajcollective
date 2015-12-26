@@ -15,6 +15,7 @@ var panel = {
 	init: function init() {
 		this.bindUI();
 		this.bindEvents();
+		console.log('test heroku');
 	},
 
 	bindUI: function bindUI() {
