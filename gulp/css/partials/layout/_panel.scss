@@ -155,4 +155,31 @@
 			}
 		}
 	}
+
+	@include tablet-portrait {
+		display: block;
+		overflow: hidden;
+
+		&__container {
+			height: 100%;
+			padding-top: 95px;
+			overflow: scroll;
+		}
+
+		&__btn {
+			display: none;
+
+			&--bottom {
+				display: block;
+				height: auto;
+				padding: 10px 0;
+				line-height: 0;
+			}
+
+			&__label {
+				position: static;
+				padding: 0;
+			}
+		}
+	}
 }

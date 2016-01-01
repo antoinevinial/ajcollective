@@ -8,3 +8,9 @@ $mq-desktop-large       : 1441px !default;
         @content;
     }
 }
+
+@mixin tablet-portrait {
+	@media (max-width: $mq-tablet-portrait) {
+		@content;
+	}
+}

@@ -502,7 +502,7 @@ var panel = {
 
 	scrollHandler: function scrollHandler(event) {
 		// If the panel is animated, return.
-		if (this.isAnimated || this.ui.$body.hasClass('is-nav-open')) { return; }
+		if (this.isAnimated || this.ui.$body.hasClass('is-nav-open') || !this.isDesktop()) { return; }
 
 		// If we scroll down and there is a next panel, click on it.
 		if (event.deltaY <= -50 && this.ui.$btnBottom.length) {
@@ -582,14 +582,6 @@ var panel = {
 		}, this.timerPanel);
 	},
 
-	isNavOpen: function isNavOpen() {
-		if (this.ui.$body.hasClass('is-nav-open')) {
-			return true;
-		} else {
-			return false;
-		}
-	},
-
 	movePanel: function movePanel(e) {
 		var self = this,
 			$el  = $(e.currentTarget);
@@ -657,6 +649,22 @@ var panel = {
 			this.ui.$navLink.removeClass('is-active');
 		}
 	},
+
+	isNavOpen: function isNavOpen() {
+		if (this.ui.$body.hasClass('is-nav-open')) {
+			return true;
+		} else {
+			return false;
+		}
+	},
+
+	isDesktop: function isDesktop() {
+		if (this.ui.$win.outerWidth() > 768) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 };
 

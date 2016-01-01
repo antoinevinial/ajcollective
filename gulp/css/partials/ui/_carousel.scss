@@ -302,16 +302,42 @@
 	}
 
 	@include tablet-landscape {
-		&__item {
-			
-		}
-
 		&__jobtitle {
 			font-size: 12px;
 		}
 
 		&__txt {
 			font-size: 12px;
+		}
+	}
+
+	@include tablet-portrait {
+		&__slider {
+			width: auto;
+		}
+
+		&__item {
+			display: block;
+			width: 100%;
+			margin-bottom: 40px;
+		}
+
+		&__full {
+			display: none;
+		}
+
+		&__pager {
+			display: none;
+		}
+
+		&__viewer {
+			display: none;
+		}
+
+		&--writer {
+			.carousel__item--text {
+				width: 100%;
+			}
 		}
 	}
 }
