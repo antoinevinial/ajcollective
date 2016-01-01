@@ -15,7 +15,6 @@ var panel = {
 	init: function init() {
 		this.bindUI();
 		this.bindEvents();
-		console.log('test heroku');
 	},
 
 	bindUI: function bindUI() {
@@ -41,10 +40,10 @@ var panel = {
 		// Touch events.
 		this.ui.$win.on('touchstart', $.proxy(this.touchStart, this));
 		this.ui.$win.on('touchmove', $.proxy(this.touchMove, this));
+		this.ui.$win.on('touchend', $.proxy(this.touchEnd, this));
 	},
 
 	scrollHandler: function scrollHandler(event) {
-
 		// If the panel is animated, return.
 		if (this.isAnimated || this.ui.$body.hasClass('is-nav-open')) { return; }
 
@@ -79,28 +78,58 @@ var panel = {
 	},
 
 	touchStart: function touchStart(e) {
-	    // Prevent default.
-	    e.preventDefault();
+		// Return if nav is open.
+		if (this.isNavOpen()) { return; }
 
 	    // Update touch start position.
 	    this.touch.start = e.originalEvent.touches[0].pageY;
+	    this.touch.move = e.originalEvent.touches[0].pageY;
 	},
 
 	touchMove: function touchMove(e) {
-		// If panels are already animated, do nothing.
-		if (this.touch.isCalculating) { return; }
+		// Return if nav is open.
+		if (this.isNavOpen()) { return; }
+
+		// Prevent default.
+		e.preventDefault();
 
 		// Update touch move position.
 		this.touch.move = e.originalEvent.touches[0].pageY;
+	},
+
+	touchEnd: function touchEnd() {
+		var self = this;
+
+		// Return if nav is open.
+		if (this.isNavOpen()) { return; }
+
+		// If panels are already animated, do nothing.
+		if (this.touch.isCalculating) { return; }
+
+		// Track the delta to do something only if user really slide.
+		if (Math.abs(this.touch.move - this.touch.start) < 125) { return; }
 
 		// Update isCalculating variable.
 		this.touch.isCalculating = true;
 
 		// Click prev or next btn.
-		if (this.touch.start > this.touch.move && this.ui.$btnBottom) {
+		if (this.touch.start > this.touch.move && this.ui.$btnBottom && this.touch.move != 0) {
 			this.ui.$btnBottom.click();
-		} else if (this.touch.start < this.touch.move && this.ui.$btnTop) {
+		} else if (this.touch.start < this.touch.move && this.ui.$btnTop && this.touch.move != 0) {
 			this.ui.$btnTop.click();
+		}
+
+		// Update isCalculating variable.
+		setTimeout(function() {
+			self.touch.isCalculating = false;
+		}, this.timerPanel);
+	},
+
+	isNavOpen: function isNavOpen() {
+		if (this.ui.$body.hasClass('is-nav-open')) {
+			return true;
+		} else {
+			return false;
 		}
 	},
 
@@ -143,7 +172,6 @@ var panel = {
 		setTimeout(function() {
 			$target.find('.js-carousel-btn-next').focus();
 			self.isAnimated = false;
-			self.touch.isCalculating = false;
 		}, this.timerPanel);
 	},
 

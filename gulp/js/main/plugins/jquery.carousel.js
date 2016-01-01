@@ -23,6 +23,13 @@
                 timerLinks: 250,
                 timerCarousel: 350,
 
+                touch: {
+                    isCalculating: false,
+                    start: 0,
+                    move: 0,
+                    delta: 0
+                },
+
                 init: function init() {
                     this.bindUI();
                     this.bindEvents();
@@ -55,6 +62,11 @@
                     this.ui.$win.on('keydown', $.proxy(this.keyboardHandler, this));
 
                     this.ui.$fullBtn.on('click', $.proxy(this.toggleFullScreen, this));
+
+                    // Touch events.
+                    this.ui.$carousel.on('touchstart', $.proxy(this.touchStart, this));
+                    this.ui.$carousel.on('touchmove', $.proxy(this.touchMove, this));
+                    this.ui.$carousel.on('touchend', $.proxy(this.touchEnd, this));
                 },
 
                 initCarousel: function initCarousel() {
@@ -80,6 +92,34 @@
                     if (e.keyCode == 27 && this.ui.$body.hasClass('is-carousel-full')) {
                         this.toggleFullScreen();
                     }
+                },
+
+                touchStart: function touchStart(e) {
+                    // Update touch start and move position.
+                    this.touch.start = e.originalEvent.touches[0].pageX;
+                    this.touch.move = e.originalEvent.touches[0].pageX;
+                },
+
+                touchMove: function touchMove(e) {
+                    // Prevent touch move.
+                    // $(e.target).closest('.a-class, .an-other-class').length === 0
+                    e.preventDefault();
+
+                    // Update touch move position.
+                    this.touch.move = e.originalEvent.touches[0].pageX;
+                },
+
+                touchEnd: function touchEnd() {
+                    // Return if user doesn't touch scroll really.
+                    if (Math.abs(this.touch.move - this.touch.start) < 50) { return; }
+
+                    // Click on prev or next btn.
+                    if (this.touch.move < this.touch.start && !this.ui.$next.hasClass('is-fade') && this.touch.move != 0) {
+                        this.ui.$next.click();
+                    } else if (this.touch.move > this.touch.start && !this.ui.$prev.hasClass('is-fade') && this.touch.move != 0) {
+                        this.ui.$prev.click();
+                    }
+                    
                 },
 
                 initViewer: function initViewer() {
