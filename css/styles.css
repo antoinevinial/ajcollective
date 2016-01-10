@@ -52,11 +52,11 @@ table {
 *, *:before, *:after {
   box-sizing: border-box; }
 
-.heading-2, .panel__btn__label, .nav, .nav-mobile__title, .contact, .carousel__jobtitle, .carousel__txt, .carousel__close, .carousel__doc__title, .splash__title {
+.heading-2, .panel__btn__label, .nav, .nav-mobile__title, .nav-mobile__link, .contact, .carousel__jobtitle, .carousel__txt, .carousel__close, .carousel__doc__title, .splash__title {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.panel__btn, .nav__link:before, .nav__link__name, .contact__close, .carousel, .carousel__item, .carousel__img, .carousel__full, .carousel__viewer, .carousel__close, .carousel__doc__overlay, .loader, .splash__loader {
+.panel__btn, .nav__link:before, .nav__link__name, .nav-mobile__btn, .nav-mobile__btn .icon, .contact__close, .carousel, .carousel__item, .carousel__img, .carousel__full, .carousel__viewer, .carousel__close, .carousel__doc__overlay, .loader, .splash__loader {
   transition: all 0.25s ease; }
 
 .panel {
@@ -73,14 +73,6 @@ table {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-
-/* Customize scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: #373737; }
-
-::-webkit-scrollbar-thumb {
-  background-color: #000; }
 
 /* @font-face */
 @font-face {
@@ -112,7 +104,7 @@ table {
   font-style: normal; }
 
 /* Extends for font-family */
-.heading-2, .panel__btn__label--lrg, .nav__link__name, .nav-mobile__title, .carousel__doc__title, .splash__title {
+.heading-2, .panel__btn__label--lrg, .nav__link__name, .nav-mobile__title, .nav-mobile__link, .carousel__doc__title, .splash__title {
   font-family: "grumpy", Serif; }
 
 .contact__txt, .carousel__txt {
@@ -463,9 +455,13 @@ strong {
   position: absolute;
   top: 0;
   left: 0;
-  display: -webkit-flex;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -596,7 +592,13 @@ strong {
   overflow-y: scroll;
   direction: rtl;
   -webkit-transform: translateX(-34.375vw);
-          transform: translateX(-34.375vw); }
+          transform: translateX(-34.375vw);
+  /* Customize scrollbar */ }
+  .nav::-webkit-scrollbar {
+    width: 10px;
+    background-color: #373737; }
+  .nav::-webkit-scrollbar-thumb {
+    background-color: #000; }
   .nav__list {
     direction: ltr; }
   .nav__link {
@@ -672,18 +674,87 @@ strong {
 
 @media (max-width: 768px) {
   .nav-mobile {
-    position: fixed;
-    display: block;
-    width: 100%;
-    height: 55px;
-    padding-top: 15px;
-    background-color: #fff;
-    text-align: center;
-    z-index: 10; }
+    display: block; }
+    .nav-mobile__header {
+      position: fixed;
+      width: 100%;
+      height: 55px;
+      padding-top: 15px;
+      background-color: #fff;
+      text-align: center;
+      z-index: 10; }
     .nav-mobile__title {
       font-size: 21px;
       line-height: 25px;
-      letter-spacing: 0; } }
+      letter-spacing: 0; }
+    .nav-mobile__btn {
+      position: absolute;
+      top: 18px;
+      left: 19px;
+      width: 25px;
+      height: 20px;
+      padding: 0;
+      border-radius: 0;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer; }
+      .nav-mobile__btn--back {
+        opacity: 0;
+        pointer-events: none; }
+      .nav-mobile__btn .icon {
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .nav-mobile__btn .icon-menu {
+        top: 3px; }
+      .nav-mobile__btn .icon-close {
+        left: 3px;
+        opacity: 0; }
+      .nav-mobile__btn .icon-back {
+        top: 6px; }
+    .nav-mobile__content {
+      position: absolute;
+      top: 55px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 55px);
+      z-index: 10;
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%); }
+    .nav-mobile__panel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 40px 51px;
+      color: #fff;
+      background-color: #000;
+      overflow: scroll;
+      -webkit-overflow-scrolling: touch; }
+      .nav-mobile__panel.is-hidden {
+        -webkit-transform: translateX(200%);
+                transform: translateX(200%); }
+    .nav-mobile__item {
+      margin-bottom: 40px; }
+    .nav-mobile__list .nav__link {
+      padding-left: 0;
+      padding-right: 0; }
+      .nav-mobile__list .nav__link:before {
+        display: none; }
+      .nav-mobile__list .nav__link:first-child {
+        padding-top: 0; }
+      .nav-mobile__list .nav__link:last-child:after {
+        display: none; }
+    .nav-mobile__link {
+      display: block;
+      font-size: 38px;
+      line-height: 45px;
+      color: #fff; }
+    .nav-mobile .contact__txt__label {
+      display: block; }
+    .nav-mobile .contact__bloc + .contact__bloc {
+      margin-top: 40px; } }
 
 .is-nav-open .main {
   -webkit-transform: translateX(34.375vw);
@@ -697,6 +768,23 @@ strong {
   pointer-events: auto;
   -webkit-transform: translateX(34.375vw);
           transform: translateX(34.375vw); }
+
+.is-nav-mobile-open .nav-mobile__btn .icon-menu {
+  opacity: 0; }
+
+.is-nav-mobile-open .nav-mobile__btn .icon-close {
+  opacity: 1; }
+
+.is-nav-mobile-open .nav-mobile__content {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+.is-nav-mobile-panel-open .nav-mobile__btn {
+  opacity: 0;
+  pointer-events: none; }
+  .is-nav-mobile-panel-open .nav-mobile__btn--back {
+    opacity: 1;
+    pointer-events: auto; }
 
 /* Popin contact */
 .contact {
@@ -751,6 +839,8 @@ strong {
     .contact__close:hover {
       color: #fff; }
   @media (max-width: 1024px) {
+    .contact__label {
+      font-size: 12px; }
     .contact__txt {
       font-size: 12px; } }
 
@@ -810,6 +900,14 @@ body {
   width: 21px;
   height: 29px;
   fill: #fff; }
+
+.icon-menu {
+  width: 25px;
+  height: 14px; }
+
+.icon-back {
+  width: 25px;
+  height: 8px; }
 
 .carousel {
   /* Modifiers */ }

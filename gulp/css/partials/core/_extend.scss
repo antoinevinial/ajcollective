@@ -24,15 +24,3 @@
     user-select: none;
 }
 
-
-
-/* Customize scrollbar */
-::-webkit-scrollbar {
-	width: 10px;
-	background-color: $color-dark-light;
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: $color-black;
-}
-

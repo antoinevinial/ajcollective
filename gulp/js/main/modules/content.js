@@ -80,7 +80,9 @@ var content = {
 		});
 
 		// Append content inside navList.
-		this.ui.$navList.html('').append(navHTML);
+		$.each(this.ui.$navList, function() {
+			$(this).html('').append(navHTML);
+		});
 	},
 
 	buildPanels: function buildPanels() {

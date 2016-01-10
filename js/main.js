@@ -144,7 +144,9 @@ var content = {
 		});
 
 		// Append content inside navList.
-		this.ui.$navList.html('').append(navHTML);
+		$.each(this.ui.$navList, function() {
+			$(this).html('').append(navHTML);
+		});
 	},
 
 	buildPanels: function buildPanels() {
@@ -307,6 +309,12 @@ var nav = {
 		this.ui.$links   = $('.js-nav-link');
 		this.ui.$imgs    = $('.js-nav-img');
 		this.ui.$panels  = $('.js-panel');
+
+		this.ui.$navMobile = $('.js-nav-mobile');
+		this.ui.$navMobilePanels = this.ui.$navMobile.find('.js-nav-mobile-panel');
+		this.ui.$navMobileBtn = this.ui.$navMobile.find('.js-nav-mobile-btn');
+		this.ui.$navMobilePanelBtn = this.ui.$navMobile.find('.js-nav-mobile-btn-panel');
+		this.ui.$navMobilePanelLinks = this.ui.$navMobile.find('.js-nav-mobile-panel-link');
 	},
 
 	bindEvents: function bindEvents() {
@@ -316,10 +324,14 @@ var nav = {
 		this.ui.$links.on('click', $.proxy(this.getClickedLink, this));
 		this.ui.$panels.on('mouseenter', $.proxy(this.hideImgs, this));
 		this.ui.$toggle.on('mouseenter', $.proxy(this.hideImgs, this));
-
 		this.ui.$links.on('mousemove', self.throttle(function(e){
 		    self.overHandler(e);
 		}, 20));
+
+		// Nav mobile.
+		this.ui.$navMobileBtn.on('click', $.proxy(this.toggleNavMobile, this));
+		this.ui.$navMobilePanelBtn.on('click', $.proxy(this.hideNavMobilePanel, this));
+		this.ui.$navMobilePanelLinks.on('click', $.proxy(this.switchPanel, this));
 	},
 
 	overHandler: function overHandler(e) {
@@ -371,7 +383,7 @@ var nav = {
 		e.preventDefault();
 
 		// Close nav.
-		this.ui.$body.removeClass('is-nav-open');
+		this.ui.$body.removeClass('is-nav-open is-nav-mobile-open is-nav-mobile-panel-open');
 
 		// Add is-active class.
 		this.ui.$links.removeClass('is-active');
@@ -425,6 +437,35 @@ var nav = {
 		setTimeout(function() {
 			self.ui.$panels.removeClass('no-transition');
 		}, this.timerPanel);
+	},
+
+	toggleNavMobile: function toggleNavMobile() {
+		this.ui.$body.toggleClass('is-nav-mobile-open');
+	},
+
+	hideNavMobilePanel: function hideNavMobilePanel() {
+		// Remove class on body.
+		this.ui.$body.removeClass('is-nav-mobile-panel-open');
+
+		// Hide panels.
+		this.ui.$navMobilePanels.addClass('is-hidden');
+	},
+
+	switchPanel: function switchPanel(e) {
+		// Prevent default.
+		e.preventDefault();
+
+		// Get target panel.
+		var href = $(e.currentTarget).attr('href');
+
+		// Get target panel.
+		var $target = $(href);
+
+		// Remove is-hidden class on target element.
+		$target.removeClass('is-hidden');
+
+		// Add class on body.
+		this.ui.$body.addClass('is-nav-mobile-panel-open');
 	},
 
 	throttle: function throttle(callback, delay) {
