@@ -716,7 +716,7 @@ var slideshow = {
 	ui: {},
 	intervalListener: '',
 	itemActive: 0,
-	timer: 300,
+	timer: 400,
 
 	init: function init() {
 		this.bindUI();
