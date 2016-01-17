@@ -540,6 +540,8 @@ strong {
     background-color: #000; }
     .panel--black .panel__container {
       color: #fff; }
+  .panel--home {
+    background-color: #6f1527; }
   .panel--center {
     -webkit-justify-content: center;
         -ms-flex-pack: center;

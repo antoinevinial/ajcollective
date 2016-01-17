@@ -26,7 +26,7 @@
 		<!-- Main container -->
 		<main class="main js-main">
 
-			<section class="panel panel--blue js-panel is-active" id="home">
+			<section class="panel panel--home js-panel is-active" id="home">
 				<div class="panel__pager">
 					<div class="panel__btn panel__btn--top">
 						<h1 class="panel__btn__label panel__btn__label--lrg">AJCollective</h1>

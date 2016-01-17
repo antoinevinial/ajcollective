@@ -3,7 +3,7 @@ var slideshow = {
 	ui: {},
 	intervalListener: '',
 	itemActive: 0,
-	timer: 500,
+	timer: 300,
 
 	init: function init() {
 		this.bindUI();
