@@ -716,7 +716,7 @@ var slideshow = {
 	ui: {},
 	intervalListener: '',
 	itemActive: 0,
-	timer: 200,
+	timer: 500,
 
 	init: function init() {
 		this.bindUI();
@@ -757,6 +757,7 @@ var slideshow = {
 
 		intervalListener = setInterval(function() {
 			self.changeSlide();
+			self.changeColor();
 		}, this.timer);
 	},
 
@@ -778,6 +779,16 @@ var slideshow = {
 		// Add on next item.
 		$(this.ui.$items[this.itemActive]).addClass('is-active');
 	},
+
+	changeColor: function changeColor() {
+		// Get color hex code of current item.
+		var color = $(this.ui.$items[this.itemActive]).data('color');
+
+		// Update background color for home panel.
+		this.ui.$home.css({
+			'background-color' : color
+		});
+	}
 
 };
 
