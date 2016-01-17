@@ -95,14 +95,19 @@
                 },
 
                 touchStart: function touchStart(e) {
+                    // Return if we're on mobile version.
+                    if (!this.isDesktop()) { return; }
+
                     // Update touch start and move position.
                     this.touch.start = e.originalEvent.touches[0].pageX;
                     this.touch.move = e.originalEvent.touches[0].pageX;
                 },
 
                 touchMove: function touchMove(e) {
+                    // Return if we're on mobile version.
+                    if (!this.isDesktop()) { return; }
+
                     // Prevent touch move.
-                    // $(e.target).closest('.a-class, .an-other-class').length === 0
                     e.preventDefault();
 
                     // Update touch move position.
@@ -110,6 +115,9 @@
                 },
 
                 touchEnd: function touchEnd() {
+                    // Return if we're on mobile version.
+                    if (!this.isDesktop()) { return; }
+                    
                     // Return if user doesn't touch scroll really.
                     if (Math.abs(this.touch.move - this.touch.start) < 50) { return; }
 
@@ -298,6 +306,14 @@
                         }, self.timerCarousel);
 
                     }, this.timerLinks); 
+                },
+
+                isDesktop: function isDesktop() {
+                    if (this.ui.$win.outerWidth() > 768) {
+                        return true;
+                    } else {
+                        return false;
+                    }
                 }
 
             };

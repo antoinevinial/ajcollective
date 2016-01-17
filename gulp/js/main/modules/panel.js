@@ -78,6 +78,9 @@ var panel = {
 	},
 
 	touchStart: function touchStart(e) {
+		// Return if we're on mobile version.
+		if (!this.isDesktop()) { return; }
+
 		// Return if nav is open.
 		if (this.isNavOpen()) { return; }
 
@@ -87,6 +90,9 @@ var panel = {
 	},
 
 	touchMove: function touchMove(e) {
+		// Return if we're on mobile version.
+		if (!this.isDesktop()) { return; }
+
 		// Return if nav is open.
 		if (this.isNavOpen()) { return; }
 
@@ -99,6 +105,9 @@ var panel = {
 
 	touchEnd: function touchEnd() {
 		var self = this;
+
+		// Return if we're on mobile version.
+		if (!this.isDesktop()) { return; }
 
 		// Return if nav is open.
 		if (this.isNavOpen()) { return; }
