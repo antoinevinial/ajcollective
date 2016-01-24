@@ -44,19 +44,19 @@
 		<div class="nav-mobile__panel js-nav-mobile-panel is-hidden" id="panel3">
 			<h2 class="heading-2 trailer-25">Contact</h2>
 			<div class="contact__bloc">
-				<span class="contact__label">Treatment writing</span>
+				<span class="contact__label">Availability</span>
 				<p class="contact__txt">
 					<span class="contact__txt__label">Katie</span>
-					<a class="contact__txt__label" href="mailto:katie@ajcolomb.com">katie@ajcolomb.com</a> 
+					<a class="contact__txt__label" href="mailto:katie@ajcollective.com">katie@ajcollective.com</a> 
 					<span class="contact__txt__label">0039 (0) 667 303 221</span>
 				</p>
 			</div>
 			<div class="contact__bloc">
-				<span class="contact__label">All other inquieries + availability</span>
+				<span class="contact__label">All other inquires &amp; general chitchat</span>
 				<p class="contact__txt">
 					<span class="contact__txt__label">Andrea</span>
-					<a class="contact__txt__label" href="mailto:andrea@ajcolomb.com">andrea@ajcolomb.com</a>
-					<span class="contact__txt__label">0044 (0) 787 403 6993</span>
+					<a class="contact__txt__label" href="mailto:andrea@ajcollective.com">andrea@ajcollective.com</a>
+					<span class="contact__txt__label">0044 (0) 787403 6993 // 0045 (0) 23 26 26 48</span>
 				</p>
 			</div>
 		</div>

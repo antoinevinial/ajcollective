@@ -22,6 +22,7 @@
 
 		&--text {
 			width: 9 / $cols * 100vw;
+			color: $color-white;
 		}
 
 		&:hover {
@@ -219,6 +220,7 @@
 		height: 270px;
 		padding: 20px 30px 20px 20px;
 		background-color: $color-brand;
+		color: $color-white;
 
 		&:before {
 			content: "";
@@ -334,6 +336,29 @@
 
 		&__viewer {
 			display: none;
+		}
+
+		&__img {
+			max-height: none;
+		}
+
+		&__video {
+			width: 100%;
+		}
+
+		&__doc {
+			width: 100%;
+			height: auto;
+
+			&__type,
+			&__doc {
+				position: static;
+				display: block;
+			}
+
+			&__type {
+				margin: 20px 0 5px 0;
+			}
 		}
 
 		&--writer {

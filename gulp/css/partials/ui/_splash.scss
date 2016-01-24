@@ -43,11 +43,37 @@
 		background-color: $color-grey;
 	}
 
-	&__percent {
-		display: block;
-		margin-top: 20px;
-		font-family: Times New Roman;
-		font-size: 18px;
-		color: $color-grey;
+	&__icon {
+		transform-origin: 50% 50%;
+		animation: splash 0.8s ease infinite;
 	}
+
+	@include tablet-portrait {
+		padding: 0 20px;
+
+		&__title {
+			margin-bottom: 20px;
+			font-size: 30px;
+		}
+	}
+}
+
+@-webkit-keyframes splash {
+  	0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@-moz-keyframes splash {
+  	0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@-o-keyframes splash {
+  	0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes splash {
+  	0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

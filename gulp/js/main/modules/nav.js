@@ -20,6 +20,7 @@ var nav = {
 		this.ui.$panels  = $('.js-panel');
 
 		this.ui.$navMobile = $('.js-nav-mobile');
+		this.ui.$navMobileLinks = this.ui.$navMobile.find('.js-nav-link');
 		this.ui.$navMobilePanels = this.ui.$navMobile.find('.js-nav-mobile-panel');
 		this.ui.$navMobileBtn = this.ui.$navMobile.find('.js-nav-mobile-btn');
 		this.ui.$navMobilePanelBtn = this.ui.$navMobile.find('.js-nav-mobile-btn-panel');
@@ -41,6 +42,7 @@ var nav = {
 		this.ui.$navMobileBtn.on('click', $.proxy(this.toggleNavMobile, this));
 		this.ui.$navMobilePanelBtn.on('click', $.proxy(this.hideNavMobilePanel, this));
 		this.ui.$navMobilePanelLinks.on('click', $.proxy(this.switchPanel, this));
+		this.ui.$navMobileLinks.on('click', $.proxy(this.hideNavMobilePanel, this));
 	},
 
 	overHandler: function overHandler(e) {
@@ -153,11 +155,18 @@ var nav = {
 	},
 
 	hideNavMobilePanel: function hideNavMobilePanel() {
+		var self = this;
+
+		// Hide panels with no transition.
+		this.ui.$navMobilePanels.addClass('no-transition').addClass('is-hidden');
+
 		// Remove class on body.
 		this.ui.$body.removeClass('is-nav-mobile-panel-open');
 
-		// Hide panels.
-		this.ui.$navMobilePanels.addClass('is-hidden');
+		// Re-add transition on panels.
+		setTimeout(function() {
+			self.ui.$navMobilePanels.removeClass('no-transition');
+		}, this.timerNav);
 	},
 
 	switchPanel: function switchPanel(e) {

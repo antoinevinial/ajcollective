@@ -63,7 +63,7 @@ table {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease; }
 
-.nav, .nav__layer, .contact, .main, .carousel__slider, .carousel__btn, .carousel__viewer__slider, .splash {
+.nav, .nav__layer, .nav-mobile__content, .nav-mobile__panel, .contact, .main, .carousel__slider, .carousel__btn, .carousel__viewer__slider, .splash {
   transition: all 0.35s ease; }
 
 .carousel__item, .carousel__viewer__item {
@@ -626,6 +626,7 @@ strong {
       vertical-align: middle;
       padding: 30px 0;
       text-align: center;
+      color: #000;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
       .panel__btn__label--left {
@@ -709,20 +710,41 @@ strong {
     .panel {
       display: block;
       overflow: hidden; }
+      .panel .grid {
+        overflow: hidden; }
       .panel__container {
         height: 100%;
+        padding: 90px 20px 0 20px;
         overflow: scroll;
         -webkit-overflow-scrolling: touch; }
       .panel__btn {
-        display: none; }
+        display: none;
+        background-color: transparent; }
         .panel__btn--bottom {
+          position: static;
           display: block;
           height: auto;
-          padding: 10px 0;
+          margin-top: 25px;
+          padding: 0;
           line-height: 0; }
+          .panel__btn--bottom:after {
+            display: none; }
         .panel__btn__label {
           position: static;
-          padding: 0; } }
+          display: block;
+          padding: 0;
+          color: #fff;
+          -webkit-transform: translateY(0);
+                  transform: translateY(0); }
+          .panel__btn__label:after {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 30px;
+            margin: 20px auto 0;
+            background-color: #fff; }
+      .panel--home .panel__btn--bottom {
+        position: absolute; } }
 
 .nav {
   position: fixed;
@@ -880,11 +902,13 @@ strong {
       left: 0;
       width: 100%;
       height: 100%;
-      padding: 40px 51px;
+      padding: 35px 20px;
       color: #fff;
       background-color: #000;
       overflow: scroll;
       -webkit-overflow-scrolling: touch; }
+      .nav-mobile__panel.no-transition {
+        transition: none; }
       .nav-mobile__panel.is-hidden {
         -webkit-transform: translateX(200%);
                 transform: translateX(200%); }
@@ -1076,7 +1100,8 @@ body {
     .carousel__item__container {
       position: relative; }
     .carousel__item--text {
-      width: 28.125vw; }
+      width: 28.125vw;
+      color: #fff; }
     .carousel__item:hover .carousel__full {
       opacity: 1; }
   .carousel__img {
@@ -1205,7 +1230,8 @@ body {
     width: 180px;
     height: 270px;
     padding: 20px 30px 20px 20px;
-    background-color: #0f008a; }
+    background-color: #0f008a;
+    color: #fff; }
     .carousel__doc:before {
       content: "";
       position: absolute;
@@ -1275,6 +1301,18 @@ body {
       display: none; }
     .carousel__viewer {
       display: none; }
+    .carousel__img {
+      max-height: none; }
+    .carousel__video {
+      width: 100%; }
+    .carousel__doc {
+      width: 100%;
+      height: auto; }
+      .carousel__doc__type, .carousel__doc__doc {
+        position: static;
+        display: block; }
+      .carousel__doc__type {
+        margin: 20px 0 5px 0; }
     .carousel--writer .carousel__item--text {
       width: 100%; } }
 
@@ -1454,9 +1492,30 @@ body {
     height: 2px;
     margin: 0;
     background-color: #727272; }
-  .splash__percent {
-    display: block;
-    margin-top: 20px;
-    font-family: Times New Roman;
-    font-size: 18px;
-    color: #727272; }
+  .splash__icon {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-animation: splash 0.8s ease infinite;
+            animation: splash 0.8s ease infinite; }
+  @media (max-width: 768px) {
+    .splash {
+      padding: 0 20px; }
+      .splash__title {
+        margin-bottom: 20px;
+        font-size: 30px; } }
+
+@-webkit-keyframes splash {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes splash {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }

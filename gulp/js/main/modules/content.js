@@ -44,9 +44,6 @@ var content = {
 		    // Build panels.
 		    self.buildPanels();
 
-		    // Update splash screens.
-		    splash.init();
-
 		    // Init slideshow.
 		    slideshow.init();
 
@@ -62,6 +59,8 @@ var content = {
 		    // Init contact.
 		    contact.init();
 
+		    // Init splash.
+		    splash.init();
 		});
 	},
 
@@ -95,36 +94,7 @@ var content = {
 		$.each(this.JSON, function() {
 
 			// Start section.
-			panelHTML += '<section class="panel panel--black js-panel is-bottom" id="' + this.id + '"';
-
-				// Start pager.
-				panelHTML += '<div class="panel__pager">';
-					panelHTML += '<div class="panel__btn panel__btn--top panel__btn--bordered panel__btn--bordered--top">';
-						panelHTML += '<span class="panel__btn__label panel__btn__label--left panel__btn__label--lrg">AJCollective</span>';
-
-						// If there is a prev person.
-						if (self.JSON[this.id - 1]) {
-							panelHTML += '<a class="panel__btn__label panel__btn__label--bordered js-panel-move js-panel-move--top" data-direction="top" href="#' + (this.id - 1) + '">Prev ' + self.JSON[this.id - 1].jobtitle + '</a>';
-						} else {
-							panelHTML += '<a class="panel__btn__label panel__btn__label--bordered js-panel-move js-panel-move--top" data-direction="top" href="#home">Back home</a>';
-						}
-
-						panelHTML += '<a class="panel__btn__label panel__btn__label--right js-contact-toggle" href="#">About / Contact</a>';
-					panelHTML += '</div>';
-
-					// If there is a next person, build next link.
-					if (self.JSON[this.id + 1]) {
-						panelHTML += '<div class="panel__btn panel__btn--bottom panel__btn--bordered panel__btn--bordered--bottom">';
-							panelHTML += '<a class="panel__btn__label js-panel-move js-panel-move--bottom" data-direction="bottom" href="#' + (this.id + 1) + '">Next ' + self.JSON[this.id + 1].jobtitle + '</a>';
-						panelHTML += '</div>';
-					} else {
-						panelHTML += '<div class="panel__btn panel__btn--bottom"></div>';
-					}
-
-					panelHTML += '<div class="panel__btn panel__btn--left">';
-						panelHTML += '<a class="panel__btn__label js-nav-toggle" href="#">Creative Researchers &amp; Writers</a>';
-					panelHTML += '</div>';
-				panelHTML += '</div>';
+			panelHTML += '<section class="panel panel--black js-panel is-bottom" id="' + this.id + '">';
 
 				// Start content.
 				panelHTML += '<div class="panel__container">';
@@ -209,6 +179,36 @@ var content = {
 
 						panelHTML += '</div>';
 					panelHTML += '</div>';
+
+					// Start pager.
+					panelHTML += '<div class="panel__pager">';
+						panelHTML += '<div class="panel__btn panel__btn--top panel__btn--bordered panel__btn--bordered--top">';
+							panelHTML += '<span class="panel__btn__label panel__btn__label--left panel__btn__label--lrg">AJCollective</span>';
+
+							// If there is a prev person.
+							if (self.JSON[this.id - 1]) {
+								panelHTML += '<a class="panel__btn__label panel__btn__label--bordered js-panel-move js-panel-move--top" data-direction="top" href="#' + (this.id - 1) + '">Prev ' + self.JSON[this.id - 1].jobtitle + '</a>';
+							} else {
+								panelHTML += '<a class="panel__btn__label panel__btn__label--bordered js-panel-move js-panel-move--top" data-direction="top" href="#home">Back home</a>';
+							}
+
+							panelHTML += '<a class="panel__btn__label panel__btn__label--right js-contact-toggle" href="#">About / Contact</a>';
+						panelHTML += '</div>';
+
+						// If there is a next person, build next link.
+						if (self.JSON[this.id + 1]) {
+							panelHTML += '<div class="panel__btn panel__btn--bottom panel__btn--bordered panel__btn--bordered--bottom">';
+								panelHTML += '<a class="panel__btn__label js-panel-move js-panel-move--bottom" data-direction="bottom" href="#' + (this.id + 1) + '">Next ' + self.JSON[this.id + 1].jobtitle + '</a>';
+							panelHTML += '</div>';
+						} else {
+							panelHTML += '<div class="panel__btn panel__btn--bottom"></div>';
+						}
+
+						panelHTML += '<div class="panel__btn panel__btn--left">';
+							panelHTML += '<a class="panel__btn__label js-nav-toggle" href="#">Creative Researchers &amp; Writers</a>';
+						panelHTML += '</div>';
+					panelHTML += '</div>';
+					
 				panelHTML += '</div>';
 			
 			// Close section.

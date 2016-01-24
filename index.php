@@ -12,7 +12,7 @@
 		<?php include "partials/_grid.php" ?>
 
 		<!-- Splash screen -->
-		<?php /* include "partials/_splash.php" */ ?>
+		<?php include "partials/_splash.php" ?>
 
 		<!-- Navigation -->
 		<?php include "partials/_nav.php" ?>
@@ -27,20 +27,6 @@
 		<main class="main js-main">
 
 			<section class="panel panel--home js-panel is-active" id="home">
-				<div class="panel__pager">
-					<div class="panel__btn panel__btn--top">
-						<h1 class="panel__btn__label panel__btn__label--lrg">AJCollective</h1>
-					</div>
-					<div class="panel__btn panel__btn--right">
-						<a class="panel__btn__label js-contact-toggle" href="#">About / Contact</a>
-					</div>
-					<div class="panel__btn panel__btn--bottom panel__btn--bordered">
-						<a class="panel__btn__label js-panel-move js-panel-move--bottom" data-direction="bottom" href="#0">Discover our work</a>
-					</div>
-					<div class="panel__btn panel__btn--left">
-						<a class="panel__btn__label js-nav-toggle" href="#">Creative Researchers &amp; Writers</a>
-					</div>
-				</div>
 				<div class="panel__container">
 					<ul class="slideshow js-slideshow">
 						<li class="slideshow__item js-slideshow-item" data-color="#6f1527">
@@ -74,6 +60,20 @@
 							<img class="slideshow__img" src="resources/slideshow/10.jpg"/>
 						</li>
 					</ul>
+					<div class="panel__pager">
+						<div class="panel__btn panel__btn--top">
+							<h1 class="panel__btn__label panel__btn__label--lrg">AJCollective</h1>
+						</div>
+						<div class="panel__btn panel__btn--right">
+							<a class="panel__btn__label js-contact-toggle" href="#">About / Contact</a>
+						</div>
+						<div class="panel__btn panel__btn--bottom panel__btn--bordered">
+							<a class="panel__btn__label js-panel-move js-panel-move--bottom" data-direction="bottom" href="#0">Discover our work</a>
+						</div>
+						<div class="panel__btn panel__btn--left">
+							<a class="panel__btn__label js-nav-toggle" href="#">Creative Researchers &amp; Writers</a>
+						</div>
+					</div>
 				</div>
 			</section>
 

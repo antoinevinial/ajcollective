@@ -9,49 +9,24 @@ var splash = {
 
 	init: function init() {
 		this.bindUI();
-		this.initSplash();
+		this.bindEvents();
 	},
 
 	bindUI: function bindUI() {
+		this.ui.$win = $(window);
 		this.ui.$splash  = $('.js-splash');
-		this.ui.$loader  = $('.js-splash-loader');
-		this.ui.$percent = $('.js-splash-percent');
-		this.ui.$imgs = $('img');
 	},
 
-	initSplash: function initSplash() {
+	bindEvents: function bindEvents() {
 		var self = this;
 
-		// Get container to track img loading.
-		var imgLoad = imagesLoaded('body');
-
-		// Get number of imgs.
-		this.imgsLength = imgLoad.images.length;
-
-		// Bind event each time an image is loaded.
-		imgLoad.on( 'always', function() {
-			for ( var i = 0, len = imgLoad.images.length; i < len; i++ ) {
-			    var image = imgLoad.images[i];
-			    
-			    // Update imgsLoaded counter.
-			    self.imgsLoaded++;
-
-			    // Update splash screen.
-			    self.updateSplash();
-			}
-		});
+		setTimeout(function() {
+			self.toggleSplash();
+		}, 3000);
 	},
 
-	updateSplash: function updateSplash() {
-		var percent = Math.round(this.imgsLoaded / this.imgsLength * 100);
-
-		// Update percent value.
-		this.ui.$percent.text(percent + '%');
-
-		// Hide splash when all images are loaded.
-		if (this.imgsLength == this.imgsLoaded) {
-			this.ui.$splash.removeClass('is-visible');
-		}
+	toggleSplash: function toggleSplash() {
+		this.ui.$splash.removeClass('is-visible');
 	}
 
 };
