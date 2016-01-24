@@ -124,6 +124,12 @@
 		}
 	}
 
+	&--contact {
+		display: block;
+		padding: 100px 0;
+		overflow: scroll;
+	}
+
 	&--home {
 		background-color: #6f1527;
 	}
@@ -169,8 +175,8 @@
 
 		&__container {
 			height: 100%;
-			padding-top: 95px;
 			overflow: scroll;
+			-webkit-overflow-scrolling: touch;
 		}
 
 		&__btn {

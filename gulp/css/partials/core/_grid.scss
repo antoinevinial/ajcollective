@@ -7,6 +7,14 @@ $navWLrg: 8 / $cols * 100;
 $marieLouiseW: 3 / $cols * 100;
 $marieLouiseWLrg: 2 / $cols * 100;
 
+.grid {
+	clear: both;
+}
+
+.grid--overflow {
+	overflow: hidden;
+}
+
 [class*="cell-"] {
 	float: left;
 }
@@ -27,6 +35,20 @@ $marieLouiseWLrg: 2 / $cols * 100;
     .append-#{$i} {
         margin-right: #{$i / $cols * 100}vw;
     }
+}
+
+@include tablet-portrait {
+	@for $i from 1 through $cols {
+	    .cell-#{$i} {
+	        width: 100%;
+	    }
+	}
+
+	@for $i from 1 through $cols {
+	    .prepend-#{$i} {
+	        margin-left: 0;
+	    }
+	}
 }
 
 /* Special style for grid dev */

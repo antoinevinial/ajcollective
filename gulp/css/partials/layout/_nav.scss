@@ -139,6 +139,10 @@
 }
 
 @include tablet-portrait {
+	.nav {
+		display: none;
+	}
+	
 	.nav-mobile {
 		position: fixed;
 		top: 0;
