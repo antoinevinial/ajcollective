@@ -1021,6 +1021,7 @@ strong {
     .contact__label {
       font-size: 12px; }
     .contact__txt {
+      margin-bottom: 20px;
       font-size: 12px; } }
 
 /* When contact is open */
