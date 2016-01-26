@@ -128,58 +128,28 @@
 		"thumbnail" : "resources/katie_anderton/thumbnail.jpg",
 		"documents" : [
 			{
-				"title" : "Lorem ipsum dolor sit amet",
+				"title" : "Warburtons",
 				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
+				"pages" : "5 pages",
+				"link" : "resources/katie_anderton/1_warburtons.pdf"
 			},
 			{
-				"title" : "Lorem ipsum dolor sit amet",
+				"title" : "Jeep Wrangler",
 				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
+				"pages" : "4 pages",
+				"link" : "resources/katie_anderton/2_jeep_wrangler.pdf"
 			},
 			{
-				"title" : "Lorem ipsum dolor sit amet",
+				"title" : "Stella Fallen Star",
 				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
+				"pages" : "6 pages",
+				"link" : "resources/katie_anderton/3_stella_fallen_star.pdf"
 			},
 			{
-				"title" : "Lorem ipsum dolor sit amet",
+				"title" : "Lottoland",
 				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
-			},
-			{
-				"title" : "Lorem ipsum dolor sit amet",
-				"type" : "PDF",
-				"pages" : "7 pages",
-				"link" : "http://www.orimi.com/pdf-test.pdf"
+				"pages" : "5 pages",
+				"link" : "resources/katie_anderton/4_lottoland.pdf"
 			}
 		]
 	}
