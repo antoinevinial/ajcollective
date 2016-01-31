@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>AJ Collective</title>
 		<meta name="description" content="AJCollective. Creative Research. Directors Interpretation. Commercial/Film Treatments. Creative Writing. Music Research. Mood Films."/>
+		<link rel="icon" type="image/png" href="resources/favicon.png" />
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
