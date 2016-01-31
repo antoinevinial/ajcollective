@@ -222,6 +222,23 @@ var content = {
 									}
 
 								panelHTML += '</ul>';
+						} else if (this.template == "other") {
+							panelHTML += '<div class="carousel carousel--other js-carousel">';
+								panelHTML += '<ul class="carousel__slider js-carousel-slider">';
+									panelHTML += '<li class="carousel__item carousel__item--text js-carousel-item js-carousel-item--text" data-index="' + (i + 1) + '">';
+										panelHTML += '<h2 class="heading-2">' + this.name + '</h2>';
+										panelHTML += '<span class="carousel__jobtitle">' + this.jobtitle + '</span>';
+										panelHTML += '<p class="carousel__txt">' + this.description + '</p>';
+									panelHTML += '</li>';
+
+									// Loop through each text.
+									for (i = 0; i < this.texts.length; i++) {
+										panelHTML += '<li class="carousel__item carousel__item--text js-carousel-item js-carousel-item--text" data-index="' + (i + 1) + '">';
+											panelHTML += '<p class="carousel__txt">' + this.texts[i] + '</p>';
+										panelHTML += '</li>';
+									}
+									
+								panelHTML += '</ul>';
 						}
 
 						panelHTML += '<div class="carousel__pager">'
