@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>AJ Collective</title>
+		<meta name="description" content="AJCollective. Creative Research. Directors Interpretation. Commercial/Film Treatments. Creative Writing. Music Research. Mood Films."/>
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
@@ -30,7 +31,7 @@
 				<div class="panel__container">
 					<div class="grid">
 						<div class="cell cell-18 prepend-7">
-							<h2 class="heading-2 intro">A.J Collective lorem ipsum dolor sit amet, consectetur adipisicing elit labore.</h2>
+							<h2 class="intro">AJCollective.<br>Creative Research. Directors Interpretation. Commercial/Film Treatments. Creative Writing. Music Research. Mood Films.</h2>
 						</div>
 					</div>
 					<div class="panel__pager">

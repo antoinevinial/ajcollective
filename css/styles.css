@@ -52,7 +52,7 @@ table {
 *, *:before, *:after {
   box-sizing: border-box; }
 
-.heading-2, .panel__btn__label, .nav, .nav-mobile__title, .nav-mobile__link, .contact, .carousel__jobtitle, .carousel__txt, .carousel__close, .carousel__doc__title, .splash__title {
+.heading-2, .intro, .panel__btn__label, .nav, .nav-mobile__title, .nav-mobile__link, .contact, .carousel__jobtitle, .carousel__txt, .carousel__close, .carousel__doc__title, .splash__title {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -104,7 +104,7 @@ table {
   font-style: normal; }
 
 /* Extends for font-family */
-.heading-2, .panel__btn__label--lrg, .nav__link__name, .nav-mobile__title, .nav-mobile__link, .carousel__doc__title, .splash__title {
+.heading-2, .intro, .panel__btn__label--lrg, .nav__link__name, .nav-mobile__title, .nav-mobile__link, .carousel__doc__title, .splash__title {
   font-family: "grumpy", Serif; }
 
 .contact__txt, .carousel__txt {
@@ -126,6 +126,9 @@ strong {
   letter-spacing: 3px; }
 
 .intro {
+  padding: 0 25px;
+  font-size: 40px;
+  line-height: 48px;
   color: #fff;
   text-align: center; }
 
@@ -137,7 +140,10 @@ strong {
 @media (max-width: 768px) {
   .heading-2 {
     font-size: 32px;
-    line-height: 40px; } }
+    line-height: 40px; }
+  .intro {
+    font-size: 25px;
+    line-height: 32px; } }
 
 /* Grid layout */
 .grid {

@@ -83,6 +83,11 @@
 }
 
 .intro {
+    @extend %antialiased;
+    @extend %grumpy;
+    padding: 0 25px;
+    font-size: 40px;
+    line-height: 48px;
     color: $color-white;
     text-align: center;
 }
@@ -98,5 +103,10 @@
     .heading-2 {
         font-size: 32px;
         line-height: 40px;
+    }
+
+    .intro {
+        font-size: 25px;
+        line-height: 32px;
     }
 }
