@@ -24,3 +24,8 @@ body {
 strong {
 	@extend %patronMedium;
 }
+
+.underline {
+	display: inline-block;
+	border-bottom: 1px solid $color-white;
+}

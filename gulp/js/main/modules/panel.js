@@ -139,7 +139,7 @@ var panel = {
 			$el  = $(e.currentTarget);
 
 		// Return if we already move a panel.
-		if (this.isAnimated) { return; }
+		if (this.isAnimated || this.ui.$body.hasClass('is-carousel-full')) { return; }
 
 		// Prevent default.
 		e.preventDefault();

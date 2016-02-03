@@ -168,6 +168,25 @@
 				}
 			}
 		}
+
+		// Special classes for animation.
+
+		&.is-active {
+			transform: translateY(0);
+			opacity: 1;
+			visibility: visible,
+		}
+
+		&.is-top,
+		&.is-bottom  {
+			transform: translateY(0);
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		&.no-transition {
+			transition: none;
+		}
 	}
 
 	@include tablet-portrait {
