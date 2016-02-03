@@ -956,7 +956,7 @@ module.exports = splash;
                 keyboardHandler: function keyboardHandler(e) {
                     // If press esc, close full screen.
                     if (e.keyCode == 27 && this.ui.$body.hasClass('is-carousel-full')) {
-                        this.toggleFullScreen();
+                        this.exitFullScreen();
                     }
                 },
 
@@ -1171,6 +1171,24 @@ module.exports = splash;
 
                         }, self.timerCarousel);
 
+                    }, this.timerLinks); 
+                },
+
+                exitFullScreen: function exitFullScreen() {
+                    var self = this;
+
+                    // Show loader.
+                    this.ui.$loader.addClass('is-visible');
+
+                    // Wait anim loader to be finished.
+                    setTimeout(function() {
+                        // Add correct class on body.
+                        self.ui.$body.removeClass('is-carousel-full');
+
+                        // Hide loader.
+                        setTimeout(function() {
+                            self.ui.$loader.removeClass('is-visible');
+                        }, self.timerCarousel);
                     }, this.timerLinks); 
                 },
 
