@@ -36,6 +36,7 @@
 		position: relative;
 		display: block;
 		padding: 55px (2 / $cols * 100vw) 0 (2 / $cols * 100vw);
+		line-height: 22px;
 
 		&:before {
 			@extend %transitionLinks;

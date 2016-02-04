@@ -810,7 +810,8 @@ strong {
   .nav__link {
     position: relative;
     display: block;
-    padding: 55px 6.25vw 0 6.25vw; }
+    padding: 55px 6.25vw 0 6.25vw;
+    line-height: 22px; }
     .nav__link:before {
       content: "";
       position: absolute;
@@ -1192,6 +1193,7 @@ body {
     display: block;
     margin: 10px 0 20px 0;
     color: #727272;
+    line-height: 22px;
     letter-spacing: 1px; }
   .carousel__txt {
     display: block;

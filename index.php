@@ -32,7 +32,7 @@
 				<div class="panel__container">
 					<div class="grid">
 						<div class="cell cell-18 prepend-7">
-							<h2 class="intro">AJCollective.<br>Creative Research. Directors Interpretation. Commercial/Film Treatments. Creative Writing. Music Research. Mood Films.</h2>
+							<h2 class="intro">AJCollective.<br>Creative Research. Directors Interpretation. Commercial / Film / Music Video Treatments. Creative Writing. Music Research. Mood Films.</h2>
 						</div>
 					</div>
 					<div class="panel__pager">
@@ -46,7 +46,7 @@
 							<a class="panel__btn__label js-panel-move js-panel-move--bottom" data-direction="bottom" href="#0">Discover our work</a>
 						</div>
 						<div class="panel__btn panel__btn--left">
-							<a class="panel__btn__label js-nav-toggle" href="#">Creative Researchers &amp; Writers</a>
+							<a class="panel__btn__label js-nav-toggle" href="#">Creatives</a>
 						</div>
 					</div>
 				</div>

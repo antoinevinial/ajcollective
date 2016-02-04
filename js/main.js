@@ -286,7 +286,7 @@ var content = {
 						}
 
 						panelHTML += '<div class="panel__btn panel__btn--left">';
-							panelHTML += '<a class="panel__btn__label js-nav-toggle" href="#">Creative Researchers &amp; Writers</a>';
+							panelHTML += '<a class="panel__btn__label js-nav-toggle" href="#">Creatives</a>';
 						panelHTML += '</div>';
 					panelHTML += '</div>';
 					

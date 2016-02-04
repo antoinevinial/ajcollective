@@ -9,8 +9,6 @@
 		"medias" : [
 			"resources/andrea_colomb/audi.jpg",
 			"resources/andrea_colomb/audi2.jpg",
-			"resources/andrea_colomb/audi3.jpg",
-			"resources/andrea_colomb/bulmers.jpg",
 			"resources/andrea_colomb/ergo.jpg",
 			"resources/andrea_colomb/hennesy.jpg",
 			"resources/andrea_colomb/landrover.jpg",
@@ -56,7 +54,9 @@
 			"resources/jody_nolan/dove.jpg",
 			"resources/jody_nolan/fitness.jpg",
 			"resources/jody_nolan/these_walls.jpg",
-			"resources/jody_nolan/vitu.jpg"
+			"resources/jody_nolan/vitu.jpg",
+			"resources/jody_nolan/woolite.jpg",
+			"resources/jody_nolan/horses.jpg"
 		]
 	},
 
@@ -160,10 +160,10 @@
 
 	{
 		"id" : 7,
-		"name" : "Ben Hsiang",
+		"name" : "Ben Hsiung",
 		"template" : "other",
-		"jobtitle" : "Resident Music Man",
-		"description" : "<strong>Hometown.</strong> London<br><strong>Current location.</strong> Brixton<br><strong>Favourite Film.</strong> Withnail & I...<br><strong>Advert.</strong> Carling Black Label (Dam Busters)<br><strong>Music Video.</strong> Prodigy 'smack my bitch up'<br><strong>Toast Topping.</strong> Hummus<br><strong>Cocktail</strong> Whiskey on the rocks<br><strong>Guilty Pleasure.</strong> Online Chess",
+		"jobtitle" : "Resident Music Man, Music Researcher",
+		"description" : "<strong>Hometown.</strong> London<br><strong>Current location.</strong> Brixton<br><strong>Favourite Film.</strong> Withnail & I...<br><strong>Advert.</strong> Carling Black Label (Dam Busters)<br><strong>Music Video.</strong> Prodigy 'smack my bitch up'<br><strong>Toast Topping.</strong> Hummus<br><strong>Cocktail.</strong> Whiskey on the rocks<br><strong>Guilty Pleasure.</strong> Online Chess",
 		"thumbnail" : "resources/ben_hsiang/thumbnail.jpg",
 		"texts" : [
 			"Our resident Music Man, Ben, has been a DJ/music play-black operator for over a decade. With roots firmly etched on the London live circuit, he has spent years playing in different bands and developing a knack for knowing how to feel the room. “Being in front of a crowd and seeing or ‘getting’ their reactions was always key to a good set - learning the boundaries you can push and pull the audience towards was always what gave me the biggest rush”.",
