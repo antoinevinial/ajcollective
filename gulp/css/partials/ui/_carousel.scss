@@ -369,6 +369,14 @@
 			}
 		}
 	}
+
+	@include large-desktop {
+		&__btn {
+			&--prev {
+				left: 120px;
+			}
+		}
+	}
 }
 
 
