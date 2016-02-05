@@ -134,6 +134,7 @@
 		width: 100000px;
 		margin-left: -0.5 / $cols * 100vw;
 		padding: 20px;
+		z-index: -1;
 
 		&__slider {
 			@extend %transitionEase;

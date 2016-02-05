@@ -1,0 +1,91 @@
+.popin {
+    @extend %transitionEase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-black;
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+
+    &__close {
+        @extend %transitionEase;
+        @extend %antialiased;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        color: $color-grey;
+
+        &__icon {
+            display: inline-block;
+            vertical-align: middle;
+            width: 40px;
+            height: 40px;
+            margin-left: 30px;
+            background-color: $color-white;
+        }
+
+        .icon {
+            position: relative;
+            top: 11px;
+            display: block;
+            margin: 0 auto;
+            fill: $color-black;
+        }
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &__table {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__table-cell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &__video {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    &__author {
+        display: block;
+        margin-top: 20px;
+        color: $color-grey;
+        text-align: center;
+        line-height: 22px;
+        letter-spacing: 1px;
+    }
+
+    &__title {
+        @extend %antialiased;
+        margin-top: 5px;
+        font-size: 20px;
+        color: $color-white;
+        text-align: center;
+    }
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    @include tablet-portrait {
+        &__close {
+            right: 20px;
+            top: 20px;
+        }
+
+        &__video {
+            width: calc(100% - 40px);
+        }
+    }
+}

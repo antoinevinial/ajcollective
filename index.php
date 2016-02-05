@@ -25,6 +25,9 @@
 		<!-- Loader -->
 		<?php include "partials/_loader.php" ?>
 
+		<!-- Popin video -->
+		<?php include "partials/_popin.php" ?>
+
 		<!-- Main container -->
 		<main class="main js-main">
 

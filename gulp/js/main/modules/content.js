@@ -4,11 +4,12 @@ var jqueryCarousel   = require('./../plugins/jquery.carousel.js');
 
 // Import modules.
 var slideshow = require('./slideshow.js');
-var nav = require('./nav.js');
-var panel = require('./panel.js');
-var carousel = require('./carousel.js');
-var contact = require('./contact.js');
-var splash = require('./splash.js');
+var nav       = require('./nav.js');
+var panel     = require('./panel.js');
+var carousel  = require('./carousel.js');
+var contact   = require('./contact.js');
+var splash    = require('./splash.js');
+var popin     = require('./popin.js');
 
 var content = {
 
@@ -61,6 +62,9 @@ var content = {
 
 		    // Init splash.
 		    splash.init();
+
+		    // Init popin.
+		    popin.init();
 		});
 	},
 
@@ -173,7 +177,7 @@ var content = {
 											panelHTML += '<p class="carousel__txt">' + this.texts[i] + '</p>';
 										panelHTML += '</li>';
 									}
-									
+
 								panelHTML += '</ul>';
 						}
 
@@ -225,9 +229,9 @@ var content = {
 							panelHTML += '<a class="panel__btn__label js-nav-toggle" href="#">Creatives</a>';
 						panelHTML += '</div>';
 					panelHTML += '</div>';
-					
+
 				panelHTML += '</div>';
-			
+
 			// Close section.
 			panelHTML += '</section>';
 
