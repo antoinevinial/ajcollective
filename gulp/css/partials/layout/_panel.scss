@@ -259,4 +259,26 @@
 			}
 		}
 	}
+
+	@include large-desktop {
+		&__btn {
+			&--top,
+			&--bottom {
+				height: 120px;
+			}
+
+			&--left,
+			&--right {
+				height: 120px;
+			}
+
+			&--left {
+				left: 120px;
+			}
+
+			&--right {
+				right: 120px;
+			}
+		}
+	}
 }

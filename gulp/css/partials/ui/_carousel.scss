@@ -128,7 +128,7 @@
 	&__viewer {
 		@extend %transitionLinks;
 		position: absolute;
-		bottom: 4 / $cols * 100vw;
+		bottom: 160px;
 		left: 14 / $cols * 100vw;
 		height: 80px;
 		width: 100000px;

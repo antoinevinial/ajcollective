@@ -14,3 +14,9 @@ $mq-desktop-large       : 1441px !default;
 		@content;
 	}
 }
+
+@mixin large-desktop {
+    @media (min-width: $mq-desktop-large) {
+        @content;
+    }
+}
