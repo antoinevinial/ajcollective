@@ -96,6 +96,9 @@ var panel = {
 		// Return if nav is open.
 		if (this.isNavOpen()) { return; }
 
+		// Return if body has "is-contact-open" class.
+        if (this.ui.$body.hasClass('is-contact-open')) { return; }
+
 		// Prevent default.
 		e.preventDefault();
 

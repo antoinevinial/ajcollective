@@ -117,7 +117,7 @@
                 touchEnd: function touchEnd() {
                     // Return if we're on mobile version.
                     if (!this.isDesktop()) { return; }
-                    
+
                     // Return if user doesn't touch scroll really.
                     if (Math.abs(this.touch.move - this.touch.start) < 50) { return; }
 
@@ -127,7 +127,7 @@
                     } else if (this.touch.move > this.touch.start && !this.ui.$prev.hasClass('is-fade') && this.touch.move != 0) {
                         this.ui.$prev.click();
                     }
-                    
+
                 },
 
                 initViewer: function initViewer() {
@@ -305,7 +305,7 @@
 
                         }, self.timerCarousel);
 
-                    }, this.timerLinks); 
+                    }, this.timerLinks);
                 },
 
                 exitFullScreen: function exitFullScreen() {
@@ -323,7 +323,7 @@
                         setTimeout(function() {
                             self.ui.$loader.removeClass('is-visible');
                         }, self.timerCarousel);
-                    }, this.timerLinks); 
+                    }, this.timerLinks);
                 },
 
                 isDesktop: function isDesktop() {
