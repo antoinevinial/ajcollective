@@ -3,7 +3,7 @@
 		"id" : 0,
 		"name" : "Andrea Jade Colomb",
 		"template" : "researcher",
-		"jobtitle" : "Founder, Creative Researcher",
+		"jobtitle" : "Bossface, Creative Researcher",
 		"description" : "<strong>Hometown.</strong> Boksburg, South Africa<br><strong>Current Location.</strong> Copenhagen, Denmark<br><strong>Favourite Film.</strong> Casino<br><strong>Advert.</strong> Guinness ‘Surfer’<br><strong>Music Video.</strong> David Byrne/St Vincent ‘Who’<br><strong>Toast Topping.</strong> Marmite<br><strong>Cocktail.</strong> Vodka Martini<br><strong>Guilty Pleasure.</strong> Mean Girls<br><strong><a class='underline js-popin-toggle' data-author='Andrea Jade Colomb' data-title='Mountain Dew Mood Film' href='https://player.vimeo.com/video/148077796?autoplay=1'>Mood Film Link.</a></strong>",
 		"thumbnail" : "resources/andrea_colomb/thumbnail.jpg",
 		"medias" : [
@@ -132,10 +132,10 @@
 		"thumbnail" : "resources/katie_anderton/thumbnail.jpg",
 		"documents" : [
 			{
-				"title" : "Warburtons",
+				"title" : "Stella Fallen Star",
 				"type" : "PDF",
-				"pages" : "5 pages",
-				"link" : "resources/katie_anderton/1_warburtons.pdf"
+				"pages" : "6 pages",
+				"link" : "resources/katie_anderton/3_stella_fallen_star.pdf"
 			},
 			{
 				"title" : "Jeep Wrangler",
@@ -144,16 +144,16 @@
 				"link" : "resources/katie_anderton/2_jeep_wrangler.pdf"
 			},
 			{
-				"title" : "Stella Fallen Star",
-				"type" : "PDF",
-				"pages" : "6 pages",
-				"link" : "resources/katie_anderton/3_stella_fallen_star.pdf"
-			},
-			{
 				"title" : "Lottoland",
 				"type" : "PDF",
 				"pages" : "5 pages",
 				"link" : "resources/katie_anderton/4_lottoland.pdf"
+			},
+			{
+				"title" : "Warburtons",
+				"type" : "PDF",
+				"pages" : "5 pages",
+				"link" : "resources/katie_anderton/1_warburtons.pdf"
 			}
 		]
 	},
