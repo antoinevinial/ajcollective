@@ -89,20 +89,6 @@
 	},
 
 	{
-		"id" : 4,
-		"name" : "Kirstine Arildborg",
-		"template" : "researcher",
-		"jobtitle" : "Creative Researcher",
-		"description" : "<strong>Hometown.</strong> Nykøbing Falster<br><strong>Current Location.</strong> Copenhagen<br><strong>Favourite Film.</strong> Rust and Bone<br><strong>Commercial.</strong> Toyota ‘Feels Good Inside/Cat’<br><strong>Music Video.</strong> Michael Jackson/Janet Jackson ‘Scream’<br><strong>Toast Topping.</strong> Egg, Tomato & Avocado<br><strong>Cocktail.</strong> Anything with gin<br><strong>Guilty Pleasure.</strong> Pick ’n Mix",
-		"thumbnail" : "resources/kirstine_arildborg/thumbnail.jpg",
-		"medias" : [
-			"resources/kirstine_arildborg/bank.jpg",
-			"resources/kirstine_arildborg/nescafe.jpg",
-			"resources/kirstine_arildborg/timing.jpg"
-		]
-	},
-
-	{
 		"id" : 5,
 		"name" : "Oscar Oz Juul-Sørensen",
 		"template" : "researcher",
