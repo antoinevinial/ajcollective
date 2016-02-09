@@ -38,6 +38,10 @@ $marieLouiseWLrg: 2 / $cols * 100;
 }
 
 @include tablet-portrait {
+	[class*="cell-"] {
+		float: none;
+	}
+
 	@for $i from 1 through $cols {
 	    .cell-#{$i} {
 	        width: 100%;
