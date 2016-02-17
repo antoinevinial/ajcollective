@@ -204,7 +204,7 @@ var content = {
 					// Start pager.
 					panelHTML += '<div class="panel__pager">';
 						panelHTML += '<div class="panel__btn panel__btn--top panel__btn--bordered panel__btn--bordered--top">';
-							panelHTML += '<span class="panel__btn__label panel__btn__label--left panel__btn__label--lrg">AJCollective</span>';
+							panelHTML += '<a class="panel__btn__label panel__btn__label--left panel__btn__label--lrg js-panel-top" href="#home">AJCollective</span>';
 
 							// If there is a prev person.
 							if (self.JSON[this.id - 1]) {

@@ -23,6 +23,7 @@ var panel = {
 		this.ui.$panels = $('.js-panel');
 		this.ui.$active = $('.js-panel.is-active');
 		this.ui.$move   = $('.js-panel-move');
+		this.ui.$top    = $('.js-panel-top');
 
 		this.ui.$navItems = $('.js-nav-list').find('li');
 		this.ui.$navLink  = $('.js-nav-link');
@@ -36,6 +37,7 @@ var panel = {
 		this.ui.$win.on('keydown', $.proxy(this.keydownHandler, this));
 		this.ui.$move.on('click', $.proxy(this.movePanel, this));
 		this.ui.$navLink.on('click', $.proxy(this.updatePanel, this));
+		this.ui.$top.on('click', $.proxy(this.goTop, this));
 
 		// Touch events.
 		this.ui.$win.on('touchstart', $.proxy(this.touchStart, this));
@@ -177,6 +179,23 @@ var panel = {
 			$target.find('.js-carousel-btn-next').focus();
 			self.isAnimated = false;
 		}, this.timerPanel);
+	},
+
+	goTop: function goTop(e) {
+		// Prevent default.
+		e.preventDefault();
+
+		// Get home panel.
+		var $home = $('#home');
+
+		// Hide all others panels.
+		this.ui.$panels.removeClass('is-active is-top').addClass('is-bottom');
+
+		// Make home active.
+		$home.removeClass('is-top is-bottom').addClass('is-active');
+
+		// Update UI.
+		this.updateUIEvents($home);
 	},
 
 	updatePanel: function updatePanel(e) {

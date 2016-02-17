@@ -48,7 +48,7 @@
 				<p class="contact__txt">
 					<span class="contact__txt__label">Katie</span>
 					<a class="contact__txt__label" href="mailto:katie@ajcollective.com">katie@ajcollective.com</a> 
-					<span class="contact__txt__label">0039 (0) 667 303 221</span>
+					<span class="contact__txt__label">0039 (0) 311 823 385</span>
 				</p>
 			</div>
 			<div class="contact__bloc">
