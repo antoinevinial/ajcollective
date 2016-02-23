@@ -158,7 +158,6 @@
 		transition: none;
 	}
 
-
 	@include tablet-landscape {
 		&__btn {
 			&__label {
@@ -288,5 +287,45 @@
 				right: 120px;
 			}
 		}
+	}
+
+	@include small-height {
+		&__label {
+			&--left {
+				left: #{$marieLouiseWSml}vw;
+			}
+
+			&--right {
+				right: #{$marieLouiseWSml}vw;
+			}
+		}
+
+		&__btn {
+			&--top,
+			&--bottom {
+				height: #{$marieLouiseWSml}vw;
+			}
+
+			&--left,
+			&--right {
+				height: #{$marieLouiseWSml}vw;
+			}
+
+			&--left {
+				left: #{$marieLouiseWSml}vw;
+			}
+
+			&--right {
+				right: #{$marieLouiseWSml}vw;
+			}
+		}
+
+		&--left {
+			left: #{$marieLouiseWSml}vw;
+		}
+
+		&--right {
+			right: #{$marieLouiseWSml}vw;
+		}	
 	}
 }

@@ -37,7 +37,7 @@
 		display: block;
 		max-width: 100%;
 		margin: 0 auto;
-		max-height: 35vh;
+		max-height: 30vh;
 	}
 
 	&__video {
@@ -379,6 +379,29 @@
 	}
 }
 
+/* Special media query for carousel--other on small vh */
+
+@include small-height {
+	.carousel__viewer {
+		bottom: 110px;
+	}
+
+	.carousel__doc {
+		width: 150px;
+		height: 230px;
+	}
+
+	.carousel--other {
+		.carousel__item--text {
+			width: 34vw;
+
+			&:first-child {
+				width: 9 / $cols * 100vw;
+			}
+		}
+	}
+}
+
 
 /* When carousel is in full-screen mode. */
 
@@ -424,7 +447,7 @@
 	}
 
 	.carousel__img {
-		max-height: 60vh;
+		max-height: 45vh;
 	}
 
 	.carousel__video {
