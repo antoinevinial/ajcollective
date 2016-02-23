@@ -55,6 +55,12 @@ $marieLouiseWSml: 2 / $cols * 100;
 	}
 }
 
+@include small-height {
+	.prepend-5 {
+		margin-left: #{4 / $cols * 100}vw;
+	}
+}
+
 /* Special style for grid dev */
 
 .grid--dev {

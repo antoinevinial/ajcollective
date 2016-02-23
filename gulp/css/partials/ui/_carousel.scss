@@ -386,6 +386,12 @@
 		bottom: 110px;
 	}
 
+	.carousel__btn {
+		&--prev {
+			left: 2 / $cols * 100vw;
+		}
+	}
+
 	.carousel__doc {
 		width: 150px;
 		height: 230px;
