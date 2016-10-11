@@ -28,58 +28,92 @@
 
 	{
 		"id" : 1,
-		"name" : "Tegan Ashmore",
-		"template" : "researcher",
-		"jobtitle" : "Senior Creative Researcher",
-		"description" : "<strong>Hometown.</strong> Dublin<br><strong>Current Location.</strong> London<br><strong>Favourite Film.</strong> Happiness<br><strong>Commercial.</strong> Dunlop ‘Expect the Unexpected’<br><strong>Music Video.</strong> Justin Bieber ‘Sorry’<br><strong>Toast Topping.</strong> Confit duck<br><strong>Cocktail.</strong> Anything neon with an umbrella<br><strong>Guilty Pleasure.</strong> Napping at work",
-		"thumbnail" : "resources/tegan_ashmore/thumbnail.jpg",
-		"medias" : [
-			"resources/tegan_ashmore/audi_rs.jpg",
-			"resources/tegan_ashmore/betfair.jpg",
-			"resources/tegan_ashmore/hankook.jpg",
-			"resources/tegan_ashmore/lacnr.jpg",
-			"resources/tegan_ashmore/pfizer.jpg"
-		]
-	},
-
-	{
-		"id" : 2,
 		"name" : "Jody Elizabeth",
 		"template" : "researcher",
 		"jobtitle" : "Senior Creative Researcher",
 		"description" : "<strong>Hometown.</strong> Nottingham<br><strong>Current Location.</strong> Copenhagen<br><strong>Favourite Film.</strong> Wild at Heart<br><strong>Commercial.</strong> Prada A/W 2012<br><strong>Music Video.</strong> Radiohead ‘Street Spirit’<br><strong>Toast Topping.</strong> A full English<br><strong>Cocktail.</strong> Old Fashioned<br><strong>Guilty Pleasure.</strong> Katy Perry",
 		"thumbnail" : "resources/jody_nolan/thumbnail.jpg",
 		"medias" : [
-			"resources/jody_nolan/deborah_tyfield.jpg",
-			"resources/jody_nolan/dove.jpg",
-			"resources/jody_nolan/fitness.jpg",
-			"resources/jody_nolan/these_walls.jpg",
-			"resources/jody_nolan/vitu.jpg",
-			"resources/jody_nolan/woolite.jpg",
-			"resources/jody_nolan/horses.jpg"
+			"resources/jody_nolan/01_deborah_tyfield.jpg",
+			"resources/jody_nolan/02_honda.jpg",
+			"resources/jody_nolan/03_volvo.jpg",
+			"resources/jody_nolan/04_milka.jpg",
+			"resources/jody_nolan/05_lookglass.jpg",
+			"resources/jody_nolan/06_dove.jpg",
+			"resources/jody_nolan/07_fitness.jpg",
+			"resources/jody_nolan/08_these_walls.jpg",
+			"resources/jody_nolan/09_vitu.jpg",
+			"resources/jody_nolan/10_ctt.jpg",
+			"resources/jody_nolan/11_otto.jpg"
+		]
+	},
+
+	{
+		"id" : 2,
+		"name" : "Frances Odim-Loughlin",
+		"template" : "researcher",
+		"jobtitle" : "Senior Creative Researcher",
+		"description" : "<strong>Hometown.</strong> Dublin<br><strong>Current Location.</strong> London<br><strong>Favourite Film.</strong> Happiness<br><strong>Commercial.</strong> Dunlop ‘Expect the Unexpected’<br><strong>Music Video.</strong> Justin Bieber ‘Sorry’<br><strong>Toast Topping.</strong> Confit duck<br><strong>Cocktail.</strong> Anything neon with an umbrella<br><strong>Guilty Pleasure.</strong> Napping at work",
+		"thumbnail" : "resources/frances_odim/thumbnail.jpg",
+		"medias" : [
+			"resources/frances_odim/01_mercedes.jpg",
+			"resources/frances_odim/02_porsche.jpg",
+			"resources/frances_odim/03_adidas.jpg",
+			"resources/frances_odim/04_lancome.jpg",
+			"resources/frances_odim/05_porsche.jpg",
+			"resources/frances_odim/06_porsche.jpg",
+			"resources/frances_odim/07_chaudfontain.jpg",
+			"resources/frances_odim/08_reebok.jpg",
+			"resources/frances_odim/09_gilette.jpg",
+			"resources/frances_odim/10_hugo.jpg",
+			"resources/frances_odim/11_crew.jpg"
 		]
 	},
 
 	{
 		"id" : 3,
+		"name" : "Tegan Ashmore",
+		"template" : "researcher",
+		"jobtitle" : "Senior Creative Researcher",
+		"description" : "<strong>Hometown.</strong> Gloucestershire <br><strong>Current Location.</strong> Shoreditch, London<br><strong>Favourite Film.</strong> Midnight Cowboy<br><strong>Commercial.</strong> Chris Cunningham ‘Flora’ Gucci<br><strong>Music Video.</strong> The Knife ‘Pass This On’<br><strong>Toast Topping.</strong> Avocado<br><strong>Cocktail.</strong> Aperol Spritz<br><strong>Guilty Pleasure.</strong> Carly Rae Jepsen ‘Call Me Maybe’ on repeat…",
+		"thumbnail" : "resources/tegan_ashmore/thumbnail.jpg",
+		"medias" : [
+			"resources/tegan_ashmore/01_audi_rs.jpg",
+			"resources/tegan_ashmore/02_facebook.jpg",
+			"resources/tegan_ashmore/03_alpha.jpg",
+			"resources/tegan_ashmore/04_betfair.jpg",
+			"resources/tegan_ashmore/05_house_of_fraser.jpg",
+			"resources/tegan_ashmore/06_hankook.jpg",
+			"resources/tegan_ashmore/07_lacnr.jpg",
+			"resources/tegan_ashmore/08_farms.jpg",
+			"resources/tegan_ashmore/09_pfizer.jpg"
+		]
+	},
+
+	{
+		"id" : 4,
 		"name" : "Michael McCool",
 		"template" : "researcher",
 		"jobtitle" : "Senior Creative Researcher",
 		"description" : "<strong>Hometown.</strong> London<br><strong>Current Location.</strong> London<br><strong>Favourite Film.</strong> Jackie Brown<br><strong>Commercial.</strong> VW ‘Singing in the Rain’<br><strong>Music Video.</strong> Michael Jackson ‘Thriller’<br><strong>Toast Topping.</strong> Marmalade<br><strong>Cocktail.</strong> Espresso Martini<br><strong>Guilty Pleasure.</strong> Justin Bieber<br><strong><a class='underline js-popin-toggle' data-author='Michael McCool' data-title='Avon Moodfilm' href='https://player.vimeo.com/video/148079061?autoplay=1'>Mood Film Link.</a></strong>",
 		"thumbnail" : "resources/michael_mccool/thumbnail.jpg",
 		"medias" : [
-			"resources/michael_mccool/circus.jpg",
-			"resources/michael_mccool/dove.jpg",
-			"resources/michael_mccool/garnier.jpg",
-			"resources/michael_mccool/gdrive.jpg",
-			"resources/michael_mccool/guiness.jpg",
-			"resources/michael_mccool/lux.jpg",
-			"resources/michael_mccool/mercedes.jpg",
-			"resources/michael_mccool/ms.jpg",
-			"resources/michael_mccool/nike.jpg",
-			"resources/michael_mccool/nina_ricci.jpg",
-			"resources/michael_mccool/rimmel.jpg",
-			"resources/michael_mccool/truvia.jpg"
+			"resources/michael_mccool/01_circus.jpg",
+			"resources/michael_mccool/02_dove.jpg",
+			"resources/michael_mccool/03_garnier.jpg",
+			"resources/michael_mccool/04_gdrive.jpg",
+			"resources/michael_mccool/05_guiness.jpg",
+			"resources/michael_mccool/06_lux.jpg",
+			"resources/michael_mccool/07_mercedes.jpg",
+			"resources/michael_mccool/08_ms.jpg",
+			"resources/michael_mccool/09_nike.jpg",
+			"resources/michael_mccool/10_nina_ricci.jpg",
+			"resources/michael_mccool/11_rimmel.jpg",
+			"resources/michael_mccool/12_truvia.jpg",
+			"resources/michael_mccool/13_adidas.jpg",
+			"resources/michael_mccool/14_braun.jpg",
+			"resources/michael_mccool/15_intense.jpg",
+			"resources/michael_mccool/16_mcdo.jpg"
 		],
 		"saved" : [
 			"<iframe data-thumbnail='https://i.vimeocdn.com/video/546917469.webp' src='https://player.vimeo.com/video/148079061?title=0&byline=0&portrait=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
@@ -89,7 +123,7 @@
 	},
 
 	{
-		"id" : 4,
+		"id" : 5,
 		"name" : "Oscar Oz Juul-Sørensen",
 		"template" : "researcher",
 		"jobtitle" : "Creative Researcher",
@@ -110,7 +144,7 @@
 	},
 
 	{
-		"id" : 5,
+		"id" : 6,
 		"name" : "Katie Anderton",
 		"template" : "writer",
 		"jobtitle" : "Her Majesty, Creative Writer",
@@ -145,7 +179,7 @@
 	},
 
 	{
-		"id" : 6,
+		"id" : 7,
 		"name" : "Ben Hsiung",
 		"template" : "other",
 		"jobtitle" : "Resident Music Man, Music Researcher",

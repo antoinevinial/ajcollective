@@ -13,6 +13,7 @@
 			<?php include "partials/icons/back.php" ?>
 		</button>
 		<h1 class="nav-mobile__title">AJCollective</h1>
+		<a class="panel__instagram panel__instagram--mobile" href="https://www.instagram.com/ajcollective/" target="_blank"><?php include('partials/icons/instagram.php'); ?></a>
 	</div>
 	<div class="nav-mobile__content">
 		<div class="nav-mobile__panel">

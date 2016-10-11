@@ -18,6 +18,24 @@
 		width: 100%;
 	}
 
+	&__instagram {
+		position: absolute;
+		top: 4vh;
+		right: 3.5vh;
+		display: block;
+		z-index: 10;
+
+		.icon {
+			display: block;
+			width: 25px;
+			height: 25px;
+		}
+
+		&--mobile {
+			display: none;
+		}
+	}
+
 	&__btn {
 		@extend %transitionLinks;
 		position: absolute;
@@ -239,6 +257,21 @@
 					height: 30px;
 					margin: 20px auto 0;
 					background-color: $color-white;
+				}
+			}
+		}
+
+		&__instagram {
+			display: none;
+
+			&--mobile {
+				display: block;
+				top: 18px;
+				right: 20px;
+
+				.icon {
+					width: 18px;
+					height: 18px;
 				}
 			}
 		}

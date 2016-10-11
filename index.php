@@ -32,6 +32,7 @@
 		<main class="main js-main">
 
 			<section class="panel panel--home js-panel is-active" id="home">
+				<a class="panel__instagram" href="https://www.instagram.com/ajcollective/" target="_blank"><?php include('partials/icons/instagram.php'); ?></a>
 				<div class="panel__container">
 					<div class="grid">
 						<div class="cell cell-18 prepend-7">
