@@ -26,6 +26,7 @@
 
 		&__label {
 			display: inline-block;
+			vertical-align: middle;
 			margin-right: 14px;
 		}
 	}
@@ -38,12 +39,29 @@
 		margin-top: 55px;
 	}
 
+	&__title {
+		position: relative;
+	}
+
 	&__label {
 		display: block;
 		margin-bottom: 15px;
 		padding-bottom: 15px;
 		color: $color-grey;
 		border-bottom: 1px solid $color-border;
+	}
+
+	&__instagram {
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: 11px;
+
+		.icon {
+			display: block;
+			width: 25px;
+			height: 25px;
+			fill: $color-white;
+		}
 	}
 
 	&__close {

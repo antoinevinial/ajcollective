@@ -13,7 +13,6 @@
 			<?php include "partials/icons/back.php" ?>
 		</button>
 		<h1 class="nav-mobile__title">AJCollective</h1>
-		<a class="panel__instagram panel__instagram--mobile" href="https://www.instagram.com/ajcollective/" target="_blank"><?php include('partials/icons/instagram.php'); ?></a>
 	</div>
 	<div class="nav-mobile__content">
 		<div class="nav-mobile__panel">
@@ -58,6 +57,7 @@
 					<span class="contact__txt__label">Andrea</span>
 					<a class="contact__txt__label" href="mailto:andrea@ajcollective.com">andrea@ajcollective.com</a>
 					<span class="contact__txt__label">0044 (0) 787403 6993 // 0045 (0) 23 26 26 48</span>
+					<a class="contact__instagram" href="https://www.instagram.com/ajcollective/" target="_blank"><?php include('partials/icons/instagram.php'); ?></a>
 				</p>
 			</div>
 		</div>

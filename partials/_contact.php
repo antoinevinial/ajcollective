@@ -2,8 +2,8 @@
 	<div class="panel panel--contact">
 		<a class="contact__close js-contact-toggle" href="#">Close<span class="contact__close__icon"><?php include "icons/close.php" ?></span></a>
 		<div class="grid grid--overflow">
-			<div class="prepend-4">
-				<h2 class="heading-2 trailer-25">Contact</h2>
+			<div class="cell-24 prepend-4">
+				<h2 class="heading-2 trailer-25 contact__title">Contact</h2>
 			</div>
 			<div class="cell-11 prepend-4">
 				<div class="contact__bloc">
@@ -21,8 +21,9 @@
 					<p class="contact__txt">
 						<span class="contact__txt__label">Andrea</span>
 						<a class="contact__txt__label" href="mailto:andrea@ajcollective.com">andrea@ajcollective.com</a>
-						<span class="contact__txt__label">0044 (0) 787403 6993 // 0045 (0) 23 26 26 48</span>
+						<span class="contact__txt__label">0044 (0) 787403 6993 // 0045 (0) 23 26 26 48</span><br>
 					</p>
+					<a class="contact__instagram" href="https://www.instagram.com/ajcollective/" target="_blank"><?php include('partials/icons/instagram.php'); ?></a>
 				</div>
 			</div>
 		</div>

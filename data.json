@@ -30,7 +30,7 @@
 		"id" : 1,
 		"name" : "Jody Elizabeth",
 		"template" : "researcher",
-		"jobtitle" : "Senior Creative Researcher",
+		"jobtitle" : "Creative Director, Researcher",
 		"description" : "<strong>Hometown.</strong> Nottingham<br><strong>Current Location.</strong> Copenhagen<br><strong>Favourite Film.</strong> Wild at Heart<br><strong>Commercial.</strong> Prada A/W 2012<br><strong>Music Video.</strong> Radiohead ‘Street Spirit’<br><strong>Toast Topping.</strong> A full English<br><strong>Cocktail.</strong> Old Fashioned<br><strong>Guilty Pleasure.</strong> Katy Perry",
 		"thumbnail" : "resources/jody_nolan/thumbnail.jpg",
 		"medias" : [
@@ -50,10 +50,30 @@
 
 	{
 		"id" : 2,
-		"name" : "Frances Odim-Loughlin",
+		"name" : "Tegan Ashmore",
 		"template" : "researcher",
 		"jobtitle" : "Senior Creative Researcher",
 		"description" : "<strong>Hometown.</strong> Dublin<br><strong>Current Location.</strong> London<br><strong>Favourite Film.</strong> Happiness<br><strong>Commercial.</strong> Dunlop ‘Expect the Unexpected’<br><strong>Music Video.</strong> Justin Bieber ‘Sorry’<br><strong>Toast Topping.</strong> Confit duck<br><strong>Cocktail.</strong> Anything neon with an umbrella<br><strong>Guilty Pleasure.</strong> Napping at work",
+		"thumbnail" : "resources/tegan_ashmore/thumbnail.jpg",
+		"medias" : [
+			"resources/tegan_ashmore/01_audi_rs.jpg",
+			"resources/tegan_ashmore/02_facebook.jpg",
+			"resources/tegan_ashmore/03_alpha.jpg",
+			"resources/tegan_ashmore/04_betfair.jpg",
+			"resources/tegan_ashmore/05_house_of_fraser.jpg",
+			"resources/tegan_ashmore/06_hankook.jpg",
+			"resources/tegan_ashmore/07_lacnr.jpg",
+			"resources/tegan_ashmore/08_farms.jpg",
+			"resources/tegan_ashmore/09_pfizer.jpg"
+		]
+	},
+
+	{
+		"id" : 3,
+		"name" : "Frances Odim-Loughlin",
+		"template" : "researcher",
+		"jobtitle" : "Senior Creative Researcher",
+		"description" : "<strong>Hometown.</strong> Gloucestershire <br><strong>Current Location.</strong> Shoreditch, London<br><strong>Favourite Film.</strong> Midnight Cowboy<br><strong>Commercial.</strong> Chris Cunningham ‘Flora’ Gucci<br><strong>Music Video.</strong> The Knife ‘Pass This On’<br><strong>Toast Topping.</strong> Avocado<br><strong>Cocktail.</strong> Aperol Spritz<br><strong>Guilty Pleasure.</strong> Carly Rae Jepsen ‘Call Me Maybe’ on repeat…",
 		"thumbnail" : "resources/frances_odim/thumbnail.jpg",
 		"medias" : [
 			"resources/frances_odim/01_mercedes.jpg",
@@ -67,26 +87,6 @@
 			"resources/frances_odim/09_gilette.jpg",
 			"resources/frances_odim/10_hugo.jpg",
 			"resources/frances_odim/11_crew.jpg"
-		]
-	},
-
-	{
-		"id" : 3,
-		"name" : "Tegan Ashmore",
-		"template" : "researcher",
-		"jobtitle" : "Senior Creative Researcher",
-		"description" : "<strong>Hometown.</strong> Gloucestershire <br><strong>Current Location.</strong> Shoreditch, London<br><strong>Favourite Film.</strong> Midnight Cowboy<br><strong>Commercial.</strong> Chris Cunningham ‘Flora’ Gucci<br><strong>Music Video.</strong> The Knife ‘Pass This On’<br><strong>Toast Topping.</strong> Avocado<br><strong>Cocktail.</strong> Aperol Spritz<br><strong>Guilty Pleasure.</strong> Carly Rae Jepsen ‘Call Me Maybe’ on repeat…",
-		"thumbnail" : "resources/tegan_ashmore/thumbnail.jpg",
-		"medias" : [
-			"resources/tegan_ashmore/01_audi_rs.jpg",
-			"resources/tegan_ashmore/02_facebook.jpg",
-			"resources/tegan_ashmore/03_alpha.jpg",
-			"resources/tegan_ashmore/04_betfair.jpg",
-			"resources/tegan_ashmore/05_house_of_fraser.jpg",
-			"resources/tegan_ashmore/06_hankook.jpg",
-			"resources/tegan_ashmore/07_lacnr.jpg",
-			"resources/tegan_ashmore/08_farms.jpg",
-			"resources/tegan_ashmore/09_pfizer.jpg"
 		]
 	},
 
