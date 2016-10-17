@@ -34,17 +34,16 @@
 		"description" : "<strong>Hometown.</strong> Nottingham<br><strong>Current Location.</strong> Copenhagen<br><strong>Favourite Film.</strong> Wild at Heart<br><strong>Commercial.</strong> Prada A/W 2012<br><strong>Music Video.</strong> Radiohead ‘Street Spirit’<br><strong>Toast Topping.</strong> A full English<br><strong>Cocktail.</strong> Old Fashioned<br><strong>Guilty Pleasure.</strong> Katy Perry",
 		"thumbnail" : "resources/jody_nolan/thumbnail.jpg",
 		"medias" : [
-			"resources/jody_nolan/01_deborah_tyfield.jpg",
-			"resources/jody_nolan/02_honda.jpg",
-			"resources/jody_nolan/03_volvo.jpg",
-			"resources/jody_nolan/04_milka.jpg",
-			"resources/jody_nolan/05_lookglass.jpg",
-			"resources/jody_nolan/06_dove.jpg",
-			"resources/jody_nolan/07_fitness.jpg",
-			"resources/jody_nolan/08_these_walls.jpg",
+			"resources/jody_nolan/01_volvo.jpg",
+			"resources/jody_nolan/02_lost_found.jpg",
+			"resources/jody_nolan/03_honda.jpg",
+			"resources/jody_nolan/04_otto.jpg",
+			"resources/jody_nolan/05_ctt.jpg",
+			"resources/jody_nolan/06_these_walls.jpg",
+			"resources/jody_nolan/07_lookglass.jpg",
+			"resources/jody_nolan/08_deborah_tyfield.jpg",
 			"resources/jody_nolan/09_vitu.jpg",
-			"resources/jody_nolan/10_ctt.jpg",
-			"resources/jody_nolan/11_otto.jpg"
+			"resources/jody_nolan/10_dove.jpg"
 		]
 	},
 
