@@ -35,7 +35,7 @@
 				<div class="panel__container">
 					<div class="grid">
 						<div class="cell cell-18 prepend-7">
-							<h2 class="intro">AJCollective.<br>Creative Research. Directors Interpretation. Commercial / Film / Music Video Treatments. Creative Writing. Music Research. Mood Films.</h2>
+							<h2 class="intro">AJCollective.<br>Creative Research. Directors Interpretation. Commercial / Film / Music Video Treatments. Creative Writing. Music Research. Mood Films. Storyboards.</h2>
 						</div>
 					</div>
 					<div class="panel__pager">
