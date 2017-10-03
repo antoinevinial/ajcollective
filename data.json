@@ -123,6 +123,39 @@
 
 	{
 		"id" : 5,
+		"name" : "Beth Cutting",
+		"template" : "researcher",
+		"jobtitle" : "Creative Researcher",
+		"description" : "<strong>Hometown.</strong> Reading<br><strong>Current Location.</strong> London<br><strong>Favourite Film.</strong> Interstellar<br><strong>Commercial.</strong> ASOS “Go Play” - Raine Allen-Miller<br><strong>Music Video.</strong> A$AP Rocky - Money Man<br><strong>Toast Topping.</strong> Burrata & Chilli<br><strong>Cocktail.</strong> Caipirinha<br><strong>Guilty Pleasure.</strong> The Kardashians",
+		"thumbnail" : "resources/beth_cutting/thumbnail.jpg",
+		"medias" : [
+			"resources/beth_cutting/01_do_my_thing.jpg",
+			"resources/beth_cutting/02_nerd.jpg",
+			"resources/beth_cutting/03_lauder.jpg",
+			"resources/beth_cutting/04_coffee.jpg"
+		]
+	},
+
+	{
+		"id" : 6,
+		"name" : "Daniel M Hudson",
+		"template" : "researcher",
+		"jobtitle" : "Creative Researcher",
+		"description" : "<strong>Hometown.</strong> London<br><strong>Current Location.</strong> Los Angeles<br><strong>Favourite Film.</strong> To Kill a Mockingbird<br><strong>Commercial.</strong> Lacoste “The Big Leap” - Seb Edwards<br><strong>Music Video.</strong> Woodkid “Iron” - Yoann Lemoine<br><strong>Toast Topping.</strong> PB & J<br><strong>Cocktail.</strong> Old Fashioned<br><strong>Guilty Pleasure.</strong> The Walking Dead",
+		"thumbnail" : "resources/daniel_m_hudson/thumbnail.jpg",
+		"medias" : [
+			"resources/daniel_m_hudson/01_adidas.jpg",
+			"resources/daniel_m_hudson/02_invoke.jpg",
+			"resources/daniel_m_hudson/03_k_perry.jpg",
+			"resources/daniel_m_hudson/04_kardashians.jpg",
+			"resources/daniel_m_hudson/05_lamer.jpg",
+			"resources/daniel_m_hudson/06_loreal.jpg",
+			"resources/daniel_m_hudson/07_thundercat.jpg"
+		]
+	},
+
+	{
+		"id" : 7,
 		"name" : "Katie Anderton",
 		"template" : "writer",
 		"jobtitle" : "Her Majesty, Creative Writer",
@@ -157,7 +190,7 @@
 	},
 
 	{
-		"id" : 6,
+		"id" : 8,
 		"name" : "Will Tempest",
 		"template" : "researcher",
 		"jobtitle" : "Storyboard Artist",
@@ -172,7 +205,7 @@
 	},
 
 	{
-		"id" : 7,
+		"id" : 9,
 		"name" : "Ben Hsiung",
 		"template" : "other",
 		"jobtitle" : "Resident Music Man, Music Researcher",
@@ -182,39 +215,6 @@
 			"Our resident Music Man, Ben, has been a DJ/music play-black operator for over a decade. With roots firmly etched on the London live circuit, he has spent years playing in different bands and developing a knack for knowing how to feel the room. “Being in front of a crowd and seeing or ‘getting’ their reactions was always key to a good set - learning the boundaries you can push and pull the audience towards was always what gave me the biggest rush”.",
 			"Working closely with the likes of RSA, Ben has had the enviable task of playing music for Brad Pitt to dance to, convincing Lewis Hamilton he was a superstar, and providing the mood for over 100 different sets, from slow, seductive vibes for Jordan Scotts’ Agent Provocateur films, or high energy dance tracks for Johan Rencks H&M spot, he’s even donned his festive seasonal hat for Dawn Shadforths M&S Xmas campaigns.",
 			"By nature, Ben is just damn cool, easy going guy to have around. His musical knowledge is extensive, but it is his taste that makes him a stand-out. Able to impress the fashion concuss glam squad, the hipster agency bods, the art dept and the sparks all at the same time, Ben has a winning formula that develops the mood and helps the director create the perfect environment for the cast to be in."
-		]
-	},
-
-	{
-		"id" : 8,
-		"name" : "Beth Cutting",
-		"template" : "researcher",
-		"jobtitle" : "Creative Researcher",
-		"description" : "<strong>Hometown.</strong> Reading<br><strong>Current Location.</strong> London<br><strong>Favourite Film.</strong> Interstellar<br><strong>Commercial.</strong> ASOS “Go Play” - Raine Allen-Miller<br><strong>Music Video.</strong> A$AP Rocky - Money Man<br><strong>Toast Topping.</strong> Burrata & Chilli<br><strong>Cocktail.</strong> Caipirinha<br><strong>Guilty Pleasure.</strong> The Kardashians",
-		"thumbnail" : "resources/beth_cutting/thumbnail.jpg",
-		"medias" : [
-			"resources/beth_cutting/01_do_my_thing.jpg",
-			"resources/beth_cutting/02_nerd.jpg",
-			"resources/beth_cutting/03_lauder.jpg",
-			"resources/beth_cutting/04_coffee.jpg"
-		]
-	},
-
-	{
-		"id" : 9,
-		"name" : "Daniel M Hudson",
-		"template" : "researcher",
-		"jobtitle" : "Creative Researcher",
-		"description" : "<strong>Hometown.</strong> London<br><strong>Current Location.</strong> Los Angeles<br><strong>Favourite Film.</strong> To Kill a Mockingbird<br><strong>Commercial.</strong> Lacoste “The Big Leap” - Seb Edwards<br><strong>Music Video.</strong> Woodkid “Iron” - Yoann Lemoine<br><strong>Toast Topping.</strong> PB & J<br><strong>Cocktail.</strong> Old Fashioned<br><strong>Guilty Pleasure.</strong> The Walking Dead",
-		"thumbnail" : "resources/daniel_m_hudson/thumbnail.jpg",
-		"medias" : [
-			"resources/daniel_m_hudson/01_adidas.jpg",
-			"resources/daniel_m_hudson/02_invoke.jpg",
-			"resources/daniel_m_hudson/03_k_perry.jpg",
-			"resources/daniel_m_hudson/04_kardashians.jpg",
-			"resources/daniel_m_hudson/05_lamer.jpg",
-			"resources/daniel_m_hudson/06_loreal.jpg",
-			"resources/daniel_m_hudson/07_thundercat.jpg"
 		]
 	}
 ]
