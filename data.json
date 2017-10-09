@@ -125,7 +125,7 @@
 		"id" : 5,
 		"name" : "Beth Cutting",
 		"template" : "researcher",
-		"jobtitle" : "Creative Researcher",
+		"jobtitle" : "Senior Creative Researcher",
 		"description" : "<strong>Hometown.</strong> Reading<br><strong>Current Location.</strong> London<br><strong>Favourite Film.</strong> Interstellar<br><strong>Commercial.</strong> ASOS “Go Play” - Raine Allen-Miller<br><strong>Music Video.</strong> A$AP Rocky - Money Man<br><strong>Toast Topping.</strong> Burrata & Chilli<br><strong>Cocktail.</strong> Caipirinha<br><strong>Guilty Pleasure.</strong> The Kardashians",
 		"thumbnail" : "resources/beth_cutting/thumbnail.jpg",
 		"medias" : [
@@ -140,7 +140,7 @@
 		"id" : 6,
 		"name" : "Daniel M Hudson",
 		"template" : "researcher",
-		"jobtitle" : "Creative Researcher",
+		"jobtitle" : "Senior Creative Researcher",
 		"description" : "<strong>Hometown.</strong> London<br><strong>Current Location.</strong> Los Angeles<br><strong>Favourite Film.</strong> To Kill a Mockingbird<br><strong>Commercial.</strong> Lacoste “The Big Leap” - Seb Edwards<br><strong>Music Video.</strong> Woodkid “Iron” - Yoann Lemoine<br><strong>Toast Topping.</strong> PB & J<br><strong>Cocktail.</strong> Old Fashioned<br><strong>Guilty Pleasure.</strong> The Walking Dead",
 		"thumbnail" : "resources/daniel_m_hudson/thumbnail.jpg",
 		"medias" : [
