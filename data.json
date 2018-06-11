@@ -156,6 +156,25 @@
 
 	{
 		"id" : 7,
+		"name" : "Antonio Colliani",
+		"template" : "researcher",
+		"jobtitle" : "Senior Creative Researcher",
+		"description" : "<strong>Hometown.</strong> Salerno, Italy<br><strong>Current Location.</strong> London<br><strong>Favourite Film.</strong> Mulholland Drive<br><strong>Commercial.</strong> KENZO - My Mutant Brain<br><strong>Music Video.</strong> Bachelorette - Bjork<br><strong>Toast Topping.</strong> Poached eggs<br><strong>Cocktail.</strong> Negroni<br><strong>Guilty Pleasure.</strong> American TV shows featuring teenage protagonists",
+		"thumbnail" : "resources/antonio_colliani/thumbnail.jpg",
+		"medias" : [
+			"resources/antonio_colliani/01_salt.jpg",
+			"resources/antonio_colliani/02_cadbury.jpg",
+			"resources/antonio_colliani/03_cares.jpg",
+			"resources/antonio_colliani/04_adidas.jpg",
+			"resources/antonio_colliani/05_deliveroo.jpg",
+			"resources/antonio_colliani/06_applewatch.jpg",
+			"resources/antonio_colliani/07_zbmw.jpg",
+			"resources/antonio_colliani/08_baonco.jpg"
+		]
+	},
+
+	{
+		"id" : 8,
 		"name" : "Katie Anderton",
 		"template" : "writer",
 		"jobtitle" : "Her Majesty, Creative Writer",
@@ -190,7 +209,7 @@
 	},
 
 	{
-		"id" : 8,
+		"id" : 9,
 		"name" : "Will Tempest",
 		"template" : "researcher",
 		"jobtitle" : "Storyboard Artist",
@@ -205,7 +224,7 @@
 	},
 
 	{
-		"id" : 9,
+		"id" : 10,
 		"name" : "Ben Hsiung",
 		"template" : "other",
 		"jobtitle" : "Resident Music Man, Music Researcher",
